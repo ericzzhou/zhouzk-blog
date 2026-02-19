@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simple Test Page</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+            line-height: 1.6;
+        }
+        h1 {
+            color: #333;
+        }
+        .btn {
+            display: inline-block;
+            background: #007bff;
+            color: white;
+            padding: 12px 24px;
+            text-decoration: none;
+            border-radius: 4px;
+            margin: 10px 5px;
+        }
+        .btn:hover {
+            background: #0056b3;
+        }
+        .test-result {
+            margin: 20px 0;
+            padding: 10px;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Simple Test Page</h1>
+    <p>This is a simple test to check if links are clickable.</p>
+    
+    <div class="test-result">
+        <h3>Test 1: External Link (Yami)</h3>
+        <a href="https://www.yami.com" class="btn" target="_blank">Click to test Yami link</a>
+        <p>Should open Yami homepage in new tab.</p>
+    </div>
+    
+    <div class="test-result">
+        <h3>Test 2: Internal Link</h3>
+        <a href="./kikkoman-hello-kitty-soy-sauce-dispenser.html" class="btn">Click to test internal link</a>
+        <p>Should open the Kikkoman page.</p>
+    </div>
+    
+    <div class="test-result">
+        <h3>Test 3: Button with JavaScript</h3>
+        <button onclick="testClick()" class="btn" style="border: none; cursor: pointer;">Click to test JavaScript</button>
+        <p id="js-result">JavaScript not triggered yet.</p>
+    </div>
+    
+    <div class="test-result">
+        <h3>Test 4: Back to Home</h3>
+        <a href="https://zhouzk.com" class="btn" target="_blank">Back to ZhouZK.com</a>
+    </div>
+    
+    <script>
+        function testClick() {
+            document.getElementById('js-result').textContent = '✅ JavaScript works! Clicked at ' + new Date().toLocaleTimeString();
+        }
+        
+        // Simple test on load
+        document.addEventListener('DOMContentLoaded', function() {
+            console.log('Test page loaded successfully');
+        });
+    </script>
+</body>
+</html>
