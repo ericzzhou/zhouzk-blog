@@ -1,89 +1,25 @@
 # AGENTS.md - Coding Guidelines for zhouzk-blog
 
-## Project Overview
+**Generated:** 2026-02-23  
+**Commit:** d7ca9ce  
+**Branch:** master
 
-Static HTML blog and landing pages for zhouzk.com. No build system, package manager, or test framework—pure HTML/CSS/JS.
+---
 
-## Build/Test/Lint Commands
+## OVERVIEW
 
-**No build system configured.** This is a static site.
+Static HTML blog and landing pages for zhouzk.com. No build system—pure HTML/CSS/JS with inline styles.
 
-- **Preview**: Open HTML files directly in browser or serve with `python3 -m http.server 8000`
-- **No tests**: Manual testing only
-- **No linting**: Follow style guidelines below
+**Total files:** 18 HTML  
+**Total lines:** ~5,700
 
-## Code Style Guidelines
+---
 
-### HTML Structure
-
-- Use HTML5 doctype: `<!DOCTYPE html>`
-- Include required meta tags:
-  ```html
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Page Title | zhouzk.com</title>
-  <meta name="description" content="...">
-  ```
-- Language attribute: `lang="en"` or `lang="zh"` as appropriate
-- Indent: 4 spaces
-- Max line length: 120 characters
-
-### CSS Conventions
-
-- Use CSS custom properties in `:root` for theming:
-  ```css
-  :root {
-      --primary: #E4007F;
-      --dark: #1d1d1f;
-      --gray: #86868b;
-  }
-  ```
-- Class naming: kebab-case (e.g., `.nav-links`, `.hero-section`)
-- One declaration per line for readability
-- Group related properties (layout, typography, colors)
-- Use Flexbox/Grid for layouts
-- Include responsive breakpoints:
-  ```css
-  @media (max-width: 768px) { ... }
-  @media (max-width: 480px) { ... }
-  ```
-
-### JavaScript
-
-- Minimal JS—prefer CSS for animations
-- Use vanilla JS (no frameworks)
-- Event listeners: `addEventListener` over inline handlers
-- Wrap in `DOMContentLoaded`:
-  ```javascript
-  document.addEventListener('DOMContentLoaded', function() {
-      // Code here
-  });
-  ```
-
-### SEO Requirements
-
-Every page must include:
-
-1. **Meta tags**: description, keywords (for landing pages)
-2. **Open Graph tags**: og:type, og:url, og:title, og:description, og:image
-3. **Schema.org JSON-LD** (for product landing pages):
-   ```html
-   <script type="application/ld+json">
-   {
-       "@context": "https://schema.org",
-       "@type": "Product",
-       "name": "...",
-       "image": "...",
-       "description": "..."
-   }
-   </script>
-   ```
-
-### File Organization
+## STRUCTURE
 
 ```
 /
-├── index.html              # Homepage
+├── index.html              # Homepage + landing page index
 ├── article/                # Blog articles
 │   └── *.html
 ├── landing-pages/          # SEO product pages
@@ -92,46 +28,96 @@ Every page must include:
 └── AGENTS.md              # This file
 ```
 
-### Landing Page Naming
+---
 
-- Use kebab-case: `product-name-with-details.html`
-- Include size/variant: `zhou-hei-ya-braising-sauce-14-1oz.html`
-- Update `index.html` landing page list when adding new pages
+## WHERE TO LOOK
 
-### Typography & Design
+| Task | Location | Notes |
+|------|----------|-------|
+| New landing page | `landing-pages/` | Follow naming convention in `landing-pages/AGENTS.md` |
+| New blog article | `article/` | Standard HTML structure |
+| Homepage updates | `index.html` | Contains landing page list |
+| Archived pages | `landing-pages/backup/` | Historical versions, do not edit |
 
-- Primary font: Inter (Google Fonts)
+---
+
+## CONVENTIONS (THIS PROJECT)
+
+### HTML
+- HTML5 doctype, 4-space indent
+- Language: `lang="en"` or `lang="zh"` as appropriate
+- Max line length: 120 characters
+
+### CSS (All Inline)
+- CSS custom properties in `:root` for theming:
+  ```css
+  :root {
+      --primary: #E4007F;
+      --dark: #1d1d1f;
+      --gray: #86868b;
+  }
+  ```
+- Class naming: kebab-case (`.nav-links`, `.hero-section`)
+- Responsive breakpoints: `768px`, `480px`
+
+### JavaScript
+- Minimal JS—prefer CSS for animations
+- Vanilla JS only, wrap in `DOMContentLoaded`
+
+### SEO Requirements (All Pages)
+1. Meta: description, keywords (landing pages)
+2. Open Graph: og:type, og:url, og:title, og:description, og:image
+3. Schema.org JSON-LD (product pages): Product, Offer, AggregateRating
+
+### Typography
+- Primary: Inter (Google Fonts)
 - Fallback: `-apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif`
-- Base font size: 16px
-- Line height: 1.5-1.6 for body text
-- Use system font stack for Chinese content
+- Base: 16px, line-height 1.5-1.6
 
 ### External Resources
+- Icons: Font Awesome CDN
+- Fonts: Google Fonts
+- Images: Yami CDN
 
-- Font Awesome for icons (CDN)
-- Google Fonts for typography
-- Yami CDN for product images
+---
 
-## Cursor/Copilot Rules
+## ANTI-PATTERNS (THIS PROJECT)
 
-None configured. Follow guidelines above.
+- **NEVER** create standalone CSS/JS files—all inline in HTML
+- **NEVER** add build tools or package managers—keep it static
+- **NEVER** skip schema markup on product landing pages
+- **NEVER** use Chinese font stack for English content (and vice versa)
 
-## Testing Checklist
+---
+
+## COMMANDS
+
+```bash
+# Preview
+python3 -m http.server 8000
+
+# No build/test/lint—manual testing only
+```
+
+---
+
+## TESTING CHECKLIST
 
 Before committing:
 
 - [ ] Page loads without console errors
-- [ ] Responsive on mobile (320px), tablet (768px), desktop (1024px+)
-- [ ] All links clickable and correct
-- [ ] Meta tags present and accurate
-- [ ] Schema markup validates (test with Google Rich Results)
-- [ ] Images load correctly
+- [ ] Responsive: mobile (320px), tablet (768px), desktop (1024px+)
+- [ ] All links clickable
+- [ ] Meta tags accurate
+- [ ] Schema markup validates (Google Rich Results)
+- [ ] Images load
 - [ ] No broken internal links
 
-## Common Patterns
+---
 
-### Sticky Navigation
+## COMMON PATTERNS
 
+### Sticky Nav
 ```css
 .nav {
     position: fixed; top: 0; left: 0; right: 0; z-index: 1000;
@@ -140,8 +126,7 @@ Before committing:
 }
 ```
 
-### CTA Buttons
-
+### CTA Button
 ```css
 .cta-button {
     background: var(--primary);
@@ -153,13 +138,8 @@ Before committing:
 }
 ```
 
-### Product Card Structure
+---
 
-```html
-<div class="product-card">
-    <img src="..." alt="...">
-    <h2>Product Name</h2>
-    <p class="price">$X.XX</p>
-    <a href="..." class="cta-button">Buy Now</a>
-</div>
-```
+## CHILD DOCUMENTS
+
+- `landing-pages/AGENTS.md` — Landing page specific conventions
