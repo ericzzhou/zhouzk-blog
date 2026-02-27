@@ -1,0 +1,9 @@
+User-agent: *
+Allow: /
+
+Disallow: /landing-pages/backup/
+Disallow: /landing-pages/test-simple
+Disallow: /landing-pages/kikkoman-fixed
+Disallow: /public/
+
+Sitemap: https://zhouzk.com/sitemap.xml
