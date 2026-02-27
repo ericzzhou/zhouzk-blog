@@ -990,8 +990,8 @@
     - **不得猜测或编造任何产品数据，所有数据必须来自 Yami 网站**
     - _Requirements: 1.1, 1.2, 2.1, 2.2, 3.3, 4.1, 4.2, 5.1, 5.2, 6.1, 6.2, 6.3, 6.4, 6.5, 7.1, 7.2, 7.3, 7.4, 7.5, 8.1, 8.2, 8.3, 8.4, 9.1, 9.2, 11.1, 11.2, 13.1, 13.2, 13.3_
 
-- [ ] 77. 创建产品 #1024158441 的 Landing Page — TSUBAKI Golden Hair Mask 180g Camellia Salon-Level
-  - [ ] 77.1 创建 Landing Page HTML 文件
+- [x] 77. 创建产品 #1024158441 的 Landing Page — TSUBAKI Golden Hair Mask 180g Camellia Salon-Level
+  - [x] 77.1 创建 Landing Page HTML 文件
     - 访问 Yami 网站搜索 item_number `1024158441`，获取真实的：产品页面 URL、产品图片 URL（格式 `https://cdn.yamibuy.net/item/{hash}_757x757.webp`）、当前价格、评分数据
     - 以 `landing-pages/laoganma-spicy-crispy-chili-oil-210g.html` 为模板参考
     - 品类: HAIRCARE，配色方案: primary=#AD1457, primary_deep=#880E4F, primary_light=#FCE4EC, accent=#F06292
@@ -1003,8 +1003,8 @@
     - **不得猜测或编造任何产品数据，所有数据必须来自 Yami 网站**
     - _Requirements: 1.1, 1.2, 2.1, 2.2, 3.3, 4.1, 4.2, 5.1, 5.2, 6.1, 6.2, 6.3, 6.4, 6.5, 7.1, 7.2, 7.3, 7.4, 7.5, 8.1, 8.2, 8.3, 8.4, 9.1, 9.2, 11.1, 11.2, 13.1, 13.2, 13.3_
 
-- [ ] 78. 创建产品 #1024141581 的 Landing Page — FINO Premium Touch Hair Mask 230g + Shampoo + Conditioner + Hair Oil (Value Pack)
-  - [ ] 78.1 创建 Landing Page HTML 文件
+- [x] 78. 创建产品 #1024141581 的 Landing Page — FINO Premium Touch Hair Mask 230g + Shampoo + Conditioner + Hair Oil (Value Pack)
+  - [x] 78.1 创建 Landing Page HTML 文件
     - 访问 Yami 网站搜索 item_number `1024141581`，获取真实的：产品页面 URL、产品图片 URL（格式 `https://cdn.yamibuy.net/item/{hash}_757x757.webp`）、当前价格、评分数据
     - 以 `landing-pages/laoganma-spicy-crispy-chili-oil-210g.html` 为模板参考
     - 品类: HAIRCARE，配色方案: primary=#AD1457, primary_deep=#880E4F, primary_light=#FCE4EC, accent=#F06292
@@ -1016,8 +1016,8 @@
     - **不得猜测或编造任何产品数据，所有数据必须来自 Yami 网站**
     - _Requirements: 1.1, 1.2, 2.1, 2.2, 3.3, 4.1, 4.2, 5.1, 5.2, 6.1, 6.2, 6.3, 6.4, 6.5, 7.1, 7.2, 7.3, 7.4, 7.5, 8.1, 8.2, 8.3, 8.4, 9.1, 9.2, 11.1, 11.2, 13.1, 13.2, 13.3_
 
-- [ ] 79. 创建产品 #1016223691 的 Landing Page — Blessings Abound Pastry Gift Box 34.57 oz
-  - [ ] 79.1 创建 Landing Page HTML 文件
+- [x] 79. 创建产品 #1016223691 的 Landing Page — Blessings Abound Pastry Gift Box 34.57 oz
+  - [x] 79.1 创建 Landing Page HTML 文件
     - 访问 Yami 网站搜索 item_number `1016223691`，获取真实的：产品页面 URL、产品图片 URL（格式 `https://cdn.yamibuy.net/item/{hash}_757x757.webp`）、当前价格、评分数据
     - 以 `landing-pages/laoganma-spicy-crispy-chili-oil-210g.html` 为模板参考
     - 品类: SNACK，配色方案: primary=#F9A825, primary_deep=#F57F17, primary_light=#FFFDE7, accent=#FFEE58
@@ -1029,8 +1029,8 @@
     - **不得猜测或编造任何产品数据，所有数据必须来自 Yami 网站**
     - _Requirements: 1.1, 1.2, 2.1, 2.2, 3.8, 4.1, 4.2, 5.1, 5.2, 6.1, 6.2, 6.3, 6.4, 6.5, 7.1, 7.2, 7.3, 7.4, 7.5, 8.1, 8.2, 8.3, 8.4, 9.1, 9.2, 11.1, 11.2, 13.1, 13.2, 13.3_
 
-- [ ] 80. 创建产品 #1017068931 的 Landing Page — Egg Tarts Cake 14.1oz
-  - [ ] 80.1 创建 Landing Page HTML 文件
+- [x] 80. 创建产品 #1017068931 的 Landing Page — Egg Tarts Cake 14.1oz
+  - [x] 80.1 创建 Landing Page HTML 文件
     - 访问 Yami 网站搜索 item_number `1017068931`，获取真实的：产品页面 URL、产品图片 URL（格式 `https://cdn.yamibuy.net/item/{hash}_757x757.webp`）、当前价格、评分数据
     - 以 `landing-pages/laoganma-spicy-crispy-chili-oil-210g.html` 为模板参考
     - 品类: SNACK，配色方案: primary=#F9A825, primary_deep=#F57F17, primary_light=#FFFDE7, accent=#FFEE58
@@ -1042,8 +1042,8 @@
     - **不得猜测或编造任何产品数据，所有数据必须来自 Yami 网站**
     - _Requirements: 1.1, 1.2, 2.1, 2.2, 3.8, 4.1, 4.2, 5.1, 5.2, 6.1, 6.2, 6.3, 6.4, 6.5, 7.1, 7.2, 7.3, 7.4, 7.5, 8.1, 8.2, 8.3, 8.4, 9.1, 9.2, 11.1, 11.2, 13.1, 13.2, 13.3_
 
-- [ ] 81. 创建产品 #1159003151 的 Landing Page — Rice Crackers Classic Milk Flavor 8.53 oz
-  - [ ] 81.1 创建 Landing Page HTML 文件
+- [x] 81. 创建产品 #1159003151 的 Landing Page — Rice Crackers Classic Milk Flavor 8.53 oz
+  - [x] 81.1 创建 Landing Page HTML 文件
     - 访问 Yami 网站搜索 item_number `1159003151`，获取真实的：产品页面 URL、产品图片 URL（格式 `https://cdn.yamibuy.net/item/{hash}_757x757.webp`）、当前价格、评分数据
     - 以 `landing-pages/laoganma-spicy-crispy-chili-oil-210g.html` 为模板参考
     - 品类: SNACK，配色方案: primary=#F9A825, primary_deep=#F57F17, primary_light=#FFFDE7, accent=#FFEE58
@@ -1055,8 +1055,8 @@
     - **不得猜测或编造任何产品数据，所有数据必须来自 Yami 网站**
     - _Requirements: 1.1, 1.2, 2.1, 2.2, 3.8, 4.1, 4.2, 5.1, 5.2, 6.1, 6.2, 6.3, 6.4, 6.5, 7.1, 7.2, 7.3, 7.4, 7.5, 8.1, 8.2, 8.3, 8.4, 9.1, 9.2, 11.1, 11.2, 13.1, 13.2, 13.3_
 
-- [ ] 82. 创建产品 #1017038201 的 Landing Page — Korean Honey Butter Potato Chips 2.11oz*3 (Value Pack)
-  - [ ] 82.1 创建 Landing Page HTML 文件
+- [x] 82. 创建产品 #1017038201 的 Landing Page — Korean Honey Butter Potato Chips 2.11oz*3 (Value Pack)
+  - [x] 82.1 创建 Landing Page HTML 文件
     - 访问 Yami 网站搜索 item_number `1017038201`，获取真实的：产品页面 URL、产品图片 URL（格式 `https://cdn.yamibuy.net/item/{hash}_757x757.webp`）、当前价格、评分数据
     - 以 `landing-pages/laoganma-spicy-crispy-chili-oil-210g.html` 为模板参考
     - 品类: SNACK，配色方案: primary=#F9A825, primary_deep=#F57F17, primary_light=#FFFDE7, accent=#FFEE58
@@ -1068,8 +1068,8 @@
     - **不得猜测或编造任何产品数据，所有数据必须来自 Yami 网站**
     - _Requirements: 1.1, 1.2, 2.1, 2.2, 3.8, 4.1, 4.2, 5.1, 5.2, 6.1, 6.2, 6.3, 6.4, 6.5, 7.1, 7.2, 7.3, 7.4, 7.5, 8.1, 8.2, 8.3, 8.4, 9.1, 9.2, 11.1, 11.2, 13.1, 13.2, 13.3_
 
-- [ ] 83. 创建产品 #1018078921 的 Landing Page — New Year Candy Gift Box 14.82 oz
-  - [ ] 83.1 创建 Landing Page HTML 文件
+- [x] 83. 创建产品 #1018078921 的 Landing Page — New Year Candy Gift Box 14.82 oz
+  - [x] 83.1 创建 Landing Page HTML 文件
     - 访问 Yami 网站搜索 item_number `1018078921`，获取真实的：产品页面 URL、产品图片 URL（格式 `https://cdn.yamibuy.net/item/{hash}_757x757.webp`）、当前价格、评分数据
     - 以 `landing-pages/laoganma-spicy-crispy-chili-oil-210g.html` 为模板参考
     - 品类: SNACK，配色方案: primary=#F9A825, primary_deep=#F57F17, primary_light=#FFFDE7, accent=#FFEE58
@@ -1081,8 +1081,8 @@
     - **不得猜测或编造任何产品数据，所有数据必须来自 Yami 网站**
     - _Requirements: 1.1, 1.2, 2.1, 2.2, 3.8, 4.1, 4.2, 5.1, 5.2, 6.1, 6.2, 6.3, 6.4, 6.5, 7.1, 7.2, 7.3, 7.4, 7.5, 8.1, 8.2, 8.3, 8.4, 9.1, 9.2, 11.1, 11.2, 13.1, 13.2, 13.3_
 
-- [ ] 84. 创建产品 #3022187641 的 Landing Page — SPIII Star Edition Hertz RF Beauty Device
-  - [ ] 84.1 创建 Landing Page HTML 文件
+- [x] 84. 创建产品 #3022187641 的 Landing Page — SPIII Star Edition Hertz RF Beauty Device
+  - [x] 84.1 创建 Landing Page HTML 文件
     - 访问 Yami 网站搜索 item_number `3022187641`，获取真实的：产品页面 URL、产品图片 URL（格式 `https://cdn.yamibuy.net/item/{hash}_757x757.webp`）、当前价格、评分数据
     - 以 `landing-pages/laoganma-spicy-crispy-chili-oil-210g.html` 为模板参考
     - 品类: BEAUTY_DEVICE，配色方案: primary=#7B1FA2, primary_deep=#4A148C, primary_light=#F3E5F5, accent=#CE93D8
@@ -1094,8 +1094,8 @@
     - **不得猜测或编造任何产品数据，所有数据必须来自 Yami 网站**
     - _Requirements: 1.1, 1.2, 2.1, 2.2, 3.2, 4.1, 4.2, 5.1, 5.2, 6.1, 6.2, 6.3, 6.4, 6.5, 7.1, 7.2, 7.3, 7.4, 7.5, 8.1, 8.2, 8.3, 8.4, 9.1, 9.2, 11.1, 11.2, 13.1, 13.2, 13.3_
 
-- [ ] 85. 创建产品 #3163001331 的 Landing Page — The ZeusⅢ Facial Tech Tool + Massage Gel + Essence
-  - [ ] 85.1 创建 Landing Page HTML 文件
+- [x] 85. 创建产品 #3163001331 的 Landing Page — The ZeusⅢ Facial Tech Tool + Massage Gel + Essence
+  - [x] 85.1 创建 Landing Page HTML 文件
     - 访问 Yami 网站搜索 item_number `3163001331`，获取真实的：产品页面 URL、产品图片 URL（格式 `https://cdn.yamibuy.net/item/{hash}_757x757.webp`）、当前价格、评分数据
     - 以 `landing-pages/laoganma-spicy-crispy-chili-oil-210g.html` 为模板参考
     - 品类: BEAUTY_DEVICE，配色方案: primary=#7B1FA2, primary_deep=#4A148C, primary_light=#F3E5F5, accent=#CE93D8
@@ -1107,8 +1107,8 @@
     - **不得猜测或编造任何产品数据，所有数据必须来自 Yami 网站**
     - _Requirements: 1.1, 1.2, 2.1, 2.2, 3.2, 4.1, 4.2, 5.1, 5.2, 6.1, 6.2, 6.3, 6.4, 6.5, 7.1, 7.2, 7.3, 7.4, 7.5, 8.1, 8.2, 8.3, 8.4, 9.1, 9.2, 11.1, 11.2, 13.1, 13.2, 13.3_
 
-- [ ] 86. 创建产品 #3022558871 的 Landing Page — Sulwhasoo Concentrated Ginseng Renewing Serum 20g
-  - [ ] 86.1 创建 Landing Page HTML 文件
+- [x] 86. 创建产品 #3022558871 的 Landing Page — Sulwhasoo Concentrated Ginseng Renewing Serum 20g
+  - [x] 86.1 创建 Landing Page HTML 文件
     - 访问 Yami 网站搜索 item_number `3022558871`，获取真实的：产品页面 URL、产品图片 URL（格式 `https://cdn.yamibuy.net/item/{hash}_757x757.webp`）、当前价格、评分数据
     - 以 `landing-pages/laoganma-spicy-crispy-chili-oil-210g.html` 为模板参考
     - 品类: SKINCARE，配色方案: primary=#2E7D32, primary_deep=#1B5E20, primary_light=#E8F5E9, accent=#66BB6A
@@ -1120,8 +1120,8 @@
     - **不得猜测或编造任何产品数据，所有数据必须来自 Yami 网站**
     - _Requirements: 1.1, 1.2, 2.1, 2.2, 3.1, 4.1, 4.2, 5.1, 5.2, 6.1, 6.2, 6.3, 6.4, 6.5, 7.1, 7.2, 7.3, 7.4, 7.5, 8.1, 8.2, 8.3, 8.4, 9.1, 9.2, 11.1, 11.2, 13.1, 13.2, 13.3_
 
-- [ ] 87. 创建产品 #3022566941 的 Landing Page — Sulwhasoo The Ultimate S Cream 60ml
-  - [ ] 87.1 创建 Landing Page HTML 文件
+- [x] 87. 创建产品 #3022566941 的 Landing Page — Sulwhasoo The Ultimate S Cream 60ml
+  - [x] 87.1 创建 Landing Page HTML 文件
     - 访问 Yami 网站搜索 item_number `3022566941`，获取真实的：产品页面 URL、产品图片 URL（格式 `https://cdn.yamibuy.net/item/{hash}_757x757.webp`）、当前价格、评分数据
     - 以 `landing-pages/laoganma-spicy-crispy-chili-oil-210g.html` 为模板参考
     - 品类: SKINCARE，配色方案: primary=#2E7D32, primary_deep=#1B5E20, primary_light=#E8F5E9, accent=#66BB6A
@@ -1133,8 +1133,8 @@
     - **不得猜测或编造任何产品数据，所有数据必须来自 Yami 网站**
     - _Requirements: 1.1, 1.2, 2.1, 2.2, 3.1, 4.1, 4.2, 5.1, 5.2, 6.1, 6.2, 6.3, 6.4, 6.5, 7.1, 7.2, 7.3, 7.4, 7.5, 8.1, 8.2, 8.3, 8.4, 9.1, 9.2, 11.1, 11.2, 13.1, 13.2, 13.3_
 
-- [ ] 88. 创建产品 #3022554881 的 Landing Page — Sulwhasoo First Care Activating Serum 90ml
-  - [ ] 88.1 创建 Landing Page HTML 文件
+- [x] 88. 创建产品 #3022554881 的 Landing Page — Sulwhasoo First Care Activating Serum 90ml
+  - [x] 88.1 创建 Landing Page HTML 文件
     - 访问 Yami 网站搜索 item_number `3022554881`，获取真实的：产品页面 URL、产品图片 URL（格式 `https://cdn.yamibuy.net/item/{hash}_757x757.webp`）、当前价格、评分数据
     - 以 `landing-pages/laoganma-spicy-crispy-chili-oil-210g.html` 为模板参考
     - 品类: SKINCARE，配色方案: primary=#2E7D32, primary_deep=#1B5E20, primary_light=#E8F5E9, accent=#66BB6A
@@ -1147,7 +1147,7 @@
     - _Requirements: 1.1, 1.2, 2.1, 2.2, 3.1, 4.1, 4.2, 5.1, 5.2, 6.1, 6.2, 6.3, 6.4, 6.5, 7.1, 7.2, 7.3, 7.4, 7.5, 8.1, 8.2, 8.3, 8.4, 9.1, 9.2, 11.1, 11.2, 13.1, 13.2, 13.3_
 
 - [ ] 89. 创建产品 #3022566961 的 Landing Page — Sulwhasoo The Ultimate S Eye Cream 20ml
-  - [ ] 89.1 创建 Landing Page HTML 文件
+  - [x] 89.1 创建 Landing Page HTML 文件
     - 访问 Yami 网站搜索 item_number `3022566961`，获取真实的：产品页面 URL、产品图片 URL（格式 `https://cdn.yamibuy.net/item/{hash}_757x757.webp`）、当前价格、评分数据
     - 以 `landing-pages/laoganma-spicy-crispy-chili-oil-210g.html` 为模板参考
     - 品类: SKINCARE，配色方案: primary=#2E7D32, primary_deep=#1B5E20, primary_light=#E8F5E9, accent=#66BB6A
@@ -1159,8 +1159,8 @@
     - **不得猜测或编造任何产品数据，所有数据必须来自 Yami 网站**
     - _Requirements: 1.1, 1.2, 2.1, 2.2, 3.1, 4.1, 4.2, 5.1, 5.2, 6.1, 6.2, 6.3, 6.4, 6.5, 7.1, 7.2, 7.3, 7.4, 7.5, 8.1, 8.2, 8.3, 8.4, 9.1, 9.2, 11.1, 11.2, 13.1, 13.2, 13.3_
 
-- [ ] 90. 创建产品 #3022567041 的 Landing Page — Sulwhasoo The Ultimate S Enriched Water 150ml
-  - [ ] 90.1 创建 Landing Page HTML 文件
+- [x] 90. 创建产品 #3022567041 的 Landing Page — Sulwhasoo The Ultimate S Enriched Water 150ml
+  - [x] 90.1 创建 Landing Page HTML 文件
     - 访问 Yami 网站搜索 item_number `3022567041`，获取真实的：产品页面 URL、产品图片 URL（格式 `https://cdn.yamibuy.net/item/{hash}_757x757.webp`）、当前价格、评分数据
     - 以 `landing-pages/laoganma-spicy-crispy-chili-oil-210g.html` 为模板参考
     - 品类: SKINCARE，配色方案: primary=#2E7D32, primary_deep=#1B5E20, primary_light=#E8F5E9, accent=#66BB6A
@@ -1172,8 +1172,8 @@
     - **不得猜测或编造任何产品数据，所有数据必须来自 Yami 网站**
     - _Requirements: 1.1, 1.2, 2.1, 2.2, 3.1, 4.1, 4.2, 5.1, 5.2, 6.1, 6.2, 6.3, 6.4, 6.5, 7.1, 7.2, 7.3, 7.4, 7.5, 8.1, 8.2, 8.3, 8.4, 9.1, 9.2, 11.1, 11.2, 13.1, 13.2, 13.3_
 
-- [ ] 91. 创建产品 #3022567061 的 Landing Page — Sulwhasoo The Ultimate S Enriched Water 40ml + Emulsion 40ml
-  - [ ] 91.1 创建 Landing Page HTML 文件
+- [x] 91. 创建产品 #3022567061 的 Landing Page — Sulwhasoo The Ultimate S Enriched Water 40ml + Emulsion 40ml
+  - [x] 91.1 创建 Landing Page HTML 文件
     - 访问 Yami 网站搜索 item_number `3022567061`，获取真实的：产品页面 URL、产品图片 URL（格式 `https://cdn.yamibuy.net/item/{hash}_757x757.webp`）、当前价格、评分数据
     - 以 `landing-pages/laoganma-spicy-crispy-chili-oil-210g.html` 为模板参考
     - 品类: SKINCARE，配色方案: primary=#2E7D32, primary_deep=#1B5E20, primary_light=#E8F5E9, accent=#66BB6A
@@ -1185,8 +1185,8 @@
     - **不得猜测或编造任何产品数据，所有数据必须来自 Yami 网站**
     - _Requirements: 1.1, 1.2, 2.1, 2.2, 3.1, 4.1, 4.2, 5.1, 5.2, 6.1, 6.2, 6.3, 6.4, 6.5, 7.1, 7.2, 7.3, 7.4, 7.5, 8.1, 8.2, 8.3, 8.4, 9.1, 9.2, 11.1, 11.2, 13.1, 13.2, 13.3_
 
-- [ ] 92. 创建产品 #3030366911 的 Landing Page — LION PAIR ACNE Cream 14g*3 boxes (Japan Direct Mail)
-  - [ ] 92.1 创建 Landing Page HTML 文件
+- [x] 92. 创建产品 #3030366911 的 Landing Page — LION PAIR ACNE Cream 14g*3 boxes (Japan Direct Mail)
+  - [x] 92.1 创建 Landing Page HTML 文件
     - 访问 Yami 网站搜索 item_number `3030366911`，获取真实的：产品页面 URL、产品图片 URL（格式 `https://cdn.yamibuy.net/item/{hash}_757x757.webp`）、当前价格、评分数据
     - 以 `landing-pages/laoganma-spicy-crispy-chili-oil-210g.html` 为模板参考
     - 品类: SKINCARE，配色方案: primary=#2E7D32, primary_deep=#1B5E20, primary_light=#E8F5E9, accent=#66BB6A
@@ -1198,8 +1198,8 @@
     - **不得猜测或编造任何产品数据，所有数据必须来自 Yami 网站**
     - _Requirements: 1.1, 1.2, 2.1, 2.2, 3.1, 4.1, 4.2, 5.1, 5.2, 6.1, 6.2, 6.3, 6.4, 6.5, 7.1, 7.2, 7.3, 7.4, 7.5, 8.1, 8.2, 8.3, 8.4, 9.1, 9.2, 11.1, 11.2, 13.1, 13.2, 13.3_
 
-- [ ] 93. 创建产品 #5022416701 的 Landing Page — Birch Juice Moisturizing Sunscreen SPF50+ 50ml Single
-  - [ ] 93.1 创建 Landing Page HTML 文件
+- [x] 93. 创建产品 #5022416701 的 Landing Page — Birch Juice Moisturizing Sunscreen SPF50+ 50ml Single
+  - [x] 93.1 创建 Landing Page HTML 文件
     - 访问 Yami 网站搜索 item_number `5022416701`，获取真实的：产品页面 URL、产品图片 URL（格式 `https://cdn.yamibuy.net/item/{hash}_757x757.webp`）、当前价格、评分数据
     - 以 `landing-pages/laoganma-spicy-crispy-chili-oil-210g.html` 为模板参考
     - 品类: SKINCARE，配色方案: primary=#2E7D32, primary_deep=#1B5E20, primary_light=#E8F5E9, accent=#66BB6A
@@ -1211,8 +1211,8 @@
     - **不得猜测或编造任何产品数据，所有数据必须来自 Yami 网站**
     - _Requirements: 1.1, 1.2, 2.1, 2.2, 3.1, 4.1, 4.2, 5.1, 5.2, 6.1, 6.2, 6.3, 6.4, 6.5, 7.1, 7.2, 7.3, 7.4, 7.5, 8.1, 8.2, 8.3, 8.4, 9.1, 9.2, 11.1, 11.2, 13.1, 13.2, 13.3_
 
-- [ ] 94. 创建产品 #5157044661 的 Landing Page — Uji Matcha Qinglan Sugar-free Aluminum Can 40g
-  - [ ] 94.1 创建 Landing Page HTML 文件
+- [x] 94. 创建产品 #5157044661 的 Landing Page — Uji Matcha Qinglan Sugar-free Aluminum Can 40g
+  - [x] 94.1 创建 Landing Page HTML 文件
     - 访问 Yami 网站搜索 item_number `5157044661`，获取真实的：产品页面 URL、产品图片 URL（格式 `https://cdn.yamibuy.net/item/{hash}_757x757.webp`）、当前价格、评分数据
     - 以 `landing-pages/laoganma-spicy-crispy-chili-oil-210g.html` 为模板参考
     - 品类: BEVERAGE，配色方案: primary=#0277BD, primary_deep=#01579B, primary_light=#E1F5FE, accent=#29B6F6
@@ -1224,8 +1224,8 @@
     - **不得猜测或编造任何产品数据，所有数据必须来自 Yami 网站**
     - _Requirements: 1.1, 1.2, 2.1, 2.2, 3.5, 4.1, 4.2, 5.1, 5.2, 6.1, 6.2, 6.3, 6.4, 6.5, 7.1, 7.2, 7.3, 7.4, 7.5, 8.1, 8.2, 8.3, 8.4, 9.1, 9.2, 11.1, 11.2, 13.1, 13.2, 13.3_
 
-- [ ] 95. 创建产品 #5157044641 的 Landing Page — Uji Matcha Isuzu Cooking And Baking 100g
-  - [ ] 95.1 创建 Landing Page HTML 文件
+- [x] 95. ~~创建产品 #5157044641 的 Landing Page — Uji Matcha Isuzu Cooking And Baking 100g~~ **SKIPPED: 产品为父产品 5157044651 的变体，该变体标记为 Unavailable，无独立产品页面**
+  - [x] 95.1 ~~创建 Landing Page HTML 文件~~ **SKIPPED**
     - 访问 Yami 网站搜索 item_number `5157044641`，获取真实的：产品页面 URL、产品图片 URL（格式 `https://cdn.yamibuy.net/item/{hash}_757x757.webp`）、当前价格、评分数据
     - 以 `landing-pages/laoganma-spicy-crispy-chili-oil-210g.html` 为模板参考
     - 品类: FOOD，配色方案: primary=#E65100, primary_deep=#BF360C, primary_light=#FFF3E0, accent=#FF9800
