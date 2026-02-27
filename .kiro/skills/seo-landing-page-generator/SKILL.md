@@ -39,10 +39,30 @@ If the user does NOT provide a purchase link, you MUST ask:
 
 ### Step 2: Product Research
 
-**只能使用 Playwright MCP 浏览器工具**（`mcp_browser_navigate`、`mcp_browser_snapshot`、`mcp_browser_evaluate`、`mcp_browser_click` 等）来获取产品数据。**绝对禁止**使用 `web_search`、`webFetch`、`remote_web_search`、`mcp_serpapi_search` 或任何其他非 Playwright 的网络工具。
+**⚠️ 强制规则：只能使用 Playwright MCP 浏览器工具**
+
+所有产品数据获取**必须且只能**通过 Playwright MCP 浏览器工具完成：`mcp_browser_navigate`、`mcp_browser_snapshot`、`mcp_browser_evaluate`、`mcp_browser_click` 等。
+
+**绝对禁止使用以下任何工具获取产品信息：**
+- ❌ `webFetch` / `web_fetch`
+- ❌ `remote_web_search`
+- ❌ `mcp_serpapi_search`
+- ❌ `web_search`
+- ❌ `curl`、`wget` 或任何 shell 网络命令
+- ❌ 任何其他非 Playwright 的网络/HTTP 工具
+
+违反此规则将导致生成的页面数据不可靠，必须重新执行。
+
+**浏览器实例管理（自适应策略）：**
+
+在开始产品研究前，先检测浏览器是否已打开：
+1. 先调用 `mcp_browser_snapshot` 尝试获取当前页面快照
+2. 如果成功返回内容 → 浏览器已打开，**直接复用现有实例**，使用 `mcp_browser_navigate` 导航到目标页面
+3. 如果失败/报错（无浏览器实例）→ 使用 `mcp_browser_navigate` 打开新浏览器并导航到目标页面
+4. **不要在已有浏览器实例的情况下强制关闭再重新打开**
 
 操作流程：
-1. 使用 `mcp_browser_navigate` 打开产品购买链接（或 Yami 搜索页 `https://www.yami.com/en/search?q={item_number}`）
+1. 按上述自适应策略打开/复用浏览器，导航到产品购买链接（或 Yami 搜索页 `https://www.yami.com/en/search?q={item_number}`）
 2. 使用 `mcp_browser_snapshot` 获取页面快照，提取产品信息
 3. 使用 `mcp_browser_evaluate` 执行 JS 提取结构化数据（图片 URL、价格、评分等）
 4. 如果页面需要交互（如点击展开详情），使用 `mcp_browser_click`
@@ -201,6 +221,19 @@ After generating the file:
    - [ ] Heading hierarchy is correct: `h1` (product name) → `h2` (sections) → `h3` (cards)
    - [ ] All purchase links include `?utm_source=zhouzk.com` (or `&utm_source=zhouzk.com` if URL already has query params)
 
+### Step 8: 清理浏览器资源
+
+**任务完成后必须关闭浏览器实例以释放系统资源。**
+
+在所有验证步骤完成后，执行以下操作：
+1. 调用 `mcp_browser_close` 关闭当前浏览器页面
+2. 确认浏览器已成功关闭
+
+**注意事项：**
+- 此步骤在所有其他步骤（包括 Step 7 验证）全部完成后才执行
+- 如果 `mcp_browser_close` 调用失败，记录错误但不阻塞整体流程
+- 不要在 Step 2（产品研究）过程中关闭浏览器，只在最终完成时关闭
+
 ## Page Structure Reference
 
 ```
@@ -266,6 +299,7 @@ See the reference example in this skill's directory:
 - Always use real product images — never ship with emoji or gradient placeholders
 - Purchase links must be real URLs, never `#` placeholders
 - Color palette must reflect the actual brand, not a generic pink/blue
-- 使用 Playwright MCP 浏览器工具访问产品页面来验证品牌颜色和产品详情，**绝对禁止**使用 web search 或 web fetch
+- 使用 Playwright MCP 浏览器工具访问产品页面来验证品牌颜色和产品详情，**绝对禁止**使用 web search、web fetch、curl、wget 或任何非 Playwright 的网络工具
+- **浏览器生命周期管理**：开始时自适应复用/创建浏览器实例，任务完成后必须调用 `mcp_browser_close` 关闭浏览器以释放资源
 - The page is for marketing demonstration — include a disclaimer in the footer. Template: `© {year} This page is for marketing demonstration purposes. Product details sourced from [Platform Name](URL). All trademarks belong to their respective owners.`
 - **SEO is non-negotiable**: H1 = product name, structured data, canonical tag, OG tags, and image attributes must all be present in every generated page. Do not sacrifice SEO for visual design.
