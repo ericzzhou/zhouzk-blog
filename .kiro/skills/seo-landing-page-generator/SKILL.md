@@ -39,13 +39,36 @@ If the user does NOT provide a purchase link, you MUST ask:
 
 ### Step 2: Product Research
 
-Use web search and web fetch tools to gather:
+**只能使用 Playwright MCP 浏览器工具**（`mcp_browser_navigate`、`mcp_browser_snapshot`、`mcp_browser_evaluate`、`mcp_browser_click` 等）来获取产品数据。**绝对禁止**使用 `web_search`、`webFetch`、`remote_web_search`、`mcp_serpapi_search` 或任何其他非 Playwright 的网络工具。
 
+操作流程：
+1. 使用 `mcp_browser_navigate` 打开产品购买链接（或 Yami 搜索页 `https://www.yami.com/en/search?q={item_number}`）
+2. 使用 `mcp_browser_snapshot` 获取页面快照，提取产品信息
+3. 使用 `mcp_browser_evaluate` 执行 JS 提取结构化数据（图片 URL、价格、评分等）
+4. 如果页面需要交互（如点击展开详情），使用 `mcp_browser_click`
+
+需要收集的信息：
 1. **Product details** — name, brand, price, size/weight, key features, ingredients/materials
 2. **Brand identity** — brand colors, visual style, brand positioning, heritage/story
-3. **Product images** — find CDN image URLs from the purchase link page (use browser DevTools `evaluate_script` to extract `img` src attributes if the page is JS-rendered)
+3. **Product images** — find CDN image URLs from the purchase link page (use `mcp_browser_evaluate` to extract `img` src attributes)
 4. **Competitive context** — what makes this product unique vs alternatives
 5. **Customer sentiment** — reviews, ratings, common praise/complaints
+
+**提取图片 URL 的推荐 JS 代码：**
+```javascript
+() => {
+    const imgs = document.querySelectorAll('img[src*="cdn.yamibuy.net"]');
+    return Array.from(imgs).map(img => img.src);
+}
+```
+
+**提取价格的推荐 JS 代码：**
+```javascript
+() => {
+    const priceEl = document.querySelector('.price-current, .unit-price, [class*="price"]');
+    return priceEl ? priceEl.textContent.trim() : 'N/A';
+}
+```
 
 ### Step 3: Define Brand Color Palette
 
@@ -90,7 +113,7 @@ Define the following content blocks based on research:
 7. **Ingredients / What's Inside** (optional) — real ingredient or material information sourced from the product page, brand website, or trusted retailer. This section is ONLY included when verifiable ingredient data is found.
 
 **Ingredients section rules:**
-- Use web search, browser tools, or SerpAPI to find real ingredient/material data
+- 使用 Playwright MCP 浏览器工具（`mcp_browser_navigate`、`mcp_browser_snapshot`、`mcp_browser_evaluate`）从产品页面提取真实成分/材料数据
 - Acceptable sources: product page text, nutrition labels, brand official site, trusted retailers (Amazon, Walmart, etc.)
 - If the product page only has ingredient info in images (common for Chinese products on Yami), extract what's available from product highlights, descriptions, and reviews
 - NEVER fabricate or guess ingredients — if no verifiable data is found, omit this section entirely
@@ -243,6 +266,6 @@ See the reference example in this skill's directory:
 - Always use real product images — never ship with emoji or gradient placeholders
 - Purchase links must be real URLs, never `#` placeholders
 - Color palette must reflect the actual brand, not a generic pink/blue
-- Use web search and browser tools to verify brand colors and product details
+- 使用 Playwright MCP 浏览器工具访问产品页面来验证品牌颜色和产品详情，**绝对禁止**使用 web search 或 web fetch
 - The page is for marketing demonstration — include a disclaimer in the footer. Template: `© {year} This page is for marketing demonstration purposes. Product details sourced from [Platform Name](URL). All trademarks belong to their respective owners.`
 - **SEO is non-negotiable**: H1 = product name, structured data, canonical tag, OG tags, and image attributes must all be present in every generated page. Do not sacrifice SEO for visual design.
