@@ -938,8 +938,8 @@
     - **不得猜测或编造任何产品数据，所有数据必须来自 Yami 网站**
     - _Requirements: 1.1, 1.2, 2.1, 2.2, 3.3, 4.1, 4.2, 5.1, 5.2, 6.1, 6.2, 6.3, 6.4, 6.5, 7.1, 7.2, 7.3, 7.4, 7.5, 8.1, 8.2, 8.3, 8.4, 9.1, 9.2, 11.1, 11.2, 13.1, 13.2, 13.3_
 
-- [ ] 73. 创建产品 #1024003121 的 Landing Page — FINO Premium Touch Hair Mask 230g
-  - [ ] 73.1 创建 Landing Page HTML 文件
+- [x] 73. 创建产品 #1024003121 的 Landing Page — FINO Premium Touch Hair Mask 230g
+  - [x] 73.1 创建 Landing Page HTML 文件
     - 访问 Yami 网站搜索 item_number `1024003121`，获取真实的：产品页面 URL、产品图片 URL（格式 `https://cdn.yamibuy.net/item/{hash}_757x757.webp`）、当前价格、评分数据
     - 以 `landing-pages/laoganma-spicy-crispy-chili-oil-210g.html` 为模板参考
     - 品类: HAIRCARE，配色方案: primary=#AD1457, primary_deep=#880E4F, primary_light=#FCE4EC, accent=#F06292
