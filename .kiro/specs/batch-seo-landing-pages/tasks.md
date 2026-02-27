@@ -756,8 +756,8 @@
     - **不得猜测或编造任何产品数据，所有数据必须来自 Yami 网站**
     - _Requirements: 1.1, 1.2, 2.1, 2.2, 3.9, 4.1, 4.2, 5.1, 5.2, 6.1, 6.2, 6.3, 6.4, 6.5, 7.1, 7.2, 7.3, 7.4, 7.5, 8.1, 8.2, 8.3, 8.4, 9.1, 9.2, 11.1, 11.2, 13.1, 13.2, 13.3_
 
-- [ ] 59. 创建产品 #1021015171 的 Landing Page — Umami Topping Crunchy Garlic with Chili Oil Mild 3.88 oz
-  - [ ] 59.1 创建 Landing Page HTML 文件
+- [x] 59. 创建产品 #1021015171 的 Landing Page — Umami Topping Crunchy Garlic with Chili Oil Mild 3.88 oz
+  - [x] 59.1 创建 Landing Page HTML 文件
     - 访问 Yami 网站搜索 item_number `1021015171`，获取真实的：产品页面 URL、产品图片 URL（格式 `https://cdn.yamibuy.net/item/{hash}_757x757.webp`）、当前价格、评分数据
     - 以 `landing-pages/laoganma-spicy-crispy-chili-oil-210g.html` 为模板参考
     - 品类: FOOD，配色方案: primary=#E65100, primary_deep=#BF360C, primary_light=#FFF3E0, accent=#FF9800
