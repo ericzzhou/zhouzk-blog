@@ -1,0 +1,1352 @@
+# Implementation Plan: 批量 SEO Landing Pages
+
+## Overview
+
+为 zhouzk.com 批量创建 100 个 Yami 产品 SEO Landing Page。每个产品作为独立任务执行，避免上下文污染。每个任务必须从 Yami 网站获取真实的产品图片 URL、价格、评分和产品页面 URL，不得猜测或编造任何数据。
+
+模板参考: `landing-pages/laoganma-spicy-crispy-chili-oil-210g.html`
+
+## Tasks
+
+- [x] 1. 创建产品 #1022541791 的 Landing Page — Matte Sun Stick with Mugwort+Camelia SPF50+ PA++++ (Value Pack)
+  - [x] 1.1 创建 Landing Page HTML 文件
+    - 访问 Yami 网站搜索 item_number `1022541791`，获取真实的：产品页面 URL、产品图片 URL（格式 `https://cdn.yamibuy.net/item/{hash}_757x757.webp`）、当前价格、评分数据
+    - 以 `landing-pages/laoganma-spicy-crispy-chili-oil-210g.html` 为模板参考
+    - 品类: SKINCARE，配色方案: primary=#2E7D32, primary_deep=#1B5E20, primary_light=#E8F5E9, accent=#66BB6A
+    - 生成完整 HTML 文件到 `landing-pages/` 目录，包含所有 10 个标准 section
+    - 确保所有 Yami 链接附加 `?utm_source=zhouzk.com`
+    - 确保 Schema.org JSON-LD 有效、Open Graph 标签完整、meta description 120-160 字符
+    - 确保 CSS 内联、响应式断点 768px/480px、IntersectionObserver 淡入动画
+    - 验证图片 URL 可访问、价格与 Yami 网站一致
+    - **不得猜测或编造任何产品数据，所有数据必须来自 Yami 网站**
+    - _Requirements: 1.1, 1.2, 2.1, 2.2, 3.1, 4.1, 4.2, 5.1, 5.2, 6.1, 6.2, 6.3, 6.4, 6.5, 7.1, 7.2, 7.3, 7.4, 7.5, 8.1, 8.2, 8.3, 8.4, 9.1, 9.2, 11.1, 11.2, 13.1, 13.2, 13.3_
+
+
+- [x] 2. 创建产品 #1149008001 的 Landing Page — Dried Red Dates Jujubes 80.28oz
+  - [x] 2.1 创建 Landing Page HTML 文件
+    - 访问 Yami 网站搜索 item_number `1149008001`，获取真实的：产品页面 URL、产品图片 URL（格式 `https://cdn.yamibuy.net/item/{hash}_757x757.webp`）、当前价格、评分数据
+    - 以 `landing-pages/laoganma-spicy-crispy-chili-oil-210g.html` 为模板参考
+    - 品类: FOOD，配色方案: primary=#E65100, primary_deep=#BF360C, primary_light=#FFF3E0, accent=#FF9800
+    - 生成完整 HTML 文件到 `landing-pages/` 目录，包含所有 10 个标准 section
+    - 确保所有 Yami 链接附加 `?utm_source=zhouzk.com`
+    - 确保 Schema.org JSON-LD 有效、Open Graph 标签完整、meta description 120-160 字符
+    - 确保 CSS 内联、响应式断点 768px/480px、IntersectionObserver 淡入动画
+    - 验证图片 URL 可访问、价格与 Yami 网站一致
+    - **不得猜测或编造任何产品数据，所有数据必须来自 Yami 网站**
+    - _Requirements: 1.1, 1.2, 2.1, 2.2, 3.9, 4.1, 4.2, 5.1, 5.2, 6.1, 6.2, 6.3, 6.4, 6.5, 7.1, 7.2, 7.3, 7.4, 7.5, 8.1, 8.2, 8.3, 8.4, 9.1, 9.2, 11.1, 11.2, 13.1, 13.2, 13.3_
+
+- [x] 3. 创建产品 #1147045731 的 Landing Page — Tuna with Chili Sauce 5.29oz*4 packs
+  - [x] 3.1 创建 Landing Page HTML 文件
+    - 访问 Yami 网站搜索 item_number `1147045731`，获取真实的：产品页面 URL、产品图片 URL（格式 `https://cdn.yamibuy.net/item/{hash}_757x757.webp`）、当前价格、评分数据
+    - 以 `landing-pages/laoganma-spicy-crispy-chili-oil-210g.html` 为模板参考
+    - 品类: FOOD，配色方案: primary=#E65100, primary_deep=#BF360C, primary_light=#FFF3E0, accent=#FF9800
+    - 生成完整 HTML 文件到 `landing-pages/` 目录，包含所有 10 个标准 section
+    - 确保所有 Yami 链接附加 `?utm_source=zhouzk.com`
+    - 确保 Schema.org JSON-LD 有效、Open Graph 标签完整、meta description 120-160 字符
+    - 确保 CSS 内联、响应式断点 768px/480px、IntersectionObserver 淡入动画
+    - 验证图片 URL 可访问、价格与 Yami 网站一致
+    - **不得猜测或编造任何产品数据，所有数据必须来自 Yami 网站**
+    - _Requirements: 1.1, 1.2, 2.1, 2.2, 3.9, 4.1, 4.2, 5.1, 5.2, 6.1, 6.2, 6.3, 6.4, 6.5, 7.1, 7.2, 7.3, 7.4, 7.5, 8.1, 8.2, 8.3, 8.4, 9.1, 9.2, 11.1, 11.2, 13.1, 13.2, 13.3_
+
+- [x] 4. 创建产品 #1022617921 的 Landing Page — Super Melting Sebum Softener + Skin Wrap Cotton Pad Set (Value Pack)
+  - [x] 4.1 创建 Landing Page HTML 文件
+    - 访问 Yami 网站搜索 item_number `1022617921`，获取真实的：产品页面 URL、产品图片 URL（格式 `https://cdn.yamibuy.net/item/{hash}_757x757.webp`）、当前价格、评分数据
+    - 以 `landing-pages/laoganma-spicy-crispy-chili-oil-210g.html` 为模板参考
+    - 品类: SKINCARE，配色方案: primary=#2E7D32, primary_deep=#1B5E20, primary_light=#E8F5E9, accent=#66BB6A
+    - 生成完整 HTML 文件到 `landing-pages/` 目录，包含所有 10 个标准 section
+    - 确保所有 Yami 链接附加 `?utm_source=zhouzk.com`
+    - 确保 Schema.org JSON-LD 有效、Open Graph 标签完整、meta description 120-160 字符
+    - 确保 CSS 内联、响应式断点 768px/480px、IntersectionObserver 淡入动画
+    - 验证图片 URL 可访问、价格与 Yami 网站一致
+    - **不得猜测或编造任何产品数据，所有数据必须来自 Yami 网站**
+    - _Requirements: 1.1, 1.2, 2.1, 2.2, 3.1, 4.1, 4.2, 5.1, 5.2, 6.1, 6.2, 6.3, 6.4, 6.5, 7.1, 7.2, 7.3, 7.4, 7.5, 8.1, 8.2, 8.3, 8.4, 9.1, 9.2, 11.1, 11.2, 13.1, 13.2, 13.3_
+
+- [x] 5. 创建产品 #1026137041 的 Landing Page — Coleology Cutting Jelly 10 Sticks 250g
+  - [x] 5.1 创建 Landing Page HTML 文件
+    - 访问 Yami 网站搜索 item_number `1026137041`，获取真实的：产品页面 URL、产品图片 URL（格式 `https://cdn.yamibuy.net/item/{hash}_757x757.webp`）、当前价格、评分数据
+    - 以 `landing-pages/laoganma-spicy-crispy-chili-oil-210g.html` 为模板参考
+    - 品类: HEALTH，配色方案: primary=#00695C, primary_deep=#004D40, primary_light=#E0F2F1, accent=#26A69A
+    - 生成完整 HTML 文件到 `landing-pages/` 目录，包含所有 10 个标准 section
+    - 确保所有 Yami 链接附加 `?utm_source=zhouzk.com`
+    - 确保 Schema.org JSON-LD 有效、Open Graph 标签完整、meta description 120-160 字符
+    - 确保 CSS 内联、响应式断点 768px/480px、IntersectionObserver 淡入动画
+    - 验证图片 URL 可访问、价格与 Yami 网站一致
+    - **不得猜测或编造任何产品数据，所有数据必须来自 Yami 网站**
+    - _Requirements: 1.1, 1.2, 2.1, 2.2, 3.7, 4.1, 4.2, 5.1, 5.2, 6.1, 6.2, 6.3, 6.4, 6.5, 7.1, 7.2, 7.3, 7.4, 7.5, 8.1, 8.2, 8.3, 8.4, 9.1, 9.2, 11.1, 11.2, 13.1, 13.2, 13.3_
+
+- [x] 6. 创建产品 #1160004621 的 Landing Page — Premio Medical Hydroxyapatite Toothpaste 3.7oz
+  - [x] 6.1 创建 Landing Page HTML 文件
+    - 访问 Yami 网站搜索 item_number `1160004621`，获取真实的：产品页面 URL、产品图片 URL（格式 `https://cdn.yamibuy.net/item/{hash}_757x757.webp`）、当前价格、评分数据
+    - 以 `landing-pages/laoganma-spicy-crispy-chili-oil-210g.html` 为模板参考
+    - 品类: HEALTH，配色方案: primary=#00695C, primary_deep=#004D40, primary_light=#E0F2F1, accent=#26A69A
+    - 生成完整 HTML 文件到 `landing-pages/` 目录，包含所有 10 个标准 section
+    - 确保所有 Yami 链接附加 `?utm_source=zhouzk.com`
+    - 确保 Schema.org JSON-LD 有效、Open Graph 标签完整、meta description 120-160 字符
+    - 确保 CSS 内联、响应式断点 768px/480px、IntersectionObserver 淡入动画
+    - 验证图片 URL 可访问、价格与 Yami 网站一致
+    - **不得猜测或编造任何产品数据，所有数据必须来自 Yami 网站**
+    - _Requirements: 1.1, 1.2, 2.1, 2.2, 3.7, 4.1, 4.2, 5.1, 5.2, 6.1, 6.2, 6.3, 6.4, 6.5, 7.1, 7.2, 7.3, 7.4, 7.5, 8.1, 8.2, 8.3, 8.4, 9.1, 9.2, 11.1, 11.2, 13.1, 13.2, 13.3_
+
+- [x] 7. 创建产品 #1016024791 的 Landing Page — Taiwan Specialties Pineapple Cakes 16.9oz
+  - [x] 7.1 创建 Landing Page HTML 文件
+    - 访问 Yami 网站搜索 item_number `1016024791`，获取真实的：产品页面 URL、产品图片 URL（格式 `https://cdn.yamibuy.net/item/{hash}_757x757.webp`）、当前价格、评分数据
+    - 以 `landing-pages/laoganma-spicy-crispy-chili-oil-210g.html` 为模板参考
+    - 品类: SNACK，配色方案: primary=#F9A825, primary_deep=#F57F17, primary_light=#FFFDE7, accent=#FFEE58
+    - 生成完整 HTML 文件到 `landing-pages/` 目录，包含所有 10 个标准 section
+    - 确保所有 Yami 链接附加 `?utm_source=zhouzk.com`
+    - 确保 Schema.org JSON-LD 有效、Open Graph 标签完整、meta description 120-160 字符
+    - 确保 CSS 内联、响应式断点 768px/480px、IntersectionObserver 淡入动画
+    - 验证图片 URL 可访问、价格与 Yami 网站一致
+    - **不得猜测或编造任何产品数据，所有数据必须来自 Yami 网站**
+    - _Requirements: 1.1, 1.2, 2.1, 2.2, 3.8, 4.1, 4.2, 5.1, 5.2, 6.1, 6.2, 6.3, 6.4, 6.5, 7.1, 7.2, 7.3, 7.4, 7.5, 8.1, 8.2, 8.3, 8.4, 9.1, 9.2, 11.1, 11.2, 13.1, 13.2, 13.3_
+
+- [x] 8. 创建产品 #5021163461 的 Landing Page — Ichiniran Ramen Classic Hakata Thin Noodles (5 packs)
+  - [x] 8.1 创建 Landing Page HTML 文件
+    - 访问 Yami 网站搜索 item_number `5021163461`，获取真实的：产品页面 URL、产品图片 URL（格式 `https://cdn.yamibuy.net/item/{hash}_757x757.webp`）、当前价格、评分数据
+    - 以 `landing-pages/laoganma-spicy-crispy-chili-oil-210g.html` 为模板参考
+    - 品类: NOODLES，配色方案: primary=#D84315, primary_deep=#BF360C, primary_light=#FBE9E7, accent=#FF7043
+    - 生成完整 HTML 文件到 `landing-pages/` 目录，包含所有 10 个标准 section
+    - 确保所有 Yami 链接附加 `?utm_source=zhouzk.com`
+    - 确保 Schema.org JSON-LD 有效、Open Graph 标签完整、meta description 120-160 字符
+    - 确保 CSS 内联、响应式断点 768px/480px、IntersectionObserver 淡入动画
+    - 验证图片 URL 可访问、价格与 Yami 网站一致
+    - **不得猜测或编造任何产品数据，所有数据必须来自 Yami 网站**
+    - _Requirements: 1.1, 1.2, 2.1, 2.2, 3.4, 4.1, 4.2, 5.1, 5.2, 6.1, 6.2, 6.3, 6.4, 6.5, 7.1, 7.2, 7.3, 7.4, 7.5, 8.1, 8.2, 8.3, 8.4, 9.1, 9.2, 11.1, 11.2, 13.1, 13.2, 13.3_
+
+- [x] 9. 创建产品 #1022501951 的 Landing Page — Biore UV Aqua Rich Watery Essence SPF50+ 70g*2 (Value Pack)
+  - [x] 9.1 创建 Landing Page HTML 文件
+    - 访问 Yami 网站搜索 item_number `1022501951`，获取真实的：产品页面 URL、产品图片 URL（格式 `https://cdn.yamibuy.net/item/{hash}_757x757.webp`）、当前价格、评分数据
+    - 以 `landing-pages/laoganma-spicy-crispy-chili-oil-210g.html` 为模板参考
+    - 品类: SKINCARE，配色方案: primary=#2E7D32, primary_deep=#1B5E20, primary_light=#E8F5E9, accent=#66BB6A
+    - 生成完整 HTML 文件到 `landing-pages/` 目录，包含所有 10 个标准 section
+    - 确保所有 Yami 链接附加 `?utm_source=zhouzk.com`
+    - 确保 Schema.org JSON-LD 有效、Open Graph 标签完整、meta description 120-160 字符
+    - 确保 CSS 内联、响应式断点 768px/480px、IntersectionObserver 淡入动画
+    - 验证图片 URL 可访问、价格与 Yami 网站一致
+    - **不得猜测或编造任何产品数据，所有数据必须来自 Yami 网站**
+    - _Requirements: 1.1, 1.2, 2.1, 2.2, 3.1, 4.1, 4.2, 5.1, 5.2, 6.1, 6.2, 6.3, 6.4, 6.5, 7.1, 7.2, 7.3, 7.4, 7.5, 8.1, 8.2, 8.3, 8.4, 9.1, 9.2, 11.1, 11.2, 13.1, 13.2, 13.3_
+
+- [x] 10. 创建产品 #1022035091 的 Landing Page — PAIR Acne Treatment Cream 24g
+  - [x] 10.1 创建 Landing Page HTML 文件
+    - 访问 Yami 网站搜索 item_number `1022035091`，获取真实的：产品页面 URL、产品图片 URL（格式 `https://cdn.yamibuy.net/item/{hash}_757x757.webp`）、当前价格、评分数据
+    - 以 `landing-pages/laoganma-spicy-crispy-chili-oil-210g.html` 为模板参考
+    - 品类: SKINCARE，配色方案: primary=#2E7D32, primary_deep=#1B5E20, primary_light=#E8F5E9, accent=#66BB6A
+    - 生成完整 HTML 文件到 `landing-pages/` 目录，包含所有 10 个标准 section
+    - 确保所有 Yami 链接附加 `?utm_source=zhouzk.com`
+    - 确保 Schema.org JSON-LD 有效、Open Graph 标签完整、meta description 120-160 字符
+    - 确保 CSS 内联、响应式断点 768px/480px、IntersectionObserver 淡入动画
+    - 验证图片 URL 可访问、价格与 Yami 网站一致
+    - **不得猜测或编造任何产品数据，所有数据必须来自 Yami 网站**
+    - _Requirements: 1.1, 1.2, 2.1, 2.2, 3.1, 4.1, 4.2, 5.1, 5.2, 6.1, 6.2, 6.3, 6.4, 6.5, 7.1, 7.2, 7.3, 7.4, 7.5, 8.1, 8.2, 8.3, 8.4, 9.1, 9.2, 11.1, 11.2, 13.1, 13.2, 13.3_
+
+- [x] 11. 创建产品 #1023232331 的 Landing Page — Biore UV Aqua Rich Watery Essence SPF50+ 70g
+  - [x] 11.1 创建 Landing Page HTML 文件
+    - 访问 Yami 网站搜索 item_number `1023232331`，获取真实的：产品页面 URL、产品图片 URL（格式 `https://cdn.yamibuy.net/item/{hash}_757x757.webp`）、当前价格、评分数据
+    - 以 `landing-pages/laoganma-spicy-crispy-chili-oil-210g.html` 为模板参考
+    - 品类: SKINCARE，配色方案: primary=#2E7D32, primary_deep=#1B5E20, primary_light=#E8F5E9, accent=#66BB6A
+    - 生成完整 HTML 文件到 `landing-pages/` 目录，包含所有 10 个标准 section
+    - 确保所有 Yami 链接附加 `?utm_source=zhouzk.com`
+    - 确保 Schema.org JSON-LD 有效、Open Graph 标签完整、meta description 120-160 字符
+    - 确保 CSS 内联、响应式断点 768px/480px、IntersectionObserver 淡入动画
+    - 验证图片 URL 可访问、价格与 Yami 网站一致
+    - **不得猜测或编造任何产品数据，所有数据必须来自 Yami 网站**
+    - _Requirements: 1.1, 1.2, 2.1, 2.2, 3.1, 4.1, 4.2, 5.1, 5.2, 6.1, 6.2, 6.3, 6.4, 6.5, 7.1, 7.2, 7.3, 7.4, 7.5, 8.1, 8.2, 8.3, 8.4, 9.1, 9.2, 11.1, 11.2, 13.1, 13.2, 13.3_
+
+- [x] 12. 创建产品 #1023001441 的 Landing Page — NIVEA Super Sun Protect Sunscreen Water Gel SPF50 PA+++ 140g
+  - [x] 12.1 创建 Landing Page HTML 文件
+    - 访问 Yami 网站搜索 item_number `1023001441`，获取真实的：产品页面 URL、产品图片 URL（格式 `https://cdn.yamibuy.net/item/{hash}_757x757.webp`）、当前价格、评分数据
+    - 以 `landing-pages/laoganma-spicy-crispy-chili-oil-210g.html` 为模板参考
+    - 品类: SKINCARE，配色方案: primary=#2E7D32, primary_deep=#1B5E20, primary_light=#E8F5E9, accent=#66BB6A
+    - 生成完整 HTML 文件到 `landing-pages/` 目录，包含所有 10 个标准 section
+    - 确保所有 Yami 链接附加 `?utm_source=zhouzk.com`
+    - 确保 Schema.org JSON-LD 有效、Open Graph 标签完整、meta description 120-160 字符
+    - 确保 CSS 内联、响应式断点 768px/480px、IntersectionObserver 淡入动画
+    - 验证图片 URL 可访问、价格与 Yami 网站一致
+    - **不得猜测或编造任何产品数据，所有数据必须来自 Yami 网站**
+    - _Requirements: 1.1, 1.2, 2.1, 2.2, 3.1, 4.1, 4.2, 5.1, 5.2, 6.1, 6.2, 6.3, 6.4, 6.5, 7.1, 7.2, 7.3, 7.4, 7.5, 8.1, 8.2, 8.3, 8.4, 9.1, 9.2, 11.1, 11.2, 13.1, 13.2, 13.3_
+
+- [x] 13. 创建产品 #1022108101 的 Landing Page — PAIR Acne Creamy Face Wash Foam 80g
+  - [x] 13.1 创建 Landing Page HTML 文件
+    - 访问 Yami 网站搜索 item_number `1022108101`，获取真实的：产品页面 URL、产品图片 URL（格式 `https://cdn.yamibuy.net/item/{hash}_757x757.webp`）、当前价格、评分数据
+    - 以 `landing-pages/laoganma-spicy-crispy-chili-oil-210g.html` 为模板参考
+    - 品类: SKINCARE，配色方案: primary=#2E7D32, primary_deep=#1B5E20, primary_light=#E8F5E9, accent=#66BB6A
+    - 生成完整 HTML 文件到 `landing-pages/` 目录，包含所有 10 个标准 section
+    - 确保所有 Yami 链接附加 `?utm_source=zhouzk.com`
+    - 确保 Schema.org JSON-LD 有效、Open Graph 标签完整、meta description 120-160 字符
+    - 确保 CSS 内联、响应式断点 768px/480px、IntersectionObserver 淡入动画
+    - 验证图片 URL 可访问、价格与 Yami 网站一致
+    - **不得猜测或编造任何产品数据，所有数据必须来自 Yami 网站**
+    - _Requirements: 1.1, 1.2, 2.1, 2.2, 3.1, 4.1, 4.2, 5.1, 5.2, 6.1, 6.2, 6.3, 6.4, 6.5, 7.1, 7.2, 7.3, 7.4, 7.5, 8.1, 8.2, 8.3, 8.4, 9.1, 9.2, 11.1, 11.2, 13.1, 13.2, 13.3_
+
+- [x] 14. 创建产品 #1023511261 的 Landing Page — The Creamy Foundation Luminous Flawless Hydrating Liquid Foundation #110
+  - [x] 14.1 创建 Landing Page HTML 文件
+    - 访问 Yami 网站搜索 item_number `1023511261`，获取真实的：产品页面 URL、产品图片 URL（格式 `https://cdn.yamibuy.net/item/{hash}_757x757.webp`）、当前价格、评分数据
+    - 以 `landing-pages/laoganma-spicy-crispy-chili-oil-210g.html` 为模板参考
+    - 品类: SKINCARE，配色方案: primary=#2E7D32, primary_deep=#1B5E20, primary_light=#E8F5E9, accent=#66BB6A
+    - 生成完整 HTML 文件到 `landing-pages/` 目录，包含所有 10 个标准 section
+    - 确保所有 Yami 链接附加 `?utm_source=zhouzk.com`
+    - 确保 Schema.org JSON-LD 有效、Open Graph 标签完整、meta description 120-160 字符
+    - 确保 CSS 内联、响应式断点 768px/480px、IntersectionObserver 淡入动画
+    - 验证图片 URL 可访问、价格与 Yami 网站一致
+    - **不得猜测或编造任何产品数据，所有数据必须来自 Yami 网站**
+    - _Requirements: 1.1, 1.2, 2.1, 2.2, 3.1, 4.1, 4.2, 5.1, 5.2, 6.1, 6.2, 6.3, 6.4, 6.5, 7.1, 7.2, 7.3, 7.4, 7.5, 8.1, 8.2, 8.3, 8.4, 9.1, 9.2, 11.1, 11.2, 13.1, 13.2, 13.3_
+
+- [x] 15. 创建产品 #1127010791 的 Landing Page — Keana Nadeshiko Pore Care Rice Mask 10pcs
+  - [x] 15.1 创建 Landing Page HTML 文件
+    - 访问 Yami 网站搜索 item_number `1127010791`，获取真实的：产品页面 URL、产品图片 URL（格式 `https://cdn.yamibuy.net/item/{hash}_757x757.webp`）、当前价格、评分数据
+    - 以 `landing-pages/laoganma-spicy-crispy-chili-oil-210g.html` 为模板参考
+    - 品类: SKINCARE，配色方案: primary=#2E7D32, primary_deep=#1B5E20, primary_light=#E8F5E9, accent=#66BB6A
+    - 生成完整 HTML 文件到 `landing-pages/` 目录，包含所有 10 个标准 section
+    - 确保所有 Yami 链接附加 `?utm_source=zhouzk.com`
+    - 确保 Schema.org JSON-LD 有效、Open Graph 标签完整、meta description 120-160 字符
+    - 确保 CSS 内联、响应式断点 768px/480px、IntersectionObserver 淡入动画
+    - 验证图片 URL 可访问、价格与 Yami 网站一致
+    - **不得猜测或编造任何产品数据，所有数据必须来自 Yami 网站**
+    - _Requirements: 1.1, 1.2, 2.1, 2.2, 3.1, 4.1, 4.2, 5.1, 5.2, 6.1, 6.2, 6.3, 6.4, 6.5, 7.1, 7.2, 7.3, 7.4, 7.5, 8.1, 8.2, 8.3, 8.4, 9.1, 9.2, 11.1, 11.2, 13.1, 13.2, 13.3_
+
+- [x] 16. 创建产品 #1023243641 的 Landing Page — Relief Sun Rice Probiotics Sunscreen SPF50+ 50ml
+  - [x] 16.1 创建 Landing Page HTML 文件
+    - 访问 Yami 网站搜索 item_number `1023243641`，获取真实的：产品页面 URL、产品图片 URL（格式 `https://cdn.yamibuy.net/item/{hash}_757x757.webp`）、当前价格、评分数据
+    - 以 `landing-pages/laoganma-spicy-crispy-chili-oil-210g.html` 为模板参考
+    - 品类: SKINCARE，配色方案: primary=#2E7D32, primary_deep=#1B5E20, primary_light=#E8F5E9, accent=#66BB6A
+    - 生成完整 HTML 文件到 `landing-pages/` 目录，包含所有 10 个标准 section
+    - 确保所有 Yami 链接附加 `?utm_source=zhouzk.com`
+    - 确保 Schema.org JSON-LD 有效、Open Graph 标签完整、meta description 120-160 字符
+    - 确保 CSS 内联、响应式断点 768px/480px、IntersectionObserver 淡入动画
+    - 验证图片 URL 可访问、价格与 Yami 网站一致
+    - **不得猜测或编造任何产品数据，所有数据必须来自 Yami 网站**
+    - _Requirements: 1.1, 1.2, 2.1, 2.2, 3.1, 4.1, 4.2, 5.1, 5.2, 6.1, 6.2, 6.3, 6.4, 6.5, 7.1, 7.2, 7.3, 7.4, 7.5, 8.1, 8.2, 8.3, 8.4, 9.1, 9.2, 11.1, 11.2, 13.1, 13.2, 13.3_
+
+- [x] 17. 创建产品 #1022541761 的 Landing Page — Relief Sun Rice Probiotics Sunscreen SPF50+ 50ml*2 (Value Pack)
+  - [x] 17.1 创建 Landing Page HTML 文件
+    - 访问 Yami 网站搜索 item_number `1022541761`，获取真实的：产品页面 URL、产品图片 URL（格式 `https://cdn.yamibuy.net/item/{hash}_757x757.webp`）、当前价格、评分数据
+    - 以 `landing-pages/laoganma-spicy-crispy-chili-oil-210g.html` 为模板参考
+    - 品类: SKINCARE，配色方案: primary=#2E7D32, primary_deep=#1B5E20, primary_light=#E8F5E9, accent=#66BB6A
+    - 生成完整 HTML 文件到 `landing-pages/` 目录，包含所有 10 个标准 section
+    - 确保所有 Yami 链接附加 `?utm_source=zhouzk.com`
+    - 确保 Schema.org JSON-LD 有效、Open Graph 标签完整、meta description 120-160 字符
+    - 确保 CSS 内联、响应式断点 768px/480px、IntersectionObserver 淡入动画
+    - 验证图片 URL 可访问、价格与 Yami 网站一致
+    - **不得猜测或编造任何产品数据，所有数据必须来自 Yami 网站**
+    - _Requirements: 1.1, 1.2, 2.1, 2.2, 3.1, 4.1, 4.2, 5.1, 5.2, 6.1, 6.2, 6.3, 6.4, 6.5, 7.1, 7.2, 7.3, 7.4, 7.5, 8.1, 8.2, 8.3, 8.4, 9.1, 9.2, 11.1, 11.2, 13.1, 13.2, 13.3_
+
+- [x] 18. 创建产品 #1022431511 的 Landing Page — Madagascar Centella Hyalu-Cica Water-Fit Sun Serum 1.69 fl.oz.
+  - [x] 18.1 创建 Landing Page HTML 文件
+    - 访问 Yami 网站搜索 item_number `1022431511`，获取真实的：产品页面 URL、产品图片 URL（格式 `https://cdn.yamibuy.net/item/{hash}_757x757.webp`）、当前价格、评分数据
+    - 以 `landing-pages/laoganma-spicy-crispy-chili-oil-210g.html` 为模板参考
+    - 品类: SKINCARE，配色方案: primary=#2E7D32, primary_deep=#1B5E20, primary_light=#E8F5E9, accent=#66BB6A
+    - 生成完整 HTML 文件到 `landing-pages/` 目录，包含所有 10 个标准 section
+    - 确保所有 Yami 链接附加 `?utm_source=zhouzk.com`
+    - 确保 Schema.org JSON-LD 有效、Open Graph 标签完整、meta description 120-160 字符
+    - 确保 CSS 内联、响应式断点 768px/480px、IntersectionObserver 淡入动画
+    - 验证图片 URL 可访问、价格与 Yami 网站一致
+    - **不得猜测或编造任何产品数据，所有数据必须来自 Yami 网站**
+    - _Requirements: 1.1, 1.2, 2.1, 2.2, 3.1, 4.1, 4.2, 5.1, 5.2, 6.1, 6.2, 6.3, 6.4, 6.5, 7.1, 7.2, 7.3, 7.4, 7.5, 8.1, 8.2, 8.3, 8.4, 9.1, 9.2, 11.1, 11.2, 13.1, 13.2, 13.3_
+
+- [x] 19. 创建产品 #1022503241 的 Landing Page — Madagascar Centella Travel Kit 5-Step Soothing Skincare Set
+  - [x] 19.1 创建 Landing Page HTML 文件
+    - 访问 Yami 网站搜索 item_number `1022503241`，获取真实的：产品页面 URL、产品图片 URL（格式 `https://cdn.yamibuy.net/item/{hash}_757x757.webp`）、当前价格、评分数据
+    - 以 `landing-pages/laoganma-spicy-crispy-chili-oil-210g.html` 为模板参考
+    - 品类: SKINCARE，配色方案: primary=#2E7D32, primary_deep=#1B5E20, primary_light=#E8F5E9, accent=#66BB6A
+    - 生成完整 HTML 文件到 `landing-pages/` 目录，包含所有 10 个标准 section
+    - 确保所有 Yami 链接附加 `?utm_source=zhouzk.com`
+    - 确保 Schema.org JSON-LD 有效、Open Graph 标签完整、meta description 120-160 字符
+    - 确保 CSS 内联、响应式断点 768px/480px、IntersectionObserver 淡入动画
+    - 验证图片 URL 可访问、价格与 Yami 网站一致
+    - **不得猜测或编造任何产品数据，所有数据必须来自 Yami 网站**
+    - _Requirements: 1.1, 1.2, 2.1, 2.2, 3.1, 4.1, 4.2, 5.1, 5.2, 6.1, 6.2, 6.3, 6.4, 6.5, 7.1, 7.2, 7.3, 7.4, 7.5, 8.1, 8.2, 8.3, 8.4, 9.1, 9.2, 11.1, 11.2, 13.1, 13.2, 13.3_
+
+- [x] 20. 创建产品 #1023180091 的 Landing Page — Birch Juice Moisturizing Sun Cream SPF50+ 1.69 fl.oz.
+  - [x] 20.1 创建 Landing Page HTML 文件
+    - 访问 Yami 网站搜索 item_number `1023180091`，获取真实的：产品页面 URL、产品图片 URL（格式 `https://cdn.yamibuy.net/item/{hash}_757x757.webp`）、当前价格、评分数据
+    - 以 `landing-pages/laoganma-spicy-crispy-chili-oil-210g.html` 为模板参考
+    - 品类: SKINCARE，配色方案: primary=#2E7D32, primary_deep=#1B5E20, primary_light=#E8F5E9, accent=#66BB6A
+    - 生成完整 HTML 文件到 `landing-pages/` 目录，包含所有 10 个标准 section
+    - 确保所有 Yami 链接附加 `?utm_source=zhouzk.com`
+    - 确保 Schema.org JSON-LD 有效、Open Graph 标签完整、meta description 120-160 字符
+    - 确保 CSS 内联、响应式断点 768px/480px、IntersectionObserver 淡入动画
+    - 验证图片 URL 可访问、价格与 Yami 网站一致
+    - **不得猜测或编造任何产品数据，所有数据必须来自 Yami 网站**
+    - _Requirements: 1.1, 1.2, 2.1, 2.2, 3.1, 4.1, 4.2, 5.1, 5.2, 6.1, 6.2, 6.3, 6.4, 6.5, 7.1, 7.2, 7.3, 7.4, 7.5, 8.1, 8.2, 8.3, 8.4, 9.1, 9.2, 11.1, 11.2, 13.1, 13.2, 13.3_
+
+- [x] 21. 创建产品 #1022481271 的 Landing Page — Healer Dual Effect Ampoule + Turnover Ampoule (1+1 Value Pack)
+  - [x] 21.1 创建 Landing Page HTML 文件
+    - 访问 Yami 网站搜索 item_number `1022481271`，获取真实的：产品页面 URL、产品图片 URL（格式 `https://cdn.yamibuy.net/item/{hash}_757x757.webp`）、当前价格、评分数据
+    - 以 `landing-pages/laoganma-spicy-crispy-chili-oil-210g.html` 为模板参考
+    - 品类: SKINCARE，配色方案: primary=#2E7D32, primary_deep=#1B5E20, primary_light=#E8F5E9, accent=#66BB6A
+    - 生成完整 HTML 文件到 `landing-pages/` 目录，包含所有 10 个标准 section
+    - 确保所有 Yami 链接附加 `?utm_source=zhouzk.com`
+    - 确保 Schema.org JSON-LD 有效、Open Graph 标签完整、meta description 120-160 字符
+    - 确保 CSS 内联、响应式断点 768px/480px、IntersectionObserver 淡入动画
+    - 验证图片 URL 可访问、价格与 Yami 网站一致
+    - **不得猜测或编造任何产品数据，所有数据必须来自 Yami 网站**
+    - _Requirements: 1.1, 1.2, 2.1, 2.2, 3.1, 4.1, 4.2, 5.1, 5.2, 6.1, 6.2, 6.3, 6.4, 6.5, 7.1, 7.2, 7.3, 7.4, 7.5, 8.1, 8.2, 8.3, 8.4, 9.1, 9.2, 11.1, 11.2, 13.1, 13.2, 13.3_
+
+- [x] 22. 创建产品 #1022446441 的 Landing Page — Healer Dual Effect Ampoule 1.01 fl oz
+  - [x] 22.1 创建 Landing Page HTML 文件
+    - 访问 Yami 网站搜索 item_number `1022446441`，获取真实的：产品页面 URL、产品图片 URL（格式 `https://cdn.yamibuy.net/item/{hash}_757x757.webp`）、当前价格、评分数据
+    - 以 `landing-pages/laoganma-spicy-crispy-chili-oil-210g.html` 为模板参考
+    - 品类: SKINCARE，配色方案: primary=#2E7D32, primary_deep=#1B5E20, primary_light=#E8F5E9, accent=#66BB6A
+    - 生成完整 HTML 文件到 `landing-pages/` 目录，包含所有 10 个标准 section
+    - 确保所有 Yami 链接附加 `?utm_source=zhouzk.com`
+    - 确保 Schema.org JSON-LD 有效、Open Graph 标签完整、meta description 120-160 字符
+    - 确保 CSS 内联、响应式断点 768px/480px、IntersectionObserver 淡入动画
+    - 验证图片 URL 可访问、价格与 Yami 网站一致
+    - **不得猜测或编造任何产品数据，所有数据必须来自 Yami 网站**
+    - _Requirements: 1.1, 1.2, 2.1, 2.2, 3.1, 4.1, 4.2, 5.1, 5.2, 6.1, 6.2, 6.3, 6.4, 6.5, 7.1, 7.2, 7.3, 7.4, 7.5, 8.1, 8.2, 8.3, 8.4, 9.1, 9.2, 11.1, 11.2, 13.1, 13.2, 13.3_
+
+- [x] 23. 创建产品 #1023403461 的 Landing Page — Perfume #CHAMO 1.69 fl oz (Jennie's Same Style)
+  - [x] 23.1 创建 Landing Page HTML 文件
+    - 访问 Yami 网站搜索 item_number `1023403461`，获取真实的：产品页面 URL、产品图片 URL（格式 `https://cdn.yamibuy.net/item/{hash}_757x757.webp`）、当前价格、评分数据
+    - 以 `landing-pages/laoganma-spicy-crispy-chili-oil-210g.html` 为模板参考
+    - 品类: SKINCARE，配色方案: primary=#2E7D32, primary_deep=#1B5E20, primary_light=#E8F5E9, accent=#66BB6A
+    - 生成完整 HTML 文件到 `landing-pages/` 目录，包含所有 10 个标准 section
+    - 确保所有 Yami 链接附加 `?utm_source=zhouzk.com`
+    - 确保 Schema.org JSON-LD 有效、Open Graph 标签完整、meta description 120-160 字符
+    - 确保 CSS 内联、响应式断点 768px/480px、IntersectionObserver 淡入动画
+    - 验证图片 URL 可访问、价格与 Yami 网站一致
+    - **不得猜测或编造任何产品数据，所有数据必须来自 Yami 网站**
+    - _Requirements: 1.1, 1.2, 2.1, 2.2, 3.1, 4.1, 4.2, 5.1, 5.2, 6.1, 6.2, 6.3, 6.4, 6.5, 7.1, 7.2, 7.3, 7.4, 7.5, 8.1, 8.2, 8.3, 8.4, 9.1, 9.2, 11.1, 11.2, 13.1, 13.2, 13.3_
+
+- [x] 24. 创建产品 #1030317661 的 Landing Page — Acnon Cream 13g Acne Treatment
+  - [x] 24.1 创建 Landing Page HTML 文件
+    - 访问 Yami 网站搜索 item_number `1030317661`，获取真实的：产品页面 URL、产品图片 URL（格式 `https://cdn.yamibuy.net/item/{hash}_757x757.webp`）、当前价格、评分数据
+    - 以 `landing-pages/laoganma-spicy-crispy-chili-oil-210g.html` 为模板参考
+    - 品类: SKINCARE，配色方案: primary=#2E7D32, primary_deep=#1B5E20, primary_light=#E8F5E9, accent=#66BB6A
+    - 生成完整 HTML 文件到 `landing-pages/` 目录，包含所有 10 个标准 section
+    - 确保所有 Yami 链接附加 `?utm_source=zhouzk.com`
+    - 确保 Schema.org JSON-LD 有效、Open Graph 标签完整、meta description 120-160 字符
+    - 确保 CSS 内联、响应式断点 768px/480px、IntersectionObserver 淡入动画
+    - 验证图片 URL 可访问、价格与 Yami 网站一致
+    - **不得猜测或编造任何产品数据，所有数据必须来自 Yami 网站**
+    - _Requirements: 1.1, 1.2, 2.1, 2.2, 3.1, 4.1, 4.2, 5.1, 5.2, 6.1, 6.2, 6.3, 6.4, 6.5, 7.1, 7.2, 7.3, 7.4, 7.5, 8.1, 8.2, 8.3, 8.4, 9.1, 9.2, 11.1, 11.2, 13.1, 13.2, 13.3_
+
+- [x] 25. 创建产品 #1023330471 的 Landing Page — Matte Sun Stick with Mugwort+Camelia SPF50+ 0.63 oz
+  - [x] 25.1 创建 Landing Page HTML 文件
+    - 访问 Yami 网站搜索 item_number `1023330471`，获取真实的：产品页面 URL、产品图片 URL（格式 `https://cdn.yamibuy.net/item/{hash}_757x757.webp`）、当前价格、评分数据
+    - 以 `landing-pages/laoganma-spicy-crispy-chili-oil-210g.html` 为模板参考
+    - 品类: SKINCARE，配色方案: primary=#2E7D32, primary_deep=#1B5E20, primary_light=#E8F5E9, accent=#66BB6A
+    - 生成完整 HTML 文件到 `landing-pages/` 目录，包含所有 10 个标准 section
+    - 确保所有 Yami 链接附加 `?utm_source=zhouzk.com`
+    - 确保 Schema.org JSON-LD 有效、Open Graph 标签完整、meta description 120-160 字符
+    - 确保 CSS 内联、响应式断点 768px/480px、IntersectionObserver 淡入动画
+    - 验证图片 URL 可访问、价格与 Yami 网站一致
+    - **不得猜测或编造任何产品数据，所有数据必须来自 Yami 网站**
+    - _Requirements: 1.1, 1.2, 2.1, 2.2, 3.1, 4.1, 4.2, 5.1, 5.2, 6.1, 6.2, 6.3, 6.4, 6.5, 7.1, 7.2, 7.3, 7.4, 7.5, 8.1, 8.2, 8.3, 8.4, 9.1, 9.2, 11.1, 11.2, 13.1, 13.2, 13.3_
+
+- [x] 26. 创建产品 #1163003131 的 Landing Page — Age-R Booster Pro #Pink
+  - [x] 26.1 创建 Landing Page HTML 文件
+    - 访问 Yami 网站搜索 item_number `1163003131`，获取真实的：产品页面 URL、产品图片 URL（格式 `https://cdn.yamibuy.net/item/{hash}_757x757.webp`）、当前价格、评分数据
+    - 以 `landing-pages/laoganma-spicy-crispy-chili-oil-210g.html` 为模板参考
+    - 品类: BEAUTY_DEVICE，配色方案: primary=#7B1FA2, primary_deep=#4A148C, primary_light=#F3E5F5, accent=#CE93D8
+    - 生成完整 HTML 文件到 `landing-pages/` 目录，包含所有 10 个标准 section
+    - 确保所有 Yami 链接附加 `?utm_source=zhouzk.com`
+    - 确保 Schema.org JSON-LD 有效、Open Graph 标签完整、meta description 120-160 字符
+    - 确保 CSS 内联、响应式断点 768px/480px、IntersectionObserver 淡入动画
+    - 验证图片 URL 可访问、价格与 Yami 网站一致
+    - **不得猜测或编造任何产品数据，所有数据必须来自 Yami 网站**
+    - _Requirements: 1.1, 1.2, 2.1, 2.2, 3.2, 4.1, 4.2, 5.1, 5.2, 6.1, 6.2, 6.3, 6.4, 6.5, 7.1, 7.2, 7.3, 7.4, 7.5, 8.1, 8.2, 8.3, 8.4, 9.1, 9.2, 11.1, 11.2, 13.1, 13.2, 13.3_
+
+- [x] 27. 创建产品 #1022542611 的 Landing Page — Madagascar Centella Hyalu-Cica Water-Fit Sun Serum 1.69 fl.oz.*2 (Value Pack)
+  - [x] 27.1 创建 Landing Page HTML 文件
+    - 访问 Yami 网站搜索 item_number `1022542611`，获取真实的：产品页面 URL、产品图片 URL（格式 `https://cdn.yamibuy.net/item/{hash}_757x757.webp`）、当前价格、评分数据
+    - 以 `landing-pages/laoganma-spicy-crispy-chili-oil-210g.html` 为模板参考
+    - 品类: SKINCARE，配色方案: primary=#2E7D32, primary_deep=#1B5E20, primary_light=#E8F5E9, accent=#66BB6A
+    - 生成完整 HTML 文件到 `landing-pages/` 目录，包含所有 10 个标准 section
+    - 确保所有 Yami 链接附加 `?utm_source=zhouzk.com`
+    - 确保 Schema.org JSON-LD 有效、Open Graph 标签完整、meta description 120-160 字符
+    - 确保 CSS 内联、响应式断点 768px/480px、IntersectionObserver 淡入动画
+    - 验证图片 URL 可访问、价格与 Yami 网站一致
+    - **不得猜测或编造任何产品数据，所有数据必须来自 Yami 网站**
+    - _Requirements: 1.1, 1.2, 2.1, 2.2, 3.1, 4.1, 4.2, 5.1, 5.2, 6.1, 6.2, 6.3, 6.4, 6.5, 7.1, 7.2, 7.3, 7.4, 7.5, 8.1, 8.2, 8.3, 8.4, 9.1, 9.2, 11.1, 11.2, 13.1, 13.2, 13.3_
+
+- [x] 28. 创建产品 #1022556571 的 Landing Page — Madagascar Centella Tone Brightening Skincare Set (Value Pack)
+  - [x] 28.1 创建 Landing Page HTML 文件
+    - 访问 Yami 网站搜索 item_number `1022556571`，获取真实的：产品页面 URL、产品图片 URL（格式 `https://cdn.yamibuy.net/item/{hash}_757x757.webp`）、当前价格、评分数据
+    - 以 `landing-pages/laoganma-spicy-crispy-chili-oil-210g.html` 为模板参考
+    - 品类: SKINCARE，配色方案: primary=#2E7D32, primary_deep=#1B5E20, primary_light=#E8F5E9, accent=#66BB6A
+    - 生成完整 HTML 文件到 `landing-pages/` 目录，包含所有 10 个标准 section
+    - 确保所有 Yami 链接附加 `?utm_source=zhouzk.com`
+    - 确保 Schema.org JSON-LD 有效、Open Graph 标签完整、meta description 120-160 字符
+    - 确保 CSS 内联、响应式断点 768px/480px、IntersectionObserver 淡入动画
+    - 验证图片 URL 可访问、价格与 Yami 网站一致
+    - **不得猜测或编造任何产品数据，所有数据必须来自 Yami 网站**
+    - _Requirements: 1.1, 1.2, 2.1, 2.2, 3.1, 4.1, 4.2, 5.1, 5.2, 6.1, 6.2, 6.3, 6.4, 6.5, 7.1, 7.2, 7.3, 7.4, 7.5, 8.1, 8.2, 8.3, 8.4, 9.1, 9.2, 11.1, 11.2, 13.1, 13.2, 13.3_
+
+- [x] 29. 创建产品 #1022394191 的 Landing Page — Revive Eye Serum Ginseng + Retinal 1.01 fl. oz.
+  - [x] 29.1 创建 Landing Page HTML 文件
+    - 访问 Yami 网站搜索 item_number `1022394191`，获取真实的：产品页面 URL、产品图片 URL（格式 `https://cdn.yamibuy.net/item/{hash}_757x757.webp`）、当前价格、评分数据
+    - 以 `landing-pages/laoganma-spicy-crispy-chili-oil-210g.html` 为模板参考
+    - 品类: SKINCARE，配色方案: primary=#2E7D32, primary_deep=#1B5E20, primary_light=#E8F5E9, accent=#66BB6A
+    - 生成完整 HTML 文件到 `landing-pages/` 目录，包含所有 10 个标准 section
+    - 确保所有 Yami 链接附加 `?utm_source=zhouzk.com`
+    - 确保 Schema.org JSON-LD 有效、Open Graph 标签完整、meta description 120-160 字符
+    - 确保 CSS 内联、响应式断点 768px/480px、IntersectionObserver 淡入动画
+    - 验证图片 URL 可访问、价格与 Yami 网站一致
+    - **不得猜测或编造任何产品数据，所有数据必须来自 Yami 网站**
+    - _Requirements: 1.1, 1.2, 2.1, 2.2, 3.1, 4.1, 4.2, 5.1, 5.2, 6.1, 6.2, 6.3, 6.4, 6.5, 7.1, 7.2, 7.3, 7.4, 7.5, 8.1, 8.2, 8.3, 8.4, 9.1, 9.2, 11.1, 11.2, 13.1, 13.2, 13.3_
+
+- [x] 30. 创建产品 #1157055131 的 Landing Page — Herbal Tea Beverage 10.9 fl oz*24 (24 Packs)
+  - [x] 30.1 创建 Landing Page HTML 文件
+    - 访问 Yami 网站搜索 item_number `1157055131`，获取真实的：产品页面 URL、产品图片 URL（格式 `https://cdn.yamibuy.net/item/{hash}_757x757.webp`）、当前价格、评分数据
+    - 以 `landing-pages/laoganma-spicy-crispy-chili-oil-210g.html` 为模板参考
+    - 品类: BEVERAGE，配色方案: primary=#0277BD, primary_deep=#01579B, primary_light=#E1F5FE, accent=#29B6F6
+    - 生成完整 HTML 文件到 `landing-pages/` 目录，包含所有 10 个标准 section
+    - 确保所有 Yami 链接附加 `?utm_source=zhouzk.com`
+    - 确保 Schema.org JSON-LD 有效、Open Graph 标签完整、meta description 120-160 字符
+    - 确保 CSS 内联、响应式断点 768px/480px、IntersectionObserver 淡入动画
+    - 验证图片 URL 可访问、价格与 Yami 网站一致
+    - **不得猜测或编造任何产品数据，所有数据必须来自 Yami 网站**
+    - _Requirements: 1.1, 1.2, 2.1, 2.2, 3.5, 4.1, 4.2, 5.1, 5.2, 6.1, 6.2, 6.3, 6.4, 6.5, 7.1, 7.2, 7.3, 7.4, 7.5, 8.1, 8.2, 8.3, 8.4, 9.1, 9.2, 11.1, 11.2, 13.1, 13.2, 13.3_
+
+- [x] 31. 创建产品 #1155011531 的 Landing Page — Ramune Drink 7 Flavors Combination Pack 6.76fl oz*7
+  - [x] 31.1 创建 Landing Page HTML 文件
+    - 访问 Yami 网站搜索 item_number `1155011531`，获取真实的：产品页面 URL、产品图片 URL（格式 `https://cdn.yamibuy.net/item/{hash}_757x757.webp`）、当前价格、评分数据
+    - 以 `landing-pages/laoganma-spicy-crispy-chili-oil-210g.html` 为模板参考
+    - 品类: BEVERAGE，配色方案: primary=#0277BD, primary_deep=#01579B, primary_light=#E1F5FE, accent=#29B6F6
+    - 生成完整 HTML 文件到 `landing-pages/` 目录，包含所有 10 个标准 section
+    - 确保所有 Yami 链接附加 `?utm_source=zhouzk.com`
+    - 确保 Schema.org JSON-LD 有效、Open Graph 标签完整、meta description 120-160 字符
+    - 确保 CSS 内联、响应式断点 768px/480px、IntersectionObserver 淡入动画
+    - 验证图片 URL 可访问、价格与 Yami 网站一致
+    - **不得猜测或编造任何产品数据，所有数据必须来自 Yami 网站**
+    - _Requirements: 1.1, 1.2, 2.1, 2.2, 3.5, 4.1, 4.2, 5.1, 5.2, 6.1, 6.2, 6.3, 6.4, 6.5, 7.1, 7.2, 7.3, 7.4, 7.5, 8.1, 8.2, 8.3, 8.4, 9.1, 9.2, 11.1, 11.2, 13.1, 13.2, 13.3_
+
+- [x] 32. 创建产品 #1157010241 的 Landing Page — Japanese Matcha Powder Premium Green Tea 1.41 oz
+  - [x] 32.1 创建 Landing Page HTML 文件
+    - 访问 Yami 网站搜索 item_number `1157010241`，获取真实的：产品页面 URL、产品图片 URL（格式 `https://cdn.yamibuy.net/item/{hash}_757x757.webp`）、当前价格、评分数据
+    - 以 `landing-pages/laoganma-spicy-crispy-chili-oil-210g.html` 为模板参考
+    - 品类: BEVERAGE，配色方案: primary=#0277BD, primary_deep=#01579B, primary_light=#E1F5FE, accent=#29B6F6
+    - 生成完整 HTML 文件到 `landing-pages/` 目录，包含所有 10 个标准 section
+    - 确保所有 Yami 链接附加 `?utm_source=zhouzk.com`
+    - 确保 Schema.org JSON-LD 有效、Open Graph 标签完整、meta description 120-160 字符
+    - 确保 CSS 内联、响应式断点 768px/480px、IntersectionObserver 淡入动画
+    - 验证图片 URL 可访问、价格与 Yami 网站一致
+    - **不得猜测或编造任何产品数据，所有数据必须来自 Yami 网站**
+    - _Requirements: 1.1, 1.2, 2.1, 2.2, 3.5, 4.1, 4.2, 5.1, 5.2, 6.1, 6.2, 6.3, 6.4, 6.5, 7.1, 7.2, 7.3, 7.4, 7.5, 8.1, 8.2, 8.3, 8.4, 9.1, 9.2, 11.1, 11.2, 13.1, 13.2, 13.3_
+
+- [x] 33. 创建产品 #1155022831 的 Landing Page — Oronamin Vitamin C Soda 4.05fl oz*6 (6 Packs)
+  - [x] 33.1 创建 Landing Page HTML 文件
+    - 访问 Yami 网站搜索 item_number `1155022831`，获取真实的：产品页面 URL、产品图片 URL（格式 `https://cdn.yamibuy.net/item/{hash}_757x757.webp`）、当前价格、评分数据
+    - 以 `landing-pages/laoganma-spicy-crispy-chili-oil-210g.html` 为模板参考
+    - 品类: BEVERAGE，配色方案: primary=#0277BD, primary_deep=#01579B, primary_light=#E1F5FE, accent=#29B6F6
+    - 生成完整 HTML 文件到 `landing-pages/` 目录，包含所有 10 个标准 section
+    - 确保所有 Yami 链接附加 `?utm_source=zhouzk.com`
+    - 确保 Schema.org JSON-LD 有效、Open Graph 标签完整、meta description 120-160 字符
+    - 确保 CSS 内联、响应式断点 768px/480px、IntersectionObserver 淡入动画
+    - 验证图片 URL 可访问、价格与 Yami 网站一致
+    - **不得猜测或编造任何产品数据，所有数据必须来自 Yami 网站**
+    - _Requirements: 1.1, 1.2, 2.1, 2.2, 3.5, 4.1, 4.2, 5.1, 5.2, 6.1, 6.2, 6.3, 6.4, 6.5, 7.1, 7.2, 7.3, 7.4, 7.5, 8.1, 8.2, 8.3, 8.4, 9.1, 9.2, 11.1, 11.2, 13.1, 13.2, 13.3_
+
+- [x] 34. 创建产品 #1020002371 的 Landing Page — Banana Flavored Milk Drink 6.76fl oz*6 Packs
+  - [x] 34.1 创建 Landing Page HTML 文件
+    - 访问 Yami 网站搜索 item_number `1020002371`，获取真实的：产品页面 URL、产品图片 URL（格式 `https://cdn.yamibuy.net/item/{hash}_757x757.webp`）、当前价格、评分数据
+    - 以 `landing-pages/laoganma-spicy-crispy-chili-oil-210g.html` 为模板参考
+    - 品类: BEVERAGE，配色方案: primary=#0277BD, primary_deep=#01579B, primary_light=#E1F5FE, accent=#29B6F6
+    - 生成完整 HTML 文件到 `landing-pages/` 目录，包含所有 10 个标准 section
+    - 确保所有 Yami 链接附加 `?utm_source=zhouzk.com`
+    - 确保 Schema.org JSON-LD 有效、Open Graph 标签完整、meta description 120-160 字符
+    - 确保 CSS 内联、响应式断点 768px/480px、IntersectionObserver 淡入动画
+    - 验证图片 URL 可访问、价格与 Yami 网站一致
+    - **不得猜测或编造任何产品数据，所有数据必须来自 Yami 网站**
+    - _Requirements: 1.1, 1.2, 2.1, 2.2, 3.5, 4.1, 4.2, 5.1, 5.2, 6.1, 6.2, 6.3, 6.4, 6.5, 7.1, 7.2, 7.3, 7.4, 7.5, 8.1, 8.2, 8.3, 8.4, 9.1, 9.2, 11.1, 11.2, 13.1, 13.2, 13.3_
+
+- [x] 35. 创建产品 #1155021091 的 Landing Page — Fanta Melon Flavor Soda 11.83 fl oz*6 (6 Packs)
+  - [x] 35.1 创建 Landing Page HTML 文件
+    - 访问 Yami 网站搜索 item_number `1155021091`，获取真实的：产品页面 URL、产品图片 URL（格式 `https://cdn.yamibuy.net/item/{hash}_757x757.webp`）、当前价格、评分数据
+    - 以 `landing-pages/laoganma-spicy-crispy-chili-oil-210g.html` 为模板参考
+    - 品类: BEVERAGE，配色方案: primary=#0277BD, primary_deep=#01579B, primary_light=#E1F5FE, accent=#29B6F6
+    - 生成完整 HTML 文件到 `landing-pages/` 目录，包含所有 10 个标准 section
+    - 确保所有 Yami 链接附加 `?utm_source=zhouzk.com`
+    - 确保 Schema.org JSON-LD 有效、Open Graph 标签完整、meta description 120-160 字符
+    - 确保 CSS 内联、响应式断点 768px/480px、IntersectionObserver 淡入动画
+    - 验证图片 URL 可访问、价格与 Yami 网站一致
+    - **不得猜测或编造任何产品数据，所有数据必须来自 Yami 网站**
+    - _Requirements: 1.1, 1.2, 2.1, 2.2, 3.5, 4.1, 4.2, 5.1, 5.2, 6.1, 6.2, 6.3, 6.4, 6.5, 7.1, 7.2, 7.3, 7.4, 7.5, 8.1, 8.2, 8.3, 8.4, 9.1, 9.2, 11.1, 11.2, 13.1, 13.2, 13.3_
+
+- [x] 36. 创建产品 #1020064491 的 Landing Page — Honey Passion Fruit Tea Concentrated Jam 35.27oz
+  - [x] 36.1 创建 Landing Page HTML 文件
+    - 访问 Yami 网站搜索 item_number `1020064491`，获取真实的：产品页面 URL、产品图片 URL（格式 `https://cdn.yamibuy.net/item/{hash}_757x757.webp`）、当前价格、评分数据
+    - 以 `landing-pages/laoganma-spicy-crispy-chili-oil-210g.html` 为模板参考
+    - 品类: BEVERAGE，配色方案: primary=#0277BD, primary_deep=#01579B, primary_light=#E1F5FE, accent=#29B6F6
+    - 生成完整 HTML 文件到 `landing-pages/` 目录，包含所有 10 个标准 section
+    - 确保所有 Yami 链接附加 `?utm_source=zhouzk.com`
+    - 确保 Schema.org JSON-LD 有效、Open Graph 标签完整、meta description 120-160 字符
+    - 确保 CSS 内联、响应式断点 768px/480px、IntersectionObserver 淡入动画
+    - 验证图片 URL 可访问、价格与 Yami 网站一致
+    - **不得猜测或编造任何产品数据，所有数据必须来自 Yami 网站**
+    - _Requirements: 1.1, 1.2, 2.1, 2.2, 3.5, 4.1, 4.2, 5.1, 5.2, 6.1, 6.2, 6.3, 6.4, 6.5, 7.1, 7.2, 7.3, 7.4, 7.5, 8.1, 8.2, 8.3, 8.4, 9.1, 9.2, 11.1, 11.2, 13.1, 13.2, 13.3_
+
+- [x] 37. 创建产品 #1029016121 的 Landing Page — Joyoung Multi-Functional Soy Milk Maker 1.3L DJ13U-G91
+  - [x] 37.1 创建 Landing Page HTML 文件
+    - 访问 Yami 网站搜索 item_number `1029016121`，获取真实的：产品页面 URL、产品图片 URL（格式 `https://cdn.yamibuy.net/item/{hash}_757x757.webp`）、当前价格、评分数据
+    - 以 `landing-pages/laoganma-spicy-crispy-chili-oil-210g.html` 为模板参考
+    - 品类: APPLIANCE，配色方案: primary=#37474F, primary_deep=#263238, primary_light=#ECEFF1, accent=#78909C
+    - 生成完整 HTML 文件到 `landing-pages/` 目录，包含所有 10 个标准 section
+    - 确保所有 Yami 链接附加 `?utm_source=zhouzk.com`
+    - 确保 Schema.org JSON-LD 有效、Open Graph 标签完整、meta description 120-160 字符
+    - 确保 CSS 内联、响应式断点 768px/480px、IntersectionObserver 淡入动画
+    - 验证图片 URL 可访问、价格与 Yami 网站一致
+    - **不得猜测或编造任何产品数据，所有数据必须来自 Yami 网站**
+    - _Requirements: 1.1, 1.2, 2.1, 2.2, 3.6, 4.1, 4.2, 5.1, 5.2, 6.1, 6.2, 6.3, 6.4, 6.5, 7.1, 7.2, 7.3, 7.4, 7.5, 8.1, 8.2, 8.3, 8.4, 9.1, 9.2, 11.1, 11.2, 13.1, 13.2, 13.3_
+
+- [x] 38. 创建产品 #1183006741 的 Landing Page — Joyoung Low-Purine Classic Soy Milk Machine DJ12N-K7G
+  - [x] 38.1 创建 Landing Page HTML 文件
+    - 访问 Yami 网站搜索 item_number `1183006741`，获取真实的：产品页面 URL、产品图片 URL（格式 `https://cdn.yamibuy.net/item/{hash}_757x757.webp`）、当前价格、评分数据
+    - 以 `landing-pages/laoganma-spicy-crispy-chili-oil-210g.html` 为模板参考
+    - 品类: APPLIANCE，配色方案: primary=#37474F, primary_deep=#263238, primary_light=#ECEFF1, accent=#78909C
+    - 生成完整 HTML 文件到 `landing-pages/` 目录，包含所有 10 个标准 section
+    - 确保所有 Yami 链接附加 `?utm_source=zhouzk.com`
+    - 确保 Schema.org JSON-LD 有效、Open Graph 标签完整、meta description 120-160 字符
+    - 确保 CSS 内联、响应式断点 768px/480px、IntersectionObserver 淡入动画
+    - 验证图片 URL 可访问、价格与 Yami 网站一致
+    - **不得猜测或编造任何产品数据，所有数据必须来自 Yami 网站**
+    - _Requirements: 1.1, 1.2, 2.1, 2.2, 3.6, 4.1, 4.2, 5.1, 5.2, 6.1, 6.2, 6.3, 6.4, 6.5, 7.1, 7.2, 7.3, 7.4, 7.5, 8.1, 8.2, 8.3, 8.4, 9.1, 9.2, 11.1, 11.2, 13.1, 13.2, 13.3_
+
+- [x] 39. 创建产品 #1029047901 的 Landing Page — Multi-Function Wellness Kettle Tea Maker K08-WY601U
+  - [x] 39.1 创建 Landing Page HTML 文件
+    - 访问 Yami 网站搜索 item_number `1029047901`，获取真实的：产品页面 URL、产品图片 URL（格式 `https://cdn.yamibuy.net/item/{hash}_757x757.webp`）、当前价格、评分数据
+    - 以 `landing-pages/laoganma-spicy-crispy-chili-oil-210g.html` 为模板参考
+    - 品类: APPLIANCE，配色方案: primary=#37474F, primary_deep=#263238, primary_light=#ECEFF1, accent=#78909C
+    - 生成完整 HTML 文件到 `landing-pages/` 目录，包含所有 10 个标准 section
+    - 确保所有 Yami 链接附加 `?utm_source=zhouzk.com`
+    - 确保 Schema.org JSON-LD 有效、Open Graph 标签完整、meta description 120-160 字符
+    - 确保 CSS 内联、响应式断点 768px/480px、IntersectionObserver 淡入动画
+    - 验证图片 URL 可访问、价格与 Yami 网站一致
+    - **不得猜测或编造任何产品数据，所有数据必须来自 Yami 网站**
+    - _Requirements: 1.1, 1.2, 2.1, 2.2, 3.6, 4.1, 4.2, 5.1, 5.2, 6.1, 6.2, 6.3, 6.4, 6.5, 7.1, 7.2, 7.3, 7.4, 7.5, 8.1, 8.2, 8.3, 8.4, 9.1, 9.2, 11.1, 11.2, 13.1, 13.2, 13.3_
+
+- [x] 40. 创建产品 #1029033271 的 Landing Page — Joyoung Multi-Functional Soy Milk Maker DJ10U-K1 Brown
+  - [x] 40.1 创建 Landing Page HTML 文件
+    - 访问 Yami 网站搜索 item_number `1029033271`，获取真实的：产品页面 URL、产品图片 URL（格式 `https://cdn.yamibuy.net/item/{hash}_757x757.webp`）、当前价格、评分数据
+    - 以 `landing-pages/laoganma-spicy-crispy-chili-oil-210g.html` 为模板参考
+    - 品类: APPLIANCE，配色方案: primary=#37474F, primary_deep=#263238, primary_light=#ECEFF1, accent=#78909C
+    - 生成完整 HTML 文件到 `landing-pages/` 目录，包含所有 10 个标准 section
+    - 确保所有 Yami 链接附加 `?utm_source=zhouzk.com`
+    - 确保 Schema.org JSON-LD 有效、Open Graph 标签完整、meta description 120-160 字符
+    - 确保 CSS 内联、响应式断点 768px/480px、IntersectionObserver 淡入动画
+    - 验证图片 URL 可访问、价格与 Yami 网站一致
+    - **不得猜测或编造任何产品数据，所有数据必须来自 Yami 网站**
+    - _Requirements: 1.1, 1.2, 2.1, 2.2, 3.6, 4.1, 4.2, 5.1, 5.2, 6.1, 6.2, 6.3, 6.4, 6.5, 7.1, 7.2, 7.3, 7.4, 7.5, 8.1, 8.2, 8.3, 8.4, 9.1, 9.2, 11.1, 11.2, 13.1, 13.2, 13.3_
+
+- [x] 41. 创建产品 #1028012291 的 Landing Page — Zojirushi Induction Heating Rice Cooker 1L NP-HCC10
+  - [x] 41.1 创建 Landing Page HTML 文件
+    - 访问 Yami 网站搜索 item_number `1028012291`，获取真实的：产品页面 URL、产品图片 URL（格式 `https://cdn.yamibuy.net/item/{hash}_757x757.webp`）、当前价格、评分数据
+    - 以 `landing-pages/laoganma-spicy-crispy-chili-oil-210g.html` 为模板参考
+    - 品类: APPLIANCE，配色方案: primary=#37474F, primary_deep=#263238, primary_light=#ECEFF1, accent=#78909C
+    - 生成完整 HTML 文件到 `landing-pages/` 目录，包含所有 10 个标准 section
+    - 确保所有 Yami 链接附加 `?utm_source=zhouzk.com`
+    - 确保 Schema.org JSON-LD 有效、Open Graph 标签完整、meta description 120-160 字符
+    - 确保 CSS 内联、响应式断点 768px/480px、IntersectionObserver 淡入动画
+    - 验证图片 URL 可访问、价格与 Yami 网站一致
+    - **不得猜测或编造任何产品数据，所有数据必须来自 Yami 网站**
+    - _Requirements: 1.1, 1.2, 2.1, 2.2, 3.6, 4.1, 4.2, 5.1, 5.2, 6.1, 6.2, 6.3, 6.4, 6.5, 7.1, 7.2, 7.3, 7.4, 7.5, 8.1, 8.2, 8.3, 8.4, 9.1, 9.2, 11.1, 11.2, 13.1, 13.2, 13.3_
+
+- [x] 42. 创建产品 #1028000171 的 Landing Page — Zojirushi Micom Rice Cooker 1L NS-TSC10
+  - [x] 42.1 创建 Landing Page HTML 文件
+    - 访问 Yami 网站搜索 item_number `1028000171`，获取真实的：产品页面 URL、产品图片 URL（格式 `https://cdn.yamibuy.net/item/{hash}_757x757.webp`）、当前价格、评分数据
+    - 以 `landing-pages/laoganma-spicy-crispy-chili-oil-210g.html` 为模板参考
+    - 品类: APPLIANCE，配色方案: primary=#37474F, primary_deep=#263238, primary_light=#ECEFF1, accent=#78909C
+    - 生成完整 HTML 文件到 `landing-pages/` 目录，包含所有 10 个标准 section
+    - 确保所有 Yami 链接附加 `?utm_source=zhouzk.com`
+    - 确保 Schema.org JSON-LD 有效、Open Graph 标签完整、meta description 120-160 字符
+    - 确保 CSS 内联、响应式断点 768px/480px、IntersectionObserver 淡入动画
+    - 验证图片 URL 可访问、价格与 Yami 网站一致
+    - **不得猜测或编造任何产品数据，所有数据必须来自 Yami 网站**
+    - _Requirements: 1.1, 1.2, 2.1, 2.2, 3.6, 4.1, 4.2, 5.1, 5.2, 6.1, 6.2, 6.3, 6.4, 6.5, 7.1, 7.2, 7.3, 7.4, 7.5, 8.1, 8.2, 8.3, 8.4, 9.1, 9.2, 11.1, 11.2, 13.1, 13.2, 13.3_
+
+- [x] 43. 创建产品 #1028016831 的 Landing Page — Zojirushi Micom Rice Cooker 1.8L NS-TSC18
+  - [x] 43.1 创建 Landing Page HTML 文件
+    - 访问 Yami 网站搜索 item_number `1028016831`，获取真实的：产品页面 URL、产品图片 URL（格式 `https://cdn.yamibuy.net/item/{hash}_757x757.webp`）、当前价格、评分数据
+    - 以 `landing-pages/laoganma-spicy-crispy-chili-oil-210g.html` 为模板参考
+    - 品类: APPLIANCE，配色方案: primary=#37474F, primary_deep=#263238, primary_light=#ECEFF1, accent=#78909C
+    - 生成完整 HTML 文件到 `landing-pages/` 目录，包含所有 10 个标准 section
+    - 确保所有 Yami 链接附加 `?utm_source=zhouzk.com`
+    - 确保 Schema.org JSON-LD 有效、Open Graph 标签完整、meta description 120-160 字符
+    - 确保 CSS 内联、响应式断点 768px/480px、IntersectionObserver 淡入动画
+    - 验证图片 URL 可访问、价格与 Yami 网站一致
+    - **不得猜测或编造任何产品数据，所有数据必须来自 Yami 网站**
+    - _Requirements: 1.1, 1.2, 2.1, 2.2, 3.6, 4.1, 4.2, 5.1, 5.2, 6.1, 6.2, 6.3, 6.4, 6.5, 7.1, 7.2, 7.3, 7.4, 7.5, 8.1, 8.2, 8.3, 8.4, 9.1, 9.2, 11.1, 11.2, 13.1, 13.2, 13.3_
+
+- [x] 44. 创建产品 #1028012331 的 Landing Page — Zojirushi Induction Heating Rice Cooker 1.8L NP-HCC18
+  - [x] 44.1 创建 Landing Page HTML 文件
+    - 访问 Yami 网站搜索 item_number `1028012331`，获取真实的：产品页面 URL、产品图片 URL（格式 `https://cdn.yamibuy.net/item/{hash}_757x757.webp`）、当前价格、评分数据
+    - 以 `landing-pages/laoganma-spicy-crispy-chili-oil-210g.html` 为模板参考
+    - 品类: APPLIANCE，配色方案: primary=#37474F, primary_deep=#263238, primary_light=#ECEFF1, accent=#78909C
+    - 生成完整 HTML 文件到 `landing-pages/` 目录，包含所有 10 个标准 section
+    - 确保所有 Yami 链接附加 `?utm_source=zhouzk.com`
+    - 确保 Schema.org JSON-LD 有效、Open Graph 标签完整、meta description 120-160 字符
+    - 确保 CSS 内联、响应式断点 768px/480px、IntersectionObserver 淡入动画
+    - 验证图片 URL 可访问、价格与 Yami 网站一致
+    - **不得猜测或编造任何产品数据，所有数据必须来自 Yami 网站**
+    - _Requirements: 1.1, 1.2, 2.1, 2.2, 3.6, 4.1, 4.2, 5.1, 5.2, 6.1, 6.2, 6.3, 6.4, 6.5, 7.1, 7.2, 7.3, 7.4, 7.5, 8.1, 8.2, 8.3, 8.4, 9.1, 9.2, 11.1, 11.2, 13.1, 13.2, 13.3_
+
+- [x] 45. 创建产品 #1028000331 的 Landing Page — Zojirushi Gourmet Expert Electric Skillet & Hot Pot EP-PBC10
+  - [x] 45.1 创建 Landing Page HTML 文件
+    - 访问 Yami 网站搜索 item_number `1028000331`，获取真实的：产品页面 URL、产品图片 URL（格式 `https://cdn.yamibuy.net/item/{hash}_757x757.webp`）、当前价格、评分数据
+    - 以 `landing-pages/laoganma-spicy-crispy-chili-oil-210g.html` 为模板参考
+    - 品类: APPLIANCE，配色方案: primary=#37474F, primary_deep=#263238, primary_light=#ECEFF1, accent=#78909C
+    - 生成完整 HTML 文件到 `landing-pages/` 目录，包含所有 10 个标准 section
+    - 确保所有 Yami 链接附加 `?utm_source=zhouzk.com`
+    - 确保 Schema.org JSON-LD 有效、Open Graph 标签完整、meta description 120-160 字符
+    - 确保 CSS 内联、响应式断点 768px/480px、IntersectionObserver 淡入动画
+    - 验证图片 URL 可访问、价格与 Yami 网站一致
+    - **不得猜测或编造任何产品数据，所有数据必须来自 Yami 网站**
+    - _Requirements: 1.1, 1.2, 2.1, 2.2, 3.6, 4.1, 4.2, 5.1, 5.2, 6.1, 6.2, 6.3, 6.4, 6.5, 7.1, 7.2, 7.3, 7.4, 7.5, 8.1, 8.2, 8.3, 8.4, 9.1, 9.2, 11.1, 11.2, 13.1, 13.2, 13.3_
+
+- [x] 46. 创建产品 #1029081651 的 Landing Page — Multi-Functional Electric Rice Cooker Stainless Steel Pearl White
+  - [x] 46.1 创建 Landing Page HTML 文件
+    - 访问 Yami 网站搜索 item_number `1029081651`，获取真实的：产品页面 URL、产品图片 URL（格式 `https://cdn.yamibuy.net/item/{hash}_757x757.webp`）、当前价格、评分数据
+    - 以 `landing-pages/laoganma-spicy-crispy-chili-oil-210g.html` 为模板参考
+    - 品类: APPLIANCE，配色方案: primary=#37474F, primary_deep=#263238, primary_light=#ECEFF1, accent=#78909C
+    - 生成完整 HTML 文件到 `landing-pages/` 目录，包含所有 10 个标准 section
+    - 确保所有 Yami 链接附加 `?utm_source=zhouzk.com`
+    - 确保 Schema.org JSON-LD 有效、Open Graph 标签完整、meta description 120-160 字符
+    - 确保 CSS 内联、响应式断点 768px/480px、IntersectionObserver 淡入动画
+    - 验证图片 URL 可访问、价格与 Yami 网站一致
+    - **不得猜测或编造任何产品数据，所有数据必须来自 Yami 网站**
+    - _Requirements: 1.1, 1.2, 2.1, 2.2, 3.6, 4.1, 4.2, 5.1, 5.2, 6.1, 6.2, 6.3, 6.4, 6.5, 7.1, 7.2, 7.3, 7.4, 7.5, 8.1, 8.2, 8.3, 8.4, 9.1, 9.2, 11.1, 11.2, 13.1, 13.2, 13.3_
+
+- [x] 47. 创建产品 #1029078561 的 Landing Page — Tatung TAC-11KN(UL) 11 Cup Rice Cooker
+  - [x] 47.1 创建 Landing Page HTML 文件
+    - 访问 Yami 网站搜索 item_number `1029078561`，获取真实的：产品页面 URL、产品图片 URL（格式 `https://cdn.yamibuy.net/item/{hash}_757x757.webp`）、当前价格、评分数据
+    - 以 `landing-pages/laoganma-spicy-crispy-chili-oil-210g.html` 为模板参考
+    - 品类: APPLIANCE，配色方案: primary=#37474F, primary_deep=#263238, primary_light=#ECEFF1, accent=#78909C
+    - 生成完整 HTML 文件到 `landing-pages/` 目录，包含所有 10 个标准 section
+    - 确保所有 Yami 链接附加 `?utm_source=zhouzk.com`
+    - 确保 Schema.org JSON-LD 有效、Open Graph 标签完整、meta description 120-160 字符
+    - 确保 CSS 内联、响应式断点 768px/480px、IntersectionObserver 淡入动画
+    - 验证图片 URL 可访问、价格与 Yami 网站一致
+    - **不得猜测或编造任何产品数据，所有数据必须来自 Yami 网站**
+    - _Requirements: 1.1, 1.2, 2.1, 2.2, 3.6, 4.1, 4.2, 5.1, 5.2, 6.1, 6.2, 6.3, 6.4, 6.5, 7.1, 7.2, 7.3, 7.4, 7.5, 8.1, 8.2, 8.3, 8.4, 9.1, 9.2, 11.1, 11.2, 13.1, 13.2, 13.3_
+
+- [x] 48. 创建产品 #1029139151 的 Landing Page — Tatung Stainless Steel Vanilla Cream Rice Cooker TAC-06IN 6 Cups
+  - [x] 48.1 创建 Landing Page HTML 文件
+    - 访问 Yami 网站搜索 item_number `1029139151`，获取真实的：产品页面 URL、产品图片 URL（格式 `https://cdn.yamibuy.net/item/{hash}_757x757.webp`）、当前价格、评分数据
+    - 以 `landing-pages/laoganma-spicy-crispy-chili-oil-210g.html` 为模板参考
+    - 品类: APPLIANCE，配色方案: primary=#37474F, primary_deep=#263238, primary_light=#ECEFF1, accent=#78909C
+    - 生成完整 HTML 文件到 `landing-pages/` 目录，包含所有 10 个标准 section
+    - 确保所有 Yami 链接附加 `?utm_source=zhouzk.com`
+    - 确保 Schema.org JSON-LD 有效、Open Graph 标签完整、meta description 120-160 字符
+    - 确保 CSS 内联、响应式断点 768px/480px、IntersectionObserver 淡入动画
+    - 验证图片 URL 可访问、价格与 Yami 网站一致
+    - **不得猜测或编造任何产品数据，所有数据必须来自 Yami 网站**
+    - _Requirements: 1.1, 1.2, 2.1, 2.2, 3.6, 4.1, 4.2, 5.1, 5.2, 6.1, 6.2, 6.3, 6.4, 6.5, 7.1, 7.2, 7.3, 7.4, 7.5, 8.1, 8.2, 8.3, 8.4, 9.1, 9.2, 11.1, 11.2, 13.1, 13.2, 13.3_
+
+- [x] 49. 创建产品 #1029067501 的 Landing Page — Tatung TAC-06KN(UL) Rice Cooker 6 Cups
+  - [x] 49.1 创建 Landing Page HTML 文件
+    - 访问 Yami 网站搜索 item_number `1029067501`，获取真实的：产品页面 URL、产品图片 URL（格式 `https://cdn.yamibuy.net/item/{hash}_757x757.webp`）、当前价格、评分数据
+    - 以 `landing-pages/laoganma-spicy-crispy-chili-oil-210g.html` 为模板参考
+    - 品类: APPLIANCE，配色方案: primary=#37474F, primary_deep=#263238, primary_light=#ECEFF1, accent=#78909C
+    - 生成完整 HTML 文件到 `landing-pages/` 目录，包含所有 10 个标准 section
+    - 确保所有 Yami 链接附加 `?utm_source=zhouzk.com`
+    - 确保 Schema.org JSON-LD 有效、Open Graph 标签完整、meta description 120-160 字符
+    - 确保 CSS 内联、响应式断点 768px/480px、IntersectionObserver 淡入动画
+    - 验证图片 URL 可访问、价格与 Yami 网站一致
+    - **不得猜测或编造任何产品数据，所有数据必须来自 Yami 网站**
+    - _Requirements: 1.1, 1.2, 2.1, 2.2, 3.6, 4.1, 4.2, 5.1, 5.2, 6.1, 6.2, 6.3, 6.4, 6.5, 7.1, 7.2, 7.3, 7.4, 7.5, 8.1, 8.2, 8.3, 8.4, 9.1, 9.2, 11.1, 11.2, 13.1, 13.2, 13.3_
+
+- [x] 50. 创建产品 #1029081661 的 Landing Page — Tatung Pearl White Rice Cooker TAC-10G 10 Cup
+  - [x] 50.1 创建 Landing Page HTML 文件
+    - 访问 Yami 网站搜索 item_number `1029081661`，获取真实的：产品页面 URL、产品图片 URL（格式 `https://cdn.yamibuy.net/item/{hash}_757x757.webp`）、当前价格、评分数据
+    - 以 `landing-pages/laoganma-spicy-crispy-chili-oil-210g.html` 为模板参考
+    - 品类: APPLIANCE，配色方案: primary=#37474F, primary_deep=#263238, primary_light=#ECEFF1, accent=#78909C
+    - 生成完整 HTML 文件到 `landing-pages/` 目录，包含所有 10 个标准 section
+    - 确保所有 Yami 链接附加 `?utm_source=zhouzk.com`
+    - 确保 Schema.org JSON-LD 有效、Open Graph 标签完整、meta description 120-160 字符
+    - 确保 CSS 内联、响应式断点 768px/480px、IntersectionObserver 淡入动画
+    - 验证图片 URL 可访问、价格与 Yami 网站一致
+    - **不得猜测或编造任何产品数据，所有数据必须来自 Yami 网站**
+    - _Requirements: 1.1, 1.2, 2.1, 2.2, 3.6, 4.1, 4.2, 5.1, 5.2, 6.1, 6.2, 6.3, 6.4, 6.5, 7.1, 7.2, 7.3, 7.4, 7.5, 8.1, 8.2, 8.3, 8.4, 9.1, 9.2, 11.1, 11.2, 13.1, 13.2, 13.3_
+
+- [ ] 51. Checkpoint — 确保前 50 个产品页面质量
+  - 确保所有已创建的 Landing Page 文件存在于 `landing-pages/` 目录
+  - 确保所有页面的图片 URL 可访问
+  - 确保所有页面的价格与 Yami 网站一致
+  - 确保所有 tests pass，ask the user if questions arise.
+
+- [x] 52. 创建产品 #1021090731 的 Landing Page — Galan Lang Lanzhou Beef Flavor Noodles 5 Packs 14.99oz
+  - [x] 52.1 创建 Landing Page HTML 文件
+    - 访问 Yami 网站搜索 item_number `1021090731`，获取真实的：产品页面 URL、产品图片 URL（格式 `https://cdn.yamibuy.net/item/{hash}_757x757.webp`）、当前价格、评分数据
+    - 以 `landing-pages/laoganma-spicy-crispy-chili-oil-210g.html` 为模板参考
+    - 品类: NOODLES，配色方案: primary=#D84315, primary_deep=#BF360C, primary_light=#FBE9E7, accent=#FF7043
+    - 生成完整 HTML 文件到 `landing-pages/` 目录，包含所有 10 个标准 section
+    - 确保所有 Yami 链接附加 `?utm_source=zhouzk.com`
+    - 确保 Schema.org JSON-LD 有效、Open Graph 标签完整、meta description 120-160 字符
+    - 确保 CSS 内联、响应式断点 768px/480px、IntersectionObserver 淡入动画
+    - 验证图片 URL 可访问、价格与 Yami 网站一致
+    - **不得猜测或编造任何产品数据，所有数据必须来自 Yami 网站**
+    - _Requirements: 1.1, 1.2, 2.1, 2.2, 3.4, 4.1, 4.2, 5.1, 5.2, 6.1, 6.2, 6.3, 6.4, 6.5, 7.1, 7.2, 7.3, 7.4, 7.5, 8.1, 8.2, 8.3, 8.4, 9.1, 9.2, 11.1, 11.2, 13.1, 13.2, 13.3_
+
+- [x] 53. 创建产品 #1021090281 的 Landing Page — Lanzhou Ramen Beef Flavor Noodles 2 Servings 15.87oz
+  - [x] 53.1 创建 Landing Page HTML 文件
+    - 访问 Yami 网站搜索 item_number `1021090281`，获取真实的：产品页面 URL、产品图片 URL（格式 `https://cdn.yamibuy.net/item/{hash}_757x757.webp`）、当前价格、评分数据
+    - 以 `landing-pages/laoganma-spicy-crispy-chili-oil-210g.html` 为模板参考
+    - 品类: NOODLES，配色方案: primary=#D84315, primary_deep=#BF360C, primary_light=#FBE9E7, accent=#FF7043
+    - 生成完整 HTML 文件到 `landing-pages/` 目录，包含所有 10 个标准 section
+    - 确保所有 Yami 链接附加 `?utm_source=zhouzk.com`
+    - 确保 Schema.org JSON-LD 有效、Open Graph 标签完整、meta description 120-160 字符
+    - 确保 CSS 内联、响应式断点 768px/480px、IntersectionObserver 淡入动画
+    - 验证图片 URL 可访问、价格与 Yami 网站一致
+    - **不得猜测或编造任何产品数据，所有数据必须来自 Yami 网站**
+    - _Requirements: 1.1, 1.2, 2.1, 2.2, 3.4, 4.1, 4.2, 5.1, 5.2, 6.1, 6.2, 6.3, 6.4, 6.5, 7.1, 7.2, 7.3, 7.4, 7.5, 8.1, 8.2, 8.3, 8.4, 9.1, 9.2, 11.1, 11.2, 13.1, 13.2, 13.3_
+
+- [x] 54. 创建产品 #1149030021 的 Landing Page — Premium Dried Goji Berries 7.94 oz
+  - [x] 54.1 创建 Landing Page HTML 文件
+    - 访问 Yami 网站搜索 item_number `1149030021`，获取真实的：产品页面 URL、产品图片 URL（格式 `https://cdn.yamibuy.net/item/{hash}_757x757.webp`）、当前价格、评分数据
+    - 以 `landing-pages/laoganma-spicy-crispy-chili-oil-210g.html` 为模板参考
+    - 品类: FOOD，配色方案: primary=#E65100, primary_deep=#BF360C, primary_light=#FFF3E0, accent=#FF9800
+    - 生成完整 HTML 文件到 `landing-pages/` 目录，包含所有 10 个标准 section
+    - 确保所有 Yami 链接附加 `?utm_source=zhouzk.com`
+    - 确保 Schema.org JSON-LD 有效、Open Graph 标签完整、meta description 120-160 字符
+    - 确保 CSS 内联、响应式断点 768px/480px、IntersectionObserver 淡入动画
+    - 验证图片 URL 可访问、价格与 Yami 网站一致
+    - **不得猜测或编造任何产品数据，所有数据必须来自 Yami 网站**
+    - _Requirements: 1.1, 1.2, 2.1, 2.2, 3.9, 4.1, 4.2, 5.1, 5.2, 6.1, 6.2, 6.3, 6.4, 6.5, 7.1, 7.2, 7.3, 7.4, 7.5, 8.1, 8.2, 8.3, 8.4, 9.1, 9.2, 11.1, 11.2, 13.1, 13.2, 13.3_
+
+- [x] 55. 创建产品 #1021066321 的 Landing Page — Organic Ningxia Jujube 16oz
+  - [x] 55.1 创建 Landing Page HTML 文件
+    - 访问 Yami 网站搜索 item_number `1021066321`，获取真实的：产品页面 URL、产品图片 URL（格式 `https://cdn.yamibuy.net/item/{hash}_757x757.webp`）、当前价格、评分数据
+    - 以 `landing-pages/laoganma-spicy-crispy-chili-oil-210g.html` 为模板参考
+    - 品类: FOOD，配色方案: primary=#E65100, primary_deep=#BF360C, primary_light=#FFF3E0, accent=#FF9800
+    - 生成完整 HTML 文件到 `landing-pages/` 目录，包含所有 10 个标准 section
+    - 确保所有 Yami 链接附加 `?utm_source=zhouzk.com`
+    - 确保 Schema.org JSON-LD 有效、Open Graph 标签完整、meta description 120-160 字符
+    - 确保 CSS 内联、响应式断点 768px/480px、IntersectionObserver 淡入动画
+    - 验证图片 URL 可访问、价格与 Yami 网站一致
+    - **不得猜测或编造任何产品数据，所有数据必须来自 Yami 网站**
+    - _Requirements: 1.1, 1.2, 2.1, 2.2, 3.9, 4.1, 4.2, 5.1, 5.2, 6.1, 6.2, 6.3, 6.4, 6.5, 7.1, 7.2, 7.3, 7.4, 7.5, 8.1, 8.2, 8.3, 8.4, 9.1, 9.2, 11.1, 11.2, 13.1, 13.2, 13.3_
+
+- [x] 56. 创建产品 #1021011501 的 Landing Page — Spicy Chili Crispy 7.4oz
+  - [x] 56.1 创建 Landing Page HTML 文件
+    - 访问 Yami 网站搜索 item_number `1021011501`，获取真实的：产品页面 URL、产品图片 URL（格式 `https://cdn.yamibuy.net/item/{hash}_757x757.webp`）、当前价格、评分数据
+    - 以 `landing-pages/laoganma-spicy-crispy-chili-oil-210g.html` 为模板参考
+    - 品类: FOOD，配色方案: primary=#E65100, primary_deep=#BF360C, primary_light=#FFF3E0, accent=#FF9800
+    - 生成完整 HTML 文件到 `landing-pages/` 目录，包含所有 10 个标准 section
+    - 确保所有 Yami 链接附加 `?utm_source=zhouzk.com`
+    - 确保 Schema.org JSON-LD 有效、Open Graph 标签完整、meta description 120-160 字符
+    - 确保 CSS 内联、响应式断点 768px/480px、IntersectionObserver 淡入动画
+    - 验证图片 URL 可访问、价格与 Yami 网站一致
+    - **不得猜测或编造任何产品数据，所有数据必须来自 Yami 网站**
+    - _Requirements: 1.1, 1.2, 2.1, 2.2, 3.9, 4.1, 4.2, 5.1, 5.2, 6.1, 6.2, 6.3, 6.4, 6.5, 7.1, 7.2, 7.3, 7.4, 7.5, 8.1, 8.2, 8.3, 8.4, 9.1, 9.2, 11.1, 11.2, 13.1, 13.2, 13.3_
+
+- [x] 57. 创建产品 #1148109911 的 Landing Page — Umami Topping Crunchy Garlic with Chili Oil Mild 3.88 oz*4
+  - [x] 57.1 创建 Landing Page HTML 文件
+    - 访问 Yami 网站搜索 item_number `1148109911`，获取真实的：产品页面 URL、产品图片 URL（格式 `https://cdn.yamibuy.net/item/{hash}_757x757.webp`）、当前价格、评分数据
+    - 以 `landing-pages/laoganma-spicy-crispy-chili-oil-210g.html` 为模板参考
+    - 品类: FOOD，配色方案: primary=#E65100, primary_deep=#BF360C, primary_light=#FFF3E0, accent=#FF9800
+    - 生成完整 HTML 文件到 `landing-pages/` 目录，包含所有 10 个标准 section
+    - 确保所有 Yami 链接附加 `?utm_source=zhouzk.com`
+    - 确保 Schema.org JSON-LD 有效、Open Graph 标签完整、meta description 120-160 字符
+    - 确保 CSS 内联、响应式断点 768px/480px、IntersectionObserver 淡入动画
+    - 验证图片 URL 可访问、价格与 Yami 网站一致
+    - **不得猜测或编造任何产品数据，所有数据必须来自 Yami 网站**
+    - _Requirements: 1.1, 1.2, 2.1, 2.2, 3.9, 4.1, 4.2, 5.1, 5.2, 6.1, 6.2, 6.3, 6.4, 6.5, 7.1, 7.2, 7.3, 7.4, 7.5, 8.1, 8.2, 8.3, 8.4, 9.1, 9.2, 11.1, 11.2, 13.1, 13.2, 13.3_
+
+- [ ] 58. 创建产品 #1148123281 的 Landing Page — Hello Kitty Soy Sauce 5 fl oz
+  - [ ] 58.1 创建 Landing Page HTML 文件
+    - 访问 Yami 网站搜索 item_number `1148123281`，获取真实的：产品页面 URL、产品图片 URL（格式 `https://cdn.yamibuy.net/item/{hash}_757x757.webp`）、当前价格、评分数据
+    - 以 `landing-pages/laoganma-spicy-crispy-chili-oil-210g.html` 为模板参考
+    - 品类: FOOD，配色方案: primary=#E65100, primary_deep=#BF360C, primary_light=#FFF3E0, accent=#FF9800
+    - 生成完整 HTML 文件到 `landing-pages/` 目录，包含所有 10 个标准 section
+    - 确保所有 Yami 链接附加 `?utm_source=zhouzk.com`
+    - 确保 Schema.org JSON-LD 有效、Open Graph 标签完整、meta description 120-160 字符
+    - 确保 CSS 内联、响应式断点 768px/480px、IntersectionObserver 淡入动画
+    - 验证图片 URL 可访问、价格与 Yami 网站一致
+    - **不得猜测或编造任何产品数据，所有数据必须来自 Yami 网站**
+    - _Requirements: 1.1, 1.2, 2.1, 2.2, 3.9, 4.1, 4.2, 5.1, 5.2, 6.1, 6.2, 6.3, 6.4, 6.5, 7.1, 7.2, 7.3, 7.4, 7.5, 8.1, 8.2, 8.3, 8.4, 9.1, 9.2, 11.1, 11.2, 13.1, 13.2, 13.3_
+
+- [ ] 59. 创建产品 #1021015171 的 Landing Page — Umami Topping Crunchy Garlic with Chili Oil Mild 3.88 oz
+  - [ ] 59.1 创建 Landing Page HTML 文件
+    - 访问 Yami 网站搜索 item_number `1021015171`，获取真实的：产品页面 URL、产品图片 URL（格式 `https://cdn.yamibuy.net/item/{hash}_757x757.webp`）、当前价格、评分数据
+    - 以 `landing-pages/laoganma-spicy-crispy-chili-oil-210g.html` 为模板参考
+    - 品类: FOOD，配色方案: primary=#E65100, primary_deep=#BF360C, primary_light=#FFF3E0, accent=#FF9800
+    - 生成完整 HTML 文件到 `landing-pages/` 目录，包含所有 10 个标准 section
+    - 确保所有 Yami 链接附加 `?utm_source=zhouzk.com`
+    - 确保 Schema.org JSON-LD 有效、Open Graph 标签完整、meta description 120-160 字符
+    - 确保 CSS 内联、响应式断点 768px/480px、IntersectionObserver 淡入动画
+    - 验证图片 URL 可访问、价格与 Yami 网站一致
+    - **不得猜测或编造任何产品数据，所有数据必须来自 Yami 网站**
+    - _Requirements: 1.1, 1.2, 2.1, 2.2, 3.9, 4.1, 4.2, 5.1, 5.2, 6.1, 6.2, 6.3, 6.4, 6.5, 7.1, 7.2, 7.3, 7.4, 7.5, 8.1, 8.2, 8.3, 8.4, 9.1, 9.2, 11.1, 11.2, 13.1, 13.2, 13.3_
+
+- [ ] 60. 创建产品 #1021032361 的 Landing Page — Kumamoto Black Garlic Oil Japanese Tonkotsu Ramen 6.6 oz
+  - [ ] 60.1 创建 Landing Page HTML 文件
+    - 访问 Yami 网站搜索 item_number `1021032361`，获取真实的：产品页面 URL、产品图片 URL（格式 `https://cdn.yamibuy.net/item/{hash}_757x757.webp`）、当前价格、评分数据
+    - 以 `landing-pages/laoganma-spicy-crispy-chili-oil-210g.html` 为模板参考
+    - 品类: NOODLES，配色方案: primary=#D84315, primary_deep=#BF360C, primary_light=#FBE9E7, accent=#FF7043
+    - 生成完整 HTML 文件到 `landing-pages/` 目录，包含所有 10 个标准 section
+    - 确保所有 Yami 链接附加 `?utm_source=zhouzk.com`
+    - 确保 Schema.org JSON-LD 有效、Open Graph 标签完整、meta description 120-160 字符
+    - 确保 CSS 内联、响应式断点 768px/480px、IntersectionObserver 淡入动画
+    - 验证图片 URL 可访问、价格与 Yami 网站一致
+    - **不得猜测或编造任何产品数据，所有数据必须来自 Yami 网站**
+    - _Requirements: 1.1, 1.2, 2.1, 2.2, 3.4, 4.1, 4.2, 5.1, 5.2, 6.1, 6.2, 6.3, 6.4, 6.5, 7.1, 7.2, 7.3, 7.4, 7.5, 8.1, 8.2, 8.3, 8.4, 9.1, 9.2, 11.1, 11.2, 13.1, 13.2, 13.3_
+
+- [ ] 61. 创建产品 #1148101621 的 Landing Page — Umami Topping Crunchy Garlic With Chili Oil Spicy 3.88 oz
+  - [ ] 61.1 创建 Landing Page HTML 文件
+    - 访问 Yami 网站搜索 item_number `1148101621`，获取真实的：产品页面 URL、产品图片 URL（格式 `https://cdn.yamibuy.net/item/{hash}_757x757.webp`）、当前价格、评分数据
+    - 以 `landing-pages/laoganma-spicy-crispy-chili-oil-210g.html` 为模板参考
+    - 品类: FOOD，配色方案: primary=#E65100, primary_deep=#BF360C, primary_light=#FFF3E0, accent=#FF9800
+    - 生成完整 HTML 文件到 `landing-pages/` 目录，包含所有 10 个标准 section
+    - 确保所有 Yami 链接附加 `?utm_source=zhouzk.com`
+    - 确保 Schema.org JSON-LD 有效、Open Graph 标签完整、meta description 120-160 字符
+    - 确保 CSS 内联、响应式断点 768px/480px、IntersectionObserver 淡入动画
+    - 验证图片 URL 可访问、价格与 Yami 网站一致
+    - **不得猜测或编造任何产品数据，所有数据必须来自 Yami 网站**
+    - _Requirements: 1.1, 1.2, 2.1, 2.2, 3.9, 4.1, 4.2, 5.1, 5.2, 6.1, 6.2, 6.3, 6.4, 6.5, 7.1, 7.2, 7.3, 7.4, 7.5, 8.1, 8.2, 8.3, 8.4, 9.1, 9.2, 11.1, 11.2, 13.1, 13.2, 13.3_
+
+- [ ] 62. 创建产品 #1147097241 的 Landing Page — Dongwon BTS Jin Special Edition Tuna 5.3oz*12 Can
+  - [ ] 62.1 创建 Landing Page HTML 文件
+    - 访问 Yami 网站搜索 item_number `1147097241`，获取真实的：产品页面 URL、产品图片 URL（格式 `https://cdn.yamibuy.net/item/{hash}_757x757.webp`）、当前价格、评分数据
+    - 以 `landing-pages/laoganma-spicy-crispy-chili-oil-210g.html` 为模板参考
+    - 品类: FOOD，配色方案: primary=#E65100, primary_deep=#BF360C, primary_light=#FFF3E0, accent=#FF9800
+    - 生成完整 HTML 文件到 `landing-pages/` 目录，包含所有 10 个标准 section
+    - 确保所有 Yami 链接附加 `?utm_source=zhouzk.com`
+    - 确保 Schema.org JSON-LD 有效、Open Graph 标签完整、meta description 120-160 字符
+    - 确保 CSS 内联、响应式断点 768px/480px、IntersectionObserver 淡入动画
+    - 验证图片 URL 可访问、价格与 Yami 网站一致
+    - **不得猜测或编造任何产品数据，所有数据必须来自 Yami 网站**
+    - _Requirements: 1.1, 1.2, 2.1, 2.2, 3.9, 4.1, 4.2, 5.1, 5.2, 6.1, 6.2, 6.3, 6.4, 6.5, 7.1, 7.2, 7.3, 7.4, 7.5, 8.1, 8.2, 8.3, 8.4, 9.1, 9.2, 11.1, 11.2, 13.1, 13.2, 13.3_
+
+- [ ] 63. 创建产品 #1021165981 的 Landing Page — Cheesy Ramen Cheddar & Mascarpone Flavor Bowl 3.53 oz*6
+  - [ ] 63.1 创建 Landing Page HTML 文件
+    - 访问 Yami 网站搜索 item_number `1021165981`，获取真实的：产品页面 URL、产品图片 URL（格式 `https://cdn.yamibuy.net/item/{hash}_757x757.webp`）、当前价格、评分数据
+    - 以 `landing-pages/laoganma-spicy-crispy-chili-oil-210g.html` 为模板参考
+    - 品类: NOODLES，配色方案: primary=#D84315, primary_deep=#BF360C, primary_light=#FBE9E7, accent=#FF7043
+    - 生成完整 HTML 文件到 `landing-pages/` 目录，包含所有 10 个标准 section
+    - 确保所有 Yami 链接附加 `?utm_source=zhouzk.com`
+    - 确保 Schema.org JSON-LD 有效、Open Graph 标签完整、meta description 120-160 字符
+    - 确保 CSS 内联、响应式断点 768px/480px、IntersectionObserver 淡入动画
+    - 验证图片 URL 可访问、价格与 Yami 网站一致
+    - **不得猜测或编造任何产品数据，所有数据必须来自 Yami 网站**
+    - _Requirements: 1.1, 1.2, 2.1, 2.2, 3.4, 4.1, 4.2, 5.1, 5.2, 6.1, 6.2, 6.3, 6.4, 6.5, 7.1, 7.2, 7.3, 7.4, 7.5, 8.1, 8.2, 8.3, 8.4, 9.1, 9.2, 11.1, 11.2, 13.1, 13.2, 13.3_
+
+- [ ] 64. 创建产品 #1021096141 的 Landing Page — Buldak Noodles Quattro Cheese Hot Chicken Ramen 5 Packs
+  - [ ] 64.1 创建 Landing Page HTML 文件
+    - 访问 Yami 网站搜索 item_number `1021096141`，获取真实的：产品页面 URL、产品图片 URL（格式 `https://cdn.yamibuy.net/item/{hash}_757x757.webp`）、当前价格、评分数据
+    - 以 `landing-pages/laoganma-spicy-crispy-chili-oil-210g.html` 为模板参考
+    - 品类: NOODLES，配色方案: primary=#D84315, primary_deep=#BF360C, primary_light=#FBE9E7, accent=#FF7043
+    - 生成完整 HTML 文件到 `landing-pages/` 目录，包含所有 10 个标准 section
+    - 确保所有 Yami 链接附加 `?utm_source=zhouzk.com`
+    - 确保 Schema.org JSON-LD 有效、Open Graph 标签完整、meta description 120-160 字符
+    - 确保 CSS 内联、响应式断点 768px/480px、IntersectionObserver 淡入动画
+    - 验证图片 URL 可访问、价格与 Yami 网站一致
+    - **不得猜测或编造任何产品数据，所有数据必须来自 Yami 网站**
+    - _Requirements: 1.1, 1.2, 2.1, 2.2, 3.4, 4.1, 4.2, 5.1, 5.2, 6.1, 6.2, 6.3, 6.4, 6.5, 7.1, 7.2, 7.3, 7.4, 7.5, 8.1, 8.2, 8.3, 8.4, 9.1, 9.2, 11.1, 11.2, 13.1, 13.2, 13.3_
+
+- [ ] 65. 创建产品 #1021037711 的 Landing Page — Korean Buldak Noodles Carbonara Stir-Fried Ramen 5 Packs
+  - [ ] 65.1 创建 Landing Page HTML 文件
+    - 访问 Yami 网站搜索 item_number `1021037711`，获取真实的：产品页面 URL、产品图片 URL（格式 `https://cdn.yamibuy.net/item/{hash}_757x757.webp`）、当前价格、评分数据
+    - 以 `landing-pages/laoganma-spicy-crispy-chili-oil-210g.html` 为模板参考
+    - 品类: NOODLES，配色方案: primary=#D84315, primary_deep=#BF360C, primary_light=#FBE9E7, accent=#FF7043
+    - 生成完整 HTML 文件到 `landing-pages/` 目录，包含所有 10 个标准 section
+    - 确保所有 Yami 链接附加 `?utm_source=zhouzk.com`
+    - 确保 Schema.org JSON-LD 有效、Open Graph 标签完整、meta description 120-160 字符
+    - 确保 CSS 内联、响应式断点 768px/480px、IntersectionObserver 淡入动画
+    - 验证图片 URL 可访问、价格与 Yami 网站一致
+    - **不得猜测或编造任何产品数据，所有数据必须来自 Yami 网站**
+    - _Requirements: 1.1, 1.2, 2.1, 2.2, 3.4, 4.1, 4.2, 5.1, 5.2, 6.1, 6.2, 6.3, 6.4, 6.5, 7.1, 7.2, 7.3, 7.4, 7.5, 8.1, 8.2, 8.3, 8.4, 9.1, 9.2, 11.1, 11.2, 13.1, 13.2, 13.3_
+
+- [ ] 66. 创建产品 #1021149581 的 Landing Page — Cheesy Ramen Cheddar Flavor 3.92oz*4 Packs
+  - [ ] 66.1 创建 Landing Page HTML 文件
+    - 访问 Yami 网站搜索 item_number `1021149581`，获取真实的：产品页面 URL、产品图片 URL（格式 `https://cdn.yamibuy.net/item/{hash}_757x757.webp`）、当前价格、评分数据
+    - 以 `landing-pages/laoganma-spicy-crispy-chili-oil-210g.html` 为模板参考
+    - 品类: NOODLES，配色方案: primary=#D84315, primary_deep=#BF360C, primary_light=#FBE9E7, accent=#FF7043
+    - 生成完整 HTML 文件到 `landing-pages/` 目录，包含所有 10 个标准 section
+    - 确保所有 Yami 链接附加 `?utm_source=zhouzk.com`
+    - 确保 Schema.org JSON-LD 有效、Open Graph 标签完整、meta description 120-160 字符
+    - 确保 CSS 内联、响应式断点 768px/480px、IntersectionObserver 淡入动画
+    - 验证图片 URL 可访问、价格与 Yami 网站一致
+    - **不得猜测或编造任何产品数据，所有数据必须来自 Yami 网站**
+    - _Requirements: 1.1, 1.2, 2.1, 2.2, 3.4, 4.1, 4.2, 5.1, 5.2, 6.1, 6.2, 6.3, 6.4, 6.5, 7.1, 7.2, 7.3, 7.4, 7.5, 8.1, 8.2, 8.3, 8.4, 9.1, 9.2, 11.1, 11.2, 13.1, 13.2, 13.3_
+
+- [ ] 67. 创建产品 #1031016881 的 Landing Page — Okamoto 001 Ultra Thin Condoms 15pcs (Value Pack)
+  - [ ] 67.1 创建 Landing Page HTML 文件
+    - 访问 Yami 网站搜索 item_number `1031016881`，获取真实的：产品页面 URL、产品图片 URL（格式 `https://cdn.yamibuy.net/item/{hash}_757x757.webp`）、当前价格、评分数据
+    - 以 `landing-pages/laoganma-spicy-crispy-chili-oil-210g.html` 为模板参考
+    - 品类: HEALTH，配色方案: primary=#00695C, primary_deep=#004D40, primary_light=#E0F2F1, accent=#26A69A
+    - 生成完整 HTML 文件到 `landing-pages/` 目录，包含所有 10 个标准 section
+    - 确保所有 Yami 链接附加 `?utm_source=zhouzk.com`
+    - 确保 Schema.org JSON-LD 有效、Open Graph 标签完整、meta description 120-160 字符
+    - 确保 CSS 内联、响应式断点 768px/480px、IntersectionObserver 淡入动画
+    - 验证图片 URL 可访问、价格与 Yami 网站一致
+    - **不得猜测或编造任何产品数据，所有数据必须来自 Yami 网站**
+    - _Requirements: 1.1, 1.2, 2.1, 2.2, 3.7, 4.1, 4.2, 5.1, 5.2, 6.1, 6.2, 6.3, 6.4, 6.5, 7.1, 7.2, 7.3, 7.4, 7.5, 8.1, 8.2, 8.3, 8.4, 9.1, 9.2, 11.1, 11.2, 13.1, 13.2, 13.3_
+
+- [ ] 68. 创建产品 #1031025731 的 Landing Page — Okamoto 001 Original Condoms 10pcs (Value Pack)
+  - [ ] 68.1 创建 Landing Page HTML 文件
+    - 访问 Yami 网站搜索 item_number `1031025731`，获取真实的：产品页面 URL、产品图片 URL（格式 `https://cdn.yamibuy.net/item/{hash}_757x757.webp`）、当前价格、评分数据
+    - 以 `landing-pages/laoganma-spicy-crispy-chili-oil-210g.html` 为模板参考
+    - 品类: HEALTH，配色方案: primary=#00695C, primary_deep=#004D40, primary_light=#E0F2F1, accent=#26A69A
+    - 生成完整 HTML 文件到 `landing-pages/` 目录，包含所有 10 个标准 section
+    - 确保所有 Yami 链接附加 `?utm_source=zhouzk.com`
+    - 确保 Schema.org JSON-LD 有效、Open Graph 标签完整、meta description 120-160 字符
+    - 确保 CSS 内联、响应式断点 768px/480px、IntersectionObserver 淡入动画
+    - 验证图片 URL 可访问、价格与 Yami 网站一致
+    - **不得猜测或编造任何产品数据，所有数据必须来自 Yami 网站**
+    - _Requirements: 1.1, 1.2, 2.1, 2.2, 3.7, 4.1, 4.2, 5.1, 5.2, 6.1, 6.2, 6.3, 6.4, 6.5, 7.1, 7.2, 7.3, 7.4, 7.5, 8.1, 8.2, 8.3, 8.4, 9.1, 9.2, 11.1, 11.2, 13.1, 13.2, 13.3_
+
+- [ ] 69. 创建产品 #1031104451 的 Landing Page — Okamoto 001 Extra Lubricated Condoms Large Fit 6pcs (Value Pack)
+  - [ ] 69.1 创建 Landing Page HTML 文件
+    - 访问 Yami 网站搜索 item_number `1031104451`，获取真实的：产品页面 URL、产品图片 URL（格式 `https://cdn.yamibuy.net/item/{hash}_757x757.webp`）、当前价格、评分数据
+    - 以 `landing-pages/laoganma-spicy-crispy-chili-oil-210g.html` 为模板参考
+    - 品类: HEALTH，配色方案: primary=#00695C, primary_deep=#004D40, primary_light=#E0F2F1, accent=#26A69A
+    - 生成完整 HTML 文件到 `landing-pages/` 目录，包含所有 10 个标准 section
+    - 确保所有 Yami 链接附加 `?utm_source=zhouzk.com`
+    - 确保 Schema.org JSON-LD 有效、Open Graph 标签完整、meta description 120-160 字符
+    - 确保 CSS 内联、响应式断点 768px/480px、IntersectionObserver 淡入动画
+    - 验证图片 URL 可访问、价格与 Yami 网站一致
+    - **不得猜测或编造任何产品数据，所有数据必须来自 Yami 网站**
+    - _Requirements: 1.1, 1.2, 2.1, 2.2, 3.7, 4.1, 4.2, 5.1, 5.2, 6.1, 6.2, 6.3, 6.4, 6.5, 7.1, 7.2, 7.3, 7.4, 7.5, 8.1, 8.2, 8.3, 8.4, 9.1, 9.2, 11.1, 11.2, 13.1, 13.2, 13.3_
+
+- [ ] 70. 创建产品 #1018146931 的 Landing Page — Konjac Jelly Lychee 5.07 fl.oz.*10pcs Sugar-Free
+  - [ ] 70.1 创建 Landing Page HTML 文件
+    - 访问 Yami 网站搜索 item_number `1018146931`，获取真实的：产品页面 URL、产品图片 URL（格式 `https://cdn.yamibuy.net/item/{hash}_757x757.webp`）、当前价格、评分数据
+    - 以 `landing-pages/laoganma-spicy-crispy-chili-oil-210g.html` 为模板参考
+    - 品类: SNACK，配色方案: primary=#F9A825, primary_deep=#F57F17, primary_light=#FFFDE7, accent=#FFEE58
+    - 生成完整 HTML 文件到 `landing-pages/` 目录，包含所有 10 个标准 section
+    - 确保所有 Yami 链接附加 `?utm_source=zhouzk.com`
+    - 确保 Schema.org JSON-LD 有效、Open Graph 标签完整、meta description 120-160 字符
+    - 确保 CSS 内联、响应式断点 768px/480px、IntersectionObserver 淡入动画
+    - 验证图片 URL 可访问、价格与 Yami 网站一致
+    - **不得猜测或编造任何产品数据，所有数据必须来自 Yami 网站**
+    - _Requirements: 1.1, 1.2, 2.1, 2.2, 3.8, 4.1, 4.2, 5.1, 5.2, 6.1, 6.2, 6.3, 6.4, 6.5, 7.1, 7.2, 7.3, 7.4, 7.5, 8.1, 8.2, 8.3, 8.4, 9.1, 9.2, 11.1, 11.2, 13.1, 13.2, 13.3_
+
+- [ ] 71. 创建产品 #1029234901 的 Landing Page — Round Dutch Oven Enamel-coated Cast-iron Peony Pink 4QT
+  - [ ] 71.1 创建 Landing Page HTML 文件
+    - 访问 Yami 网站搜索 item_number `1029234901`，获取真实的：产品页面 URL、产品图片 URL（格式 `https://cdn.yamibuy.net/item/{hash}_757x757.webp`）、当前价格、评分数据
+    - 以 `landing-pages/laoganma-spicy-crispy-chili-oil-210g.html` 为模板参考
+    - 品类: APPLIANCE，配色方案: primary=#37474F, primary_deep=#263238, primary_light=#ECEFF1, accent=#78909C
+    - 生成完整 HTML 文件到 `landing-pages/` 目录，包含所有 10 个标准 section
+    - 确保所有 Yami 链接附加 `?utm_source=zhouzk.com`
+    - 确保 Schema.org JSON-LD 有效、Open Graph 标签完整、meta description 120-160 字符
+    - 确保 CSS 内联、响应式断点 768px/480px、IntersectionObserver 淡入动画
+    - 验证图片 URL 可访问、价格与 Yami 网站一致
+    - **不得猜测或编造任何产品数据，所有数据必须来自 Yami 网站**
+    - _Requirements: 1.1, 1.2, 2.1, 2.2, 3.6, 4.1, 4.2, 5.1, 5.2, 6.1, 6.2, 6.3, 6.4, 6.5, 7.1, 7.2, 7.3, 7.4, 7.5, 8.1, 8.2, 8.3, 8.4, 9.1, 9.2, 11.1, 11.2, 13.1, 13.2, 13.3_
+
+- [ ] 72. 创建产品 #1024051751 的 Landing Page — Fino Repair Shampoo+Conditioner 550ml+550ml
+  - [ ] 72.1 创建 Landing Page HTML 文件
+    - 访问 Yami 网站搜索 item_number `1024051751`，获取真实的：产品页面 URL、产品图片 URL（格式 `https://cdn.yamibuy.net/item/{hash}_757x757.webp`）、当前价格、评分数据
+    - 以 `landing-pages/laoganma-spicy-crispy-chili-oil-210g.html` 为模板参考
+    - 品类: HAIRCARE，配色方案: primary=#AD1457, primary_deep=#880E4F, primary_light=#FCE4EC, accent=#F06292
+    - 生成完整 HTML 文件到 `landing-pages/` 目录，包含所有 10 个标准 section
+    - 确保所有 Yami 链接附加 `?utm_source=zhouzk.com`
+    - 确保 Schema.org JSON-LD 有效、Open Graph 标签完整、meta description 120-160 字符
+    - 确保 CSS 内联、响应式断点 768px/480px、IntersectionObserver 淡入动画
+    - 验证图片 URL 可访问、价格与 Yami 网站一致
+    - **不得猜测或编造任何产品数据，所有数据必须来自 Yami 网站**
+    - _Requirements: 1.1, 1.2, 2.1, 2.2, 3.3, 4.1, 4.2, 5.1, 5.2, 6.1, 6.2, 6.3, 6.4, 6.5, 7.1, 7.2, 7.3, 7.4, 7.5, 8.1, 8.2, 8.3, 8.4, 9.1, 9.2, 11.1, 11.2, 13.1, 13.2, 13.3_
+
+- [ ] 73. 创建产品 #1024003121 的 Landing Page — FINO Premium Touch Hair Mask 230g
+  - [ ] 73.1 创建 Landing Page HTML 文件
+    - 访问 Yami 网站搜索 item_number `1024003121`，获取真实的：产品页面 URL、产品图片 URL（格式 `https://cdn.yamibuy.net/item/{hash}_757x757.webp`）、当前价格、评分数据
+    - 以 `landing-pages/laoganma-spicy-crispy-chili-oil-210g.html` 为模板参考
+    - 品类: HAIRCARE，配色方案: primary=#AD1457, primary_deep=#880E4F, primary_light=#FCE4EC, accent=#F06292
+    - 生成完整 HTML 文件到 `landing-pages/` 目录，包含所有 10 个标准 section
+    - 确保所有 Yami 链接附加 `?utm_source=zhouzk.com`
+    - 确保 Schema.org JSON-LD 有效、Open Graph 标签完整、meta description 120-160 字符
+    - 确保 CSS 内联、响应式断点 768px/480px、IntersectionObserver 淡入动画
+    - 验证图片 URL 可访问、价格与 Yami 网站一致
+    - **不得猜测或编造任何产品数据，所有数据必须来自 Yami 网站**
+    - _Requirements: 1.1, 1.2, 2.1, 2.2, 3.3, 4.1, 4.2, 5.1, 5.2, 6.1, 6.2, 6.3, 6.4, 6.5, 7.1, 7.2, 7.3, 7.4, 7.5, 8.1, 8.2, 8.3, 8.4, 9.1, 9.2, 11.1, 11.2, 13.1, 13.2, 13.3_
+
+- [ ] 74. 创建产品 #1024141631 的 Landing Page — Fino Shampoo 500ml + Conditioner 500ml + Hair Mask 230g (Value Pack)
+  - [ ] 74.1 创建 Landing Page HTML 文件
+    - 访问 Yami 网站搜索 item_number `1024141631`，获取真实的：产品页面 URL、产品图片 URL（格式 `https://cdn.yamibuy.net/item/{hash}_757x757.webp`）、当前价格、评分数据
+    - 以 `landing-pages/laoganma-spicy-crispy-chili-oil-210g.html` 为模板参考
+    - 品类: HAIRCARE，配色方案: primary=#AD1457, primary_deep=#880E4F, primary_light=#FCE4EC, accent=#F06292
+    - 生成完整 HTML 文件到 `landing-pages/` 目录，包含所有 10 个标准 section
+    - 确保所有 Yami 链接附加 `?utm_source=zhouzk.com`
+    - 确保 Schema.org JSON-LD 有效、Open Graph 标签完整、meta description 120-160 字符
+    - 确保 CSS 内联、响应式断点 768px/480px、IntersectionObserver 淡入动画
+    - 验证图片 URL 可访问、价格与 Yami 网站一致
+    - **不得猜测或编造任何产品数据，所有数据必须来自 Yami 网站**
+    - _Requirements: 1.1, 1.2, 2.1, 2.2, 3.3, 4.1, 4.2, 5.1, 5.2, 6.1, 6.2, 6.3, 6.4, 6.5, 7.1, 7.2, 7.3, 7.4, 7.5, 8.1, 8.2, 8.3, 8.4, 9.1, 9.2, 11.1, 11.2, 13.1, 13.2, 13.3_
+
+- [ ] 75. 创建产品 #1024013641 的 Landing Page — TSUBAKI Premium Repair Hair Mask 180g
+  - [ ] 75.1 创建 Landing Page HTML 文件
+    - 访问 Yami 网站搜索 item_number `1024013641`，获取真实的：产品页面 URL、产品图片 URL（格式 `https://cdn.yamibuy.net/item/{hash}_757x757.webp`）、当前价格、评分数据
+    - 以 `landing-pages/laoganma-spicy-crispy-chili-oil-210g.html` 为模板参考
+    - 品类: HAIRCARE，配色方案: primary=#AD1457, primary_deep=#880E4F, primary_light=#FCE4EC, accent=#F06292
+    - 生成完整 HTML 文件到 `landing-pages/` 目录，包含所有 10 个标准 section
+    - 确保所有 Yami 链接附加 `?utm_source=zhouzk.com`
+    - 确保 Schema.org JSON-LD 有效、Open Graph 标签完整、meta description 120-160 字符
+    - 确保 CSS 内联、响应式断点 768px/480px、IntersectionObserver 淡入动画
+    - 验证图片 URL 可访问、价格与 Yami 网站一致
+    - **不得猜测或编造任何产品数据，所有数据必须来自 Yami 网站**
+    - _Requirements: 1.1, 1.2, 2.1, 2.2, 3.3, 4.1, 4.2, 5.1, 5.2, 6.1, 6.2, 6.3, 6.4, 6.5, 7.1, 7.2, 7.3, 7.4, 7.5, 8.1, 8.2, 8.3, 8.4, 9.1, 9.2, 11.1, 11.2, 13.1, 13.2, 13.3_
+
+- [ ] 76. 创建产品 #1024012251 的 Landing Page — Pon Pon Powder Natural Volume
+  - [ ] 76.1 创建 Landing Page HTML 文件
+    - 访问 Yami 网站搜索 item_number `1024012251`，获取真实的：产品页面 URL、产品图片 URL（格式 `https://cdn.yamibuy.net/item/{hash}_757x757.webp`）、当前价格、评分数据
+    - 以 `landing-pages/laoganma-spicy-crispy-chili-oil-210g.html` 为模板参考
+    - 品类: HAIRCARE，配色方案: primary=#AD1457, primary_deep=#880E4F, primary_light=#FCE4EC, accent=#F06292
+    - 生成完整 HTML 文件到 `landing-pages/` 目录，包含所有 10 个标准 section
+    - 确保所有 Yami 链接附加 `?utm_source=zhouzk.com`
+    - 确保 Schema.org JSON-LD 有效、Open Graph 标签完整、meta description 120-160 字符
+    - 确保 CSS 内联、响应式断点 768px/480px、IntersectionObserver 淡入动画
+    - 验证图片 URL 可访问、价格与 Yami 网站一致
+    - **不得猜测或编造任何产品数据，所有数据必须来自 Yami 网站**
+    - _Requirements: 1.1, 1.2, 2.1, 2.2, 3.3, 4.1, 4.2, 5.1, 5.2, 6.1, 6.2, 6.3, 6.4, 6.5, 7.1, 7.2, 7.3, 7.4, 7.5, 8.1, 8.2, 8.3, 8.4, 9.1, 9.2, 11.1, 11.2, 13.1, 13.2, 13.3_
+
+- [ ] 77. 创建产品 #1024158441 的 Landing Page — TSUBAKI Golden Hair Mask 180g Camellia Salon-Level
+  - [ ] 77.1 创建 Landing Page HTML 文件
+    - 访问 Yami 网站搜索 item_number `1024158441`，获取真实的：产品页面 URL、产品图片 URL（格式 `https://cdn.yamibuy.net/item/{hash}_757x757.webp`）、当前价格、评分数据
+    - 以 `landing-pages/laoganma-spicy-crispy-chili-oil-210g.html` 为模板参考
+    - 品类: HAIRCARE，配色方案: primary=#AD1457, primary_deep=#880E4F, primary_light=#FCE4EC, accent=#F06292
+    - 生成完整 HTML 文件到 `landing-pages/` 目录，包含所有 10 个标准 section
+    - 确保所有 Yami 链接附加 `?utm_source=zhouzk.com`
+    - 确保 Schema.org JSON-LD 有效、Open Graph 标签完整、meta description 120-160 字符
+    - 确保 CSS 内联、响应式断点 768px/480px、IntersectionObserver 淡入动画
+    - 验证图片 URL 可访问、价格与 Yami 网站一致
+    - **不得猜测或编造任何产品数据，所有数据必须来自 Yami 网站**
+    - _Requirements: 1.1, 1.2, 2.1, 2.2, 3.3, 4.1, 4.2, 5.1, 5.2, 6.1, 6.2, 6.3, 6.4, 6.5, 7.1, 7.2, 7.3, 7.4, 7.5, 8.1, 8.2, 8.3, 8.4, 9.1, 9.2, 11.1, 11.2, 13.1, 13.2, 13.3_
+
+- [ ] 78. 创建产品 #1024141581 的 Landing Page — FINO Premium Touch Hair Mask 230g + Shampoo + Conditioner + Hair Oil (Value Pack)
+  - [ ] 78.1 创建 Landing Page HTML 文件
+    - 访问 Yami 网站搜索 item_number `1024141581`，获取真实的：产品页面 URL、产品图片 URL（格式 `https://cdn.yamibuy.net/item/{hash}_757x757.webp`）、当前价格、评分数据
+    - 以 `landing-pages/laoganma-spicy-crispy-chili-oil-210g.html` 为模板参考
+    - 品类: HAIRCARE，配色方案: primary=#AD1457, primary_deep=#880E4F, primary_light=#FCE4EC, accent=#F06292
+    - 生成完整 HTML 文件到 `landing-pages/` 目录，包含所有 10 个标准 section
+    - 确保所有 Yami 链接附加 `?utm_source=zhouzk.com`
+    - 确保 Schema.org JSON-LD 有效、Open Graph 标签完整、meta description 120-160 字符
+    - 确保 CSS 内联、响应式断点 768px/480px、IntersectionObserver 淡入动画
+    - 验证图片 URL 可访问、价格与 Yami 网站一致
+    - **不得猜测或编造任何产品数据，所有数据必须来自 Yami 网站**
+    - _Requirements: 1.1, 1.2, 2.1, 2.2, 3.3, 4.1, 4.2, 5.1, 5.2, 6.1, 6.2, 6.3, 6.4, 6.5, 7.1, 7.2, 7.3, 7.4, 7.5, 8.1, 8.2, 8.3, 8.4, 9.1, 9.2, 11.1, 11.2, 13.1, 13.2, 13.3_
+
+- [ ] 79. 创建产品 #1016223691 的 Landing Page — Blessings Abound Pastry Gift Box 34.57 oz
+  - [ ] 79.1 创建 Landing Page HTML 文件
+    - 访问 Yami 网站搜索 item_number `1016223691`，获取真实的：产品页面 URL、产品图片 URL（格式 `https://cdn.yamibuy.net/item/{hash}_757x757.webp`）、当前价格、评分数据
+    - 以 `landing-pages/laoganma-spicy-crispy-chili-oil-210g.html` 为模板参考
+    - 品类: SNACK，配色方案: primary=#F9A825, primary_deep=#F57F17, primary_light=#FFFDE7, accent=#FFEE58
+    - 生成完整 HTML 文件到 `landing-pages/` 目录，包含所有 10 个标准 section
+    - 确保所有 Yami 链接附加 `?utm_source=zhouzk.com`
+    - 确保 Schema.org JSON-LD 有效、Open Graph 标签完整、meta description 120-160 字符
+    - 确保 CSS 内联、响应式断点 768px/480px、IntersectionObserver 淡入动画
+    - 验证图片 URL 可访问、价格与 Yami 网站一致
+    - **不得猜测或编造任何产品数据，所有数据必须来自 Yami 网站**
+    - _Requirements: 1.1, 1.2, 2.1, 2.2, 3.8, 4.1, 4.2, 5.1, 5.2, 6.1, 6.2, 6.3, 6.4, 6.5, 7.1, 7.2, 7.3, 7.4, 7.5, 8.1, 8.2, 8.3, 8.4, 9.1, 9.2, 11.1, 11.2, 13.1, 13.2, 13.3_
+
+- [ ] 80. 创建产品 #1017068931 的 Landing Page — Egg Tarts Cake 14.1oz
+  - [ ] 80.1 创建 Landing Page HTML 文件
+    - 访问 Yami 网站搜索 item_number `1017068931`，获取真实的：产品页面 URL、产品图片 URL（格式 `https://cdn.yamibuy.net/item/{hash}_757x757.webp`）、当前价格、评分数据
+    - 以 `landing-pages/laoganma-spicy-crispy-chili-oil-210g.html` 为模板参考
+    - 品类: SNACK，配色方案: primary=#F9A825, primary_deep=#F57F17, primary_light=#FFFDE7, accent=#FFEE58
+    - 生成完整 HTML 文件到 `landing-pages/` 目录，包含所有 10 个标准 section
+    - 确保所有 Yami 链接附加 `?utm_source=zhouzk.com`
+    - 确保 Schema.org JSON-LD 有效、Open Graph 标签完整、meta description 120-160 字符
+    - 确保 CSS 内联、响应式断点 768px/480px、IntersectionObserver 淡入动画
+    - 验证图片 URL 可访问、价格与 Yami 网站一致
+    - **不得猜测或编造任何产品数据，所有数据必须来自 Yami 网站**
+    - _Requirements: 1.1, 1.2, 2.1, 2.2, 3.8, 4.1, 4.2, 5.1, 5.2, 6.1, 6.2, 6.3, 6.4, 6.5, 7.1, 7.2, 7.3, 7.4, 7.5, 8.1, 8.2, 8.3, 8.4, 9.1, 9.2, 11.1, 11.2, 13.1, 13.2, 13.3_
+
+- [ ] 81. 创建产品 #1159003151 的 Landing Page — Rice Crackers Classic Milk Flavor 8.53 oz
+  - [ ] 81.1 创建 Landing Page HTML 文件
+    - 访问 Yami 网站搜索 item_number `1159003151`，获取真实的：产品页面 URL、产品图片 URL（格式 `https://cdn.yamibuy.net/item/{hash}_757x757.webp`）、当前价格、评分数据
+    - 以 `landing-pages/laoganma-spicy-crispy-chili-oil-210g.html` 为模板参考
+    - 品类: SNACK，配色方案: primary=#F9A825, primary_deep=#F57F17, primary_light=#FFFDE7, accent=#FFEE58
+    - 生成完整 HTML 文件到 `landing-pages/` 目录，包含所有 10 个标准 section
+    - 确保所有 Yami 链接附加 `?utm_source=zhouzk.com`
+    - 确保 Schema.org JSON-LD 有效、Open Graph 标签完整、meta description 120-160 字符
+    - 确保 CSS 内联、响应式断点 768px/480px、IntersectionObserver 淡入动画
+    - 验证图片 URL 可访问、价格与 Yami 网站一致
+    - **不得猜测或编造任何产品数据，所有数据必须来自 Yami 网站**
+    - _Requirements: 1.1, 1.2, 2.1, 2.2, 3.8, 4.1, 4.2, 5.1, 5.2, 6.1, 6.2, 6.3, 6.4, 6.5, 7.1, 7.2, 7.3, 7.4, 7.5, 8.1, 8.2, 8.3, 8.4, 9.1, 9.2, 11.1, 11.2, 13.1, 13.2, 13.3_
+
+- [ ] 82. 创建产品 #1017038201 的 Landing Page — Korean Honey Butter Potato Chips 2.11oz*3 (Value Pack)
+  - [ ] 82.1 创建 Landing Page HTML 文件
+    - 访问 Yami 网站搜索 item_number `1017038201`，获取真实的：产品页面 URL、产品图片 URL（格式 `https://cdn.yamibuy.net/item/{hash}_757x757.webp`）、当前价格、评分数据
+    - 以 `landing-pages/laoganma-spicy-crispy-chili-oil-210g.html` 为模板参考
+    - 品类: SNACK，配色方案: primary=#F9A825, primary_deep=#F57F17, primary_light=#FFFDE7, accent=#FFEE58
+    - 生成完整 HTML 文件到 `landing-pages/` 目录，包含所有 10 个标准 section
+    - 确保所有 Yami 链接附加 `?utm_source=zhouzk.com`
+    - 确保 Schema.org JSON-LD 有效、Open Graph 标签完整、meta description 120-160 字符
+    - 确保 CSS 内联、响应式断点 768px/480px、IntersectionObserver 淡入动画
+    - 验证图片 URL 可访问、价格与 Yami 网站一致
+    - **不得猜测或编造任何产品数据，所有数据必须来自 Yami 网站**
+    - _Requirements: 1.1, 1.2, 2.1, 2.2, 3.8, 4.1, 4.2, 5.1, 5.2, 6.1, 6.2, 6.3, 6.4, 6.5, 7.1, 7.2, 7.3, 7.4, 7.5, 8.1, 8.2, 8.3, 8.4, 9.1, 9.2, 11.1, 11.2, 13.1, 13.2, 13.3_
+
+- [ ] 83. 创建产品 #1018078921 的 Landing Page — New Year Candy Gift Box 14.82 oz
+  - [ ] 83.1 创建 Landing Page HTML 文件
+    - 访问 Yami 网站搜索 item_number `1018078921`，获取真实的：产品页面 URL、产品图片 URL（格式 `https://cdn.yamibuy.net/item/{hash}_757x757.webp`）、当前价格、评分数据
+    - 以 `landing-pages/laoganma-spicy-crispy-chili-oil-210g.html` 为模板参考
+    - 品类: SNACK，配色方案: primary=#F9A825, primary_deep=#F57F17, primary_light=#FFFDE7, accent=#FFEE58
+    - 生成完整 HTML 文件到 `landing-pages/` 目录，包含所有 10 个标准 section
+    - 确保所有 Yami 链接附加 `?utm_source=zhouzk.com`
+    - 确保 Schema.org JSON-LD 有效、Open Graph 标签完整、meta description 120-160 字符
+    - 确保 CSS 内联、响应式断点 768px/480px、IntersectionObserver 淡入动画
+    - 验证图片 URL 可访问、价格与 Yami 网站一致
+    - **不得猜测或编造任何产品数据，所有数据必须来自 Yami 网站**
+    - _Requirements: 1.1, 1.2, 2.1, 2.2, 3.8, 4.1, 4.2, 5.1, 5.2, 6.1, 6.2, 6.3, 6.4, 6.5, 7.1, 7.2, 7.3, 7.4, 7.5, 8.1, 8.2, 8.3, 8.4, 9.1, 9.2, 11.1, 11.2, 13.1, 13.2, 13.3_
+
+- [ ] 84. 创建产品 #3022187641 的 Landing Page — SPIII Star Edition Hertz RF Beauty Device
+  - [ ] 84.1 创建 Landing Page HTML 文件
+    - 访问 Yami 网站搜索 item_number `3022187641`，获取真实的：产品页面 URL、产品图片 URL（格式 `https://cdn.yamibuy.net/item/{hash}_757x757.webp`）、当前价格、评分数据
+    - 以 `landing-pages/laoganma-spicy-crispy-chili-oil-210g.html` 为模板参考
+    - 品类: BEAUTY_DEVICE，配色方案: primary=#7B1FA2, primary_deep=#4A148C, primary_light=#F3E5F5, accent=#CE93D8
+    - 生成完整 HTML 文件到 `landing-pages/` 目录，包含所有 10 个标准 section
+    - 确保所有 Yami 链接附加 `?utm_source=zhouzk.com`
+    - 确保 Schema.org JSON-LD 有效、Open Graph 标签完整、meta description 120-160 字符
+    - 确保 CSS 内联、响应式断点 768px/480px、IntersectionObserver 淡入动画
+    - 验证图片 URL 可访问、价格与 Yami 网站一致
+    - **不得猜测或编造任何产品数据，所有数据必须来自 Yami 网站**
+    - _Requirements: 1.1, 1.2, 2.1, 2.2, 3.2, 4.1, 4.2, 5.1, 5.2, 6.1, 6.2, 6.3, 6.4, 6.5, 7.1, 7.2, 7.3, 7.4, 7.5, 8.1, 8.2, 8.3, 8.4, 9.1, 9.2, 11.1, 11.2, 13.1, 13.2, 13.3_
+
+- [ ] 85. 创建产品 #3163001331 的 Landing Page — The ZeusⅢ Facial Tech Tool + Massage Gel + Essence
+  - [ ] 85.1 创建 Landing Page HTML 文件
+    - 访问 Yami 网站搜索 item_number `3163001331`，获取真实的：产品页面 URL、产品图片 URL（格式 `https://cdn.yamibuy.net/item/{hash}_757x757.webp`）、当前价格、评分数据
+    - 以 `landing-pages/laoganma-spicy-crispy-chili-oil-210g.html` 为模板参考
+    - 品类: BEAUTY_DEVICE，配色方案: primary=#7B1FA2, primary_deep=#4A148C, primary_light=#F3E5F5, accent=#CE93D8
+    - 生成完整 HTML 文件到 `landing-pages/` 目录，包含所有 10 个标准 section
+    - 确保所有 Yami 链接附加 `?utm_source=zhouzk.com`
+    - 确保 Schema.org JSON-LD 有效、Open Graph 标签完整、meta description 120-160 字符
+    - 确保 CSS 内联、响应式断点 768px/480px、IntersectionObserver 淡入动画
+    - 验证图片 URL 可访问、价格与 Yami 网站一致
+    - **不得猜测或编造任何产品数据，所有数据必须来自 Yami 网站**
+    - _Requirements: 1.1, 1.2, 2.1, 2.2, 3.2, 4.1, 4.2, 5.1, 5.2, 6.1, 6.2, 6.3, 6.4, 6.5, 7.1, 7.2, 7.3, 7.4, 7.5, 8.1, 8.2, 8.3, 8.4, 9.1, 9.2, 11.1, 11.2, 13.1, 13.2, 13.3_
+
+- [ ] 86. 创建产品 #3022558871 的 Landing Page — Sulwhasoo Concentrated Ginseng Renewing Serum 20g
+  - [ ] 86.1 创建 Landing Page HTML 文件
+    - 访问 Yami 网站搜索 item_number `3022558871`，获取真实的：产品页面 URL、产品图片 URL（格式 `https://cdn.yamibuy.net/item/{hash}_757x757.webp`）、当前价格、评分数据
+    - 以 `landing-pages/laoganma-spicy-crispy-chili-oil-210g.html` 为模板参考
+    - 品类: SKINCARE，配色方案: primary=#2E7D32, primary_deep=#1B5E20, primary_light=#E8F5E9, accent=#66BB6A
+    - 生成完整 HTML 文件到 `landing-pages/` 目录，包含所有 10 个标准 section
+    - 确保所有 Yami 链接附加 `?utm_source=zhouzk.com`
+    - 确保 Schema.org JSON-LD 有效、Open Graph 标签完整、meta description 120-160 字符
+    - 确保 CSS 内联、响应式断点 768px/480px、IntersectionObserver 淡入动画
+    - 验证图片 URL 可访问、价格与 Yami 网站一致
+    - **不得猜测或编造任何产品数据，所有数据必须来自 Yami 网站**
+    - _Requirements: 1.1, 1.2, 2.1, 2.2, 3.1, 4.1, 4.2, 5.1, 5.2, 6.1, 6.2, 6.3, 6.4, 6.5, 7.1, 7.2, 7.3, 7.4, 7.5, 8.1, 8.2, 8.3, 8.4, 9.1, 9.2, 11.1, 11.2, 13.1, 13.2, 13.3_
+
+- [ ] 87. 创建产品 #3022566941 的 Landing Page — Sulwhasoo The Ultimate S Cream 60ml
+  - [ ] 87.1 创建 Landing Page HTML 文件
+    - 访问 Yami 网站搜索 item_number `3022566941`，获取真实的：产品页面 URL、产品图片 URL（格式 `https://cdn.yamibuy.net/item/{hash}_757x757.webp`）、当前价格、评分数据
+    - 以 `landing-pages/laoganma-spicy-crispy-chili-oil-210g.html` 为模板参考
+    - 品类: SKINCARE，配色方案: primary=#2E7D32, primary_deep=#1B5E20, primary_light=#E8F5E9, accent=#66BB6A
+    - 生成完整 HTML 文件到 `landing-pages/` 目录，包含所有 10 个标准 section
+    - 确保所有 Yami 链接附加 `?utm_source=zhouzk.com`
+    - 确保 Schema.org JSON-LD 有效、Open Graph 标签完整、meta description 120-160 字符
+    - 确保 CSS 内联、响应式断点 768px/480px、IntersectionObserver 淡入动画
+    - 验证图片 URL 可访问、价格与 Yami 网站一致
+    - **不得猜测或编造任何产品数据，所有数据必须来自 Yami 网站**
+    - _Requirements: 1.1, 1.2, 2.1, 2.2, 3.1, 4.1, 4.2, 5.1, 5.2, 6.1, 6.2, 6.3, 6.4, 6.5, 7.1, 7.2, 7.3, 7.4, 7.5, 8.1, 8.2, 8.3, 8.4, 9.1, 9.2, 11.1, 11.2, 13.1, 13.2, 13.3_
+
+- [ ] 88. 创建产品 #3022554881 的 Landing Page — Sulwhasoo First Care Activating Serum 90ml
+  - [ ] 88.1 创建 Landing Page HTML 文件
+    - 访问 Yami 网站搜索 item_number `3022554881`，获取真实的：产品页面 URL、产品图片 URL（格式 `https://cdn.yamibuy.net/item/{hash}_757x757.webp`）、当前价格、评分数据
+    - 以 `landing-pages/laoganma-spicy-crispy-chili-oil-210g.html` 为模板参考
+    - 品类: SKINCARE，配色方案: primary=#2E7D32, primary_deep=#1B5E20, primary_light=#E8F5E9, accent=#66BB6A
+    - 生成完整 HTML 文件到 `landing-pages/` 目录，包含所有 10 个标准 section
+    - 确保所有 Yami 链接附加 `?utm_source=zhouzk.com`
+    - 确保 Schema.org JSON-LD 有效、Open Graph 标签完整、meta description 120-160 字符
+    - 确保 CSS 内联、响应式断点 768px/480px、IntersectionObserver 淡入动画
+    - 验证图片 URL 可访问、价格与 Yami 网站一致
+    - **不得猜测或编造任何产品数据，所有数据必须来自 Yami 网站**
+    - _Requirements: 1.1, 1.2, 2.1, 2.2, 3.1, 4.1, 4.2, 5.1, 5.2, 6.1, 6.2, 6.3, 6.4, 6.5, 7.1, 7.2, 7.3, 7.4, 7.5, 8.1, 8.2, 8.3, 8.4, 9.1, 9.2, 11.1, 11.2, 13.1, 13.2, 13.3_
+
+- [ ] 89. 创建产品 #3022566961 的 Landing Page — Sulwhasoo The Ultimate S Eye Cream 20ml
+  - [ ] 89.1 创建 Landing Page HTML 文件
+    - 访问 Yami 网站搜索 item_number `3022566961`，获取真实的：产品页面 URL、产品图片 URL（格式 `https://cdn.yamibuy.net/item/{hash}_757x757.webp`）、当前价格、评分数据
+    - 以 `landing-pages/laoganma-spicy-crispy-chili-oil-210g.html` 为模板参考
+    - 品类: SKINCARE，配色方案: primary=#2E7D32, primary_deep=#1B5E20, primary_light=#E8F5E9, accent=#66BB6A
+    - 生成完整 HTML 文件到 `landing-pages/` 目录，包含所有 10 个标准 section
+    - 确保所有 Yami 链接附加 `?utm_source=zhouzk.com`
+    - 确保 Schema.org JSON-LD 有效、Open Graph 标签完整、meta description 120-160 字符
+    - 确保 CSS 内联、响应式断点 768px/480px、IntersectionObserver 淡入动画
+    - 验证图片 URL 可访问、价格与 Yami 网站一致
+    - **不得猜测或编造任何产品数据，所有数据必须来自 Yami 网站**
+    - _Requirements: 1.1, 1.2, 2.1, 2.2, 3.1, 4.1, 4.2, 5.1, 5.2, 6.1, 6.2, 6.3, 6.4, 6.5, 7.1, 7.2, 7.3, 7.4, 7.5, 8.1, 8.2, 8.3, 8.4, 9.1, 9.2, 11.1, 11.2, 13.1, 13.2, 13.3_
+
+- [ ] 90. 创建产品 #3022567041 的 Landing Page — Sulwhasoo The Ultimate S Enriched Water 150ml
+  - [ ] 90.1 创建 Landing Page HTML 文件
+    - 访问 Yami 网站搜索 item_number `3022567041`，获取真实的：产品页面 URL、产品图片 URL（格式 `https://cdn.yamibuy.net/item/{hash}_757x757.webp`）、当前价格、评分数据
+    - 以 `landing-pages/laoganma-spicy-crispy-chili-oil-210g.html` 为模板参考
+    - 品类: SKINCARE，配色方案: primary=#2E7D32, primary_deep=#1B5E20, primary_light=#E8F5E9, accent=#66BB6A
+    - 生成完整 HTML 文件到 `landing-pages/` 目录，包含所有 10 个标准 section
+    - 确保所有 Yami 链接附加 `?utm_source=zhouzk.com`
+    - 确保 Schema.org JSON-LD 有效、Open Graph 标签完整、meta description 120-160 字符
+    - 确保 CSS 内联、响应式断点 768px/480px、IntersectionObserver 淡入动画
+    - 验证图片 URL 可访问、价格与 Yami 网站一致
+    - **不得猜测或编造任何产品数据，所有数据必须来自 Yami 网站**
+    - _Requirements: 1.1, 1.2, 2.1, 2.2, 3.1, 4.1, 4.2, 5.1, 5.2, 6.1, 6.2, 6.3, 6.4, 6.5, 7.1, 7.2, 7.3, 7.4, 7.5, 8.1, 8.2, 8.3, 8.4, 9.1, 9.2, 11.1, 11.2, 13.1, 13.2, 13.3_
+
+- [ ] 91. 创建产品 #3022567061 的 Landing Page — Sulwhasoo The Ultimate S Enriched Water 40ml + Emulsion 40ml
+  - [ ] 91.1 创建 Landing Page HTML 文件
+    - 访问 Yami 网站搜索 item_number `3022567061`，获取真实的：产品页面 URL、产品图片 URL（格式 `https://cdn.yamibuy.net/item/{hash}_757x757.webp`）、当前价格、评分数据
+    - 以 `landing-pages/laoganma-spicy-crispy-chili-oil-210g.html` 为模板参考
+    - 品类: SKINCARE，配色方案: primary=#2E7D32, primary_deep=#1B5E20, primary_light=#E8F5E9, accent=#66BB6A
+    - 生成完整 HTML 文件到 `landing-pages/` 目录，包含所有 10 个标准 section
+    - 确保所有 Yami 链接附加 `?utm_source=zhouzk.com`
+    - 确保 Schema.org JSON-LD 有效、Open Graph 标签完整、meta description 120-160 字符
+    - 确保 CSS 内联、响应式断点 768px/480px、IntersectionObserver 淡入动画
+    - 验证图片 URL 可访问、价格与 Yami 网站一致
+    - **不得猜测或编造任何产品数据，所有数据必须来自 Yami 网站**
+    - _Requirements: 1.1, 1.2, 2.1, 2.2, 3.1, 4.1, 4.2, 5.1, 5.2, 6.1, 6.2, 6.3, 6.4, 6.5, 7.1, 7.2, 7.3, 7.4, 7.5, 8.1, 8.2, 8.3, 8.4, 9.1, 9.2, 11.1, 11.2, 13.1, 13.2, 13.3_
+
+- [ ] 92. 创建产品 #3030366911 的 Landing Page — LION PAIR ACNE Cream 14g*3 boxes (Japan Direct Mail)
+  - [ ] 92.1 创建 Landing Page HTML 文件
+    - 访问 Yami 网站搜索 item_number `3030366911`，获取真实的：产品页面 URL、产品图片 URL（格式 `https://cdn.yamibuy.net/item/{hash}_757x757.webp`）、当前价格、评分数据
+    - 以 `landing-pages/laoganma-spicy-crispy-chili-oil-210g.html` 为模板参考
+    - 品类: SKINCARE，配色方案: primary=#2E7D32, primary_deep=#1B5E20, primary_light=#E8F5E9, accent=#66BB6A
+    - 生成完整 HTML 文件到 `landing-pages/` 目录，包含所有 10 个标准 section
+    - 确保所有 Yami 链接附加 `?utm_source=zhouzk.com`
+    - 确保 Schema.org JSON-LD 有效、Open Graph 标签完整、meta description 120-160 字符
+    - 确保 CSS 内联、响应式断点 768px/480px、IntersectionObserver 淡入动画
+    - 验证图片 URL 可访问、价格与 Yami 网站一致
+    - **不得猜测或编造任何产品数据，所有数据必须来自 Yami 网站**
+    - _Requirements: 1.1, 1.2, 2.1, 2.2, 3.1, 4.1, 4.2, 5.1, 5.2, 6.1, 6.2, 6.3, 6.4, 6.5, 7.1, 7.2, 7.3, 7.4, 7.5, 8.1, 8.2, 8.3, 8.4, 9.1, 9.2, 11.1, 11.2, 13.1, 13.2, 13.3_
+
+- [ ] 93. 创建产品 #5022416701 的 Landing Page — Birch Juice Moisturizing Sunscreen SPF50+ 50ml Single
+  - [ ] 93.1 创建 Landing Page HTML 文件
+    - 访问 Yami 网站搜索 item_number `5022416701`，获取真实的：产品页面 URL、产品图片 URL（格式 `https://cdn.yamibuy.net/item/{hash}_757x757.webp`）、当前价格、评分数据
+    - 以 `landing-pages/laoganma-spicy-crispy-chili-oil-210g.html` 为模板参考
+    - 品类: SKINCARE，配色方案: primary=#2E7D32, primary_deep=#1B5E20, primary_light=#E8F5E9, accent=#66BB6A
+    - 生成完整 HTML 文件到 `landing-pages/` 目录，包含所有 10 个标准 section
+    - 确保所有 Yami 链接附加 `?utm_source=zhouzk.com`
+    - 确保 Schema.org JSON-LD 有效、Open Graph 标签完整、meta description 120-160 字符
+    - 确保 CSS 内联、响应式断点 768px/480px、IntersectionObserver 淡入动画
+    - 验证图片 URL 可访问、价格与 Yami 网站一致
+    - **不得猜测或编造任何产品数据，所有数据必须来自 Yami 网站**
+    - _Requirements: 1.1, 1.2, 2.1, 2.2, 3.1, 4.1, 4.2, 5.1, 5.2, 6.1, 6.2, 6.3, 6.4, 6.5, 7.1, 7.2, 7.3, 7.4, 7.5, 8.1, 8.2, 8.3, 8.4, 9.1, 9.2, 11.1, 11.2, 13.1, 13.2, 13.3_
+
+- [ ] 94. 创建产品 #5157044661 的 Landing Page — Uji Matcha Qinglan Sugar-free Aluminum Can 40g
+  - [ ] 94.1 创建 Landing Page HTML 文件
+    - 访问 Yami 网站搜索 item_number `5157044661`，获取真实的：产品页面 URL、产品图片 URL（格式 `https://cdn.yamibuy.net/item/{hash}_757x757.webp`）、当前价格、评分数据
+    - 以 `landing-pages/laoganma-spicy-crispy-chili-oil-210g.html` 为模板参考
+    - 品类: BEVERAGE，配色方案: primary=#0277BD, primary_deep=#01579B, primary_light=#E1F5FE, accent=#29B6F6
+    - 生成完整 HTML 文件到 `landing-pages/` 目录，包含所有 10 个标准 section
+    - 确保所有 Yami 链接附加 `?utm_source=zhouzk.com`
+    - 确保 Schema.org JSON-LD 有效、Open Graph 标签完整、meta description 120-160 字符
+    - 确保 CSS 内联、响应式断点 768px/480px、IntersectionObserver 淡入动画
+    - 验证图片 URL 可访问、价格与 Yami 网站一致
+    - **不得猜测或编造任何产品数据，所有数据必须来自 Yami 网站**
+    - _Requirements: 1.1, 1.2, 2.1, 2.2, 3.5, 4.1, 4.2, 5.1, 5.2, 6.1, 6.2, 6.3, 6.4, 6.5, 7.1, 7.2, 7.3, 7.4, 7.5, 8.1, 8.2, 8.3, 8.4, 9.1, 9.2, 11.1, 11.2, 13.1, 13.2, 13.3_
+
+- [ ] 95. 创建产品 #5157044641 的 Landing Page — Uji Matcha Isuzu Cooking And Baking 100g
+  - [ ] 95.1 创建 Landing Page HTML 文件
+    - 访问 Yami 网站搜索 item_number `5157044641`，获取真实的：产品页面 URL、产品图片 URL（格式 `https://cdn.yamibuy.net/item/{hash}_757x757.webp`）、当前价格、评分数据
+    - 以 `landing-pages/laoganma-spicy-crispy-chili-oil-210g.html` 为模板参考
+    - 品类: FOOD，配色方案: primary=#E65100, primary_deep=#BF360C, primary_light=#FFF3E0, accent=#FF9800
+    - 生成完整 HTML 文件到 `landing-pages/` 目录，包含所有 10 个标准 section
+    - 确保所有 Yami 链接附加 `?utm_source=zhouzk.com`
+    - 确保 Schema.org JSON-LD 有效、Open Graph 标签完整、meta description 120-160 字符
+    - 确保 CSS 内联、响应式断点 768px/480px、IntersectionObserver 淡入动画
+    - 验证图片 URL 可访问、价格与 Yami 网站一致
+    - **不得猜测或编造任何产品数据，所有数据必须来自 Yami 网站**
+    - _Requirements: 1.1, 1.2, 2.1, 2.2, 3.9, 4.1, 4.2, 5.1, 5.2, 6.1, 6.2, 6.3, 6.4, 6.5, 7.1, 7.2, 7.3, 7.4, 7.5, 8.1, 8.2, 8.3, 8.4, 9.1, 9.2, 11.1, 11.2, 13.1, 13.2, 13.3_
+
+- [ ] 96. 创建产品 #5028458581 的 Landing Page — White Kitchen Dish Sterilizer Tableware Dryer 42L
+  - [ ] 96.1 创建 Landing Page HTML 文件
+    - 访问 Yami 网站搜索 item_number `5028458581`，获取真实的：产品页面 URL、产品图片 URL（格式 `https://cdn.yamibuy.net/item/{hash}_757x757.webp`）、当前价格、评分数据
+    - 以 `landing-pages/laoganma-spicy-crispy-chili-oil-210g.html` 为模板参考
+    - 品类: APPLIANCE，配色方案: primary=#37474F, primary_deep=#263238, primary_light=#ECEFF1, accent=#78909C
+    - 生成完整 HTML 文件到 `landing-pages/` 目录，包含所有 10 个标准 section
+    - 确保所有 Yami 链接附加 `?utm_source=zhouzk.com`
+    - 确保 Schema.org JSON-LD 有效、Open Graph 标签完整、meta description 120-160 字符
+    - 确保 CSS 内联、响应式断点 768px/480px、IntersectionObserver 淡入动画
+    - 验证图片 URL 可访问、价格与 Yami 网站一致
+    - **不得猜测或编造任何产品数据，所有数据必须来自 Yami 网站**
+    - _Requirements: 1.1, 1.2, 2.1, 2.2, 3.6, 4.1, 4.2, 5.1, 5.2, 6.1, 6.2, 6.3, 6.4, 6.5, 7.1, 7.2, 7.3, 7.4, 7.5, 8.1, 8.2, 8.3, 8.4, 9.1, 9.2, 11.1, 11.2, 13.1, 13.2, 13.3_
+
+- [ ] 97. 创建产品 #5021092411 的 Landing Page — Ichiniran Classic Hakata Tonkotsu Ramen Kit 5 Packs
+  - [ ] 97.1 创建 Landing Page HTML 文件
+    - 访问 Yami 网站搜索 item_number `5021092411`，获取真实的：产品页面 URL、产品图片 URL（格式 `https://cdn.yamibuy.net/item/{hash}_757x757.webp`）、当前价格、评分数据
+    - 以 `landing-pages/laoganma-spicy-crispy-chili-oil-210g.html` 为模板参考
+    - 品类: NOODLES，配色方案: primary=#D84315, primary_deep=#BF360C, primary_light=#FBE9E7, accent=#FF7043
+    - 生成完整 HTML 文件到 `landing-pages/` 目录，包含所有 10 个标准 section
+    - 确保所有 Yami 链接附加 `?utm_source=zhouzk.com`
+    - 确保 Schema.org JSON-LD 有效、Open Graph 标签完整、meta description 120-160 字符
+    - 确保 CSS 内联、响应式断点 768px/480px、IntersectionObserver 淡入动画
+    - 验证图片 URL 可访问、价格与 Yami 网站一致
+    - **不得猜测或编造任何产品数据，所有数据必须来自 Yami 网站**
+    - _Requirements: 1.1, 1.2, 2.1, 2.2, 3.4, 4.1, 4.2, 5.1, 5.2, 6.1, 6.2, 6.3, 6.4, 6.5, 7.1, 7.2, 7.3, 7.4, 7.5, 8.1, 8.2, 8.3, 8.4, 9.1, 9.2, 11.1, 11.2, 13.1, 13.2, 13.3_
+
+- [ ] 98. 创建产品 #5019107511 的 Landing Page — Steaming Dried Sweet Potatoes 250g
+  - [ ] 98.1 创建 Landing Page HTML 文件
+    - 访问 Yami 网站搜索 item_number `5019107511`，获取真实的：产品页面 URL、产品图片 URL（格式 `https://cdn.yamibuy.net/item/{hash}_757x757.webp`）、当前价格、评分数据
+    - 以 `landing-pages/laoganma-spicy-crispy-chili-oil-210g.html` 为模板参考
+    - 品类: SNACK，配色方案: primary=#F9A825, primary_deep=#F57F17, primary_light=#FFFDE7, accent=#FFEE58
+    - 生成完整 HTML 文件到 `landing-pages/` 目录，包含所有 10 个标准 section
+    - 确保所有 Yami 链接附加 `?utm_source=zhouzk.com`
+    - 确保 Schema.org JSON-LD 有效、Open Graph 标签完整、meta description 120-160 字符
+    - 确保 CSS 内联、响应式断点 768px/480px、IntersectionObserver 淡入动画
+    - 验证图片 URL 可访问、价格与 Yami 网站一致
+    - **不得猜测或编造任何产品数据，所有数据必须来自 Yami 网站**
+    - _Requirements: 1.1, 1.2, 2.1, 2.2, 3.8, 4.1, 4.2, 5.1, 5.2, 6.1, 6.2, 6.3, 6.4, 6.5, 7.1, 7.2, 7.3, 7.4, 7.5, 8.1, 8.2, 8.3, 8.4, 9.1, 9.2, 11.1, 11.2, 13.1, 13.2, 13.3_
+
+- [ ] 99. 创建产品 #5019163131 的 Landing Page — Sweet Potato Strips Sugar-Free Healthy Snack 250g
+  - [ ] 99.1 创建 Landing Page HTML 文件
+    - 访问 Yami 网站搜索 item_number `5019163131`，获取真实的：产品页面 URL、产品图片 URL（格式 `https://cdn.yamibuy.net/item/{hash}_757x757.webp`）、当前价格、评分数据
+    - 以 `landing-pages/laoganma-spicy-crispy-chili-oil-210g.html` 为模板参考
+    - 品类: SNACK，配色方案: primary=#F9A825, primary_deep=#F57F17, primary_light=#FFFDE7, accent=#FFEE58
+    - 生成完整 HTML 文件到 `landing-pages/` 目录，包含所有 10 个标准 section
+    - 确保所有 Yami 链接附加 `?utm_source=zhouzk.com`
+    - 确保 Schema.org JSON-LD 有效、Open Graph 标签完整、meta description 120-160 字符
+    - 确保 CSS 内联、响应式断点 768px/480px、IntersectionObserver 淡入动画
+    - 验证图片 URL 可访问、价格与 Yami 网站一致
+    - **不得猜测或编造任何产品数据，所有数据必须来自 Yami 网站**
+    - _Requirements: 1.1, 1.2, 2.1, 2.2, 3.8, 4.1, 4.2, 5.1, 5.2, 6.1, 6.2, 6.3, 6.4, 6.5, 7.1, 7.2, 7.3, 7.4, 7.5, 8.1, 8.2, 8.3, 8.4, 9.1, 9.2, 11.1, 11.2, 13.1, 13.2, 13.3_
+
+- [ ] 100. 创建产品 #1157077641 的 Landing Page — Japanese Matcha Powder Wakatake Ceremonial Grade 3.53oz
+  - [ ] 100.1 创建 Landing Page HTML 文件
+    - 访问 Yami 网站搜索 item_number `1157077641`，获取真实的：产品页面 URL、产品图片 URL（格式 `https://cdn.yamibuy.net/item/{hash}_757x757.webp`）、当前价格、评分数据
+    - 以 `landing-pages/laoganma-spicy-crispy-chili-oil-210g.html` 为模板参考
+    - 品类: BEVERAGE，配色方案: primary=#0277BD, primary_deep=#01579B, primary_light=#E1F5FE, accent=#29B6F6
+    - 生成完整 HTML 文件到 `landing-pages/` 目录，包含所有 10 个标准 section
+    - 确保所有 Yami 链接附加 `?utm_source=zhouzk.com`
+    - 确保 Schema.org JSON-LD 有效、Open Graph 标签完整、meta description 120-160 字符
+    - 确保 CSS 内联、响应式断点 768px/480px、IntersectionObserver 淡入动画
+    - 验证图片 URL 可访问、价格与 Yami 网站一致
+    - **不得猜测或编造任何产品数据，所有数据必须来自 Yami 网站**
+    - _Requirements: 1.1, 1.2, 2.1, 2.2, 3.5, 4.1, 4.2, 5.1, 5.2, 6.1, 6.2, 6.3, 6.4, 6.5, 7.1, 7.2, 7.3, 7.4, 7.5, 8.1, 8.2, 8.3, 8.4, 9.1, 9.2, 11.1, 11.2, 13.1, 13.2, 13.3_
+
+- [ ] 101. 创建产品 #1018203151 的 Landing Page — Godiva x Labubu Classic Master Series Hazelnut Milk Chocolate Gift Box 2.82oz
+  - [ ] 101.1 创建 Landing Page HTML 文件
+    - 访问 Yami 网站搜索 item_number `1018203151`，获取真实的：产品页面 URL、产品图片 URL（格式 `https://cdn.yamibuy.net/item/{hash}_757x757.webp`）、当前价格、评分数据
+    - 以 `landing-pages/laoganma-spicy-crispy-chili-oil-210g.html` 为模板参考
+    - 品类: SNACK，配色方案: primary=#F9A825, primary_deep=#F57F17, primary_light=#FFFDE7, accent=#FFEE58
+    - 生成完整 HTML 文件到 `landing-pages/` 目录，包含所有 10 个标准 section
+    - 确保所有 Yami 链接附加 `?utm_source=zhouzk.com`
+    - 确保 Schema.org JSON-LD 有效、Open Graph 标签完整、meta description 120-160 字符
+    - 确保 CSS 内联、响应式断点 768px/480px、IntersectionObserver 淡入动画
+    - 验证图片 URL 可访问、价格与 Yami 网站一致
+    - **不得猜测或编造任何产品数据，所有数据必须来自 Yami 网站**
+    - _Requirements: 1.1, 1.2, 2.1, 2.2, 3.8, 4.1, 4.2, 5.1, 5.2, 6.1, 6.2, 6.3, 6.4, 6.5, 7.1, 7.2, 7.3, 7.4, 7.5, 8.1, 8.2, 8.3, 8.4, 9.1, 9.2, 11.1, 11.2, 13.1, 13.2, 13.3_
+
+- [ ] 102. Checkpoint — 确保所有 100 个产品页面质量
+  - 确保所有已创建的 Landing Page 文件存在于 `landing-pages/` 目录
+  - 确保所有页面的图片 URL 可访问
+  - 确保所有页面的价格与 Yami 网站一致
+  - 确保所有 tests pass，ask the user if questions arise.
+
+- [ ] 103. 更新 index.html 和 sitemap.xml — 注册所有新 Landing Page
+  - [ ] 103.1 更新 index.html 的 LANDING-PAGE-LINKS 区域
+    - 在 `index.html` 中找到 `<!-- LANDING-PAGE-LINKS:START -->` 和 `<!-- LANDING-PAGE-LINKS:END -->` 标记
+    - 保留现有链接不变（Requirements 10.4）
+    - 将所有 100 个新产品 Landing Page 的链接按品类分组插入
+    - 每个链接格式: `<li><a href="./landing-pages/{filename}">{product_name}</a></li>`
+    - 确保所有文件名与实际生成的 HTML 文件名一致
+    - _Requirements: 10.1, 10.2, 10.4_
+  - [ ] 103.2 更新 sitemap.xml
+    - 将所有 100 个新产品 Landing Page 的 URL 添加到 sitemap.xml
+    - URL 格式: `https://zhouzk.com/landing-pages/{filename}`
+    - 确保 XML 格式有效
+    - _Requirements: 10.3_
+
+- [ ] 104. Final Checkpoint — 最终验证
+  - 确保 index.html 中所有新增链接指向存在的文件
+  - 确保 sitemap.xml 格式有效且包含所有新页面
+  - 确保所有 100 个 Landing Page 文件存在于 `landing-pages/` 目录
+  - 确保所有 tests pass，ask the user if questions arise.
+
+## Notes
+
+- 每个产品任务是独立的，应由独立的 subagent 在干净上下文中执行，避免上下文污染和幻觉
+- 所有产品数据（图片 URL、价格、评分、产品页面 URL）必须从 Yami 网站实时获取，不得猜测或编造
+- 模板参考: `landing-pages/laoganma-spicy-crispy-chili-oil-210g.html`
+- 品类配色方案详见设计文档 `design.md` 中的品类配色映射表
+- 所有 Yami 链接必须附加 `?utm_source=zhouzk.com` UTM 追踪参数
+- Checkpoints 用于阶段性验证，确保增量质量
+- 任务 103 必须在所有产品页面创建完成后执行
